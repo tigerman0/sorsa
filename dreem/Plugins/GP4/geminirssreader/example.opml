@@ -1,0 +1,6 @@
+<opml version="2.0">
+<head><title>Example</title><ownerName>User</ownerName></head>
+<body>
+<outline type="rss" text="foobar" xmlUrl="https://foobar.com" cookies="{'wbb2_userpassword': 'xxx', 'wbb2_userid': '000'}" />
+</body>
+</opml>

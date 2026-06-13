@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="150"
+   height="150"
+   viewBox="0 0 39.687499 39.687501"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="place.svg">
+  <defs
+     id="defs2">
+    <filter
+       filterUnits="objectBoundingBox"
+       y="0%"
+       x="0%"
+       height="100%"
+       width="100%"
+       id="alpha">
+      <feColorMatrix
+         id="feColorMatrix816"
+         values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"
+         type="matrix"
+         in="SourceGraphic" />
+    </filter>
+    <mask
+       id="mask0">
+      <g
+         id="g821"
+         filter="url(#alpha)">
+        <rect
+           id="rect819"
+           style="fill:rgb(0%,0%,0%);fill-opacity:0.301961"
+           y="0"
+           x="0"
+           height="384"
+           width="384" />
+      </g>
+    </mask>
+    <clipPath
+       id="clip1">
+      <rect
+         id="rect824"
+         y="0"
+         x="0"
+         height="384"
+         width="384" />
+    </clipPath>
+    <g
+       clip-path="url(#clip1)"
+       id="surface5">
+      <path
+         id="path827"
+         d="M 192 105.75 C 140.0625 105.75 98.25 147.5625 98.25 199.5 C 98.25 251.4375 140.0625 293.25 192 293.25 C 243.9375 293.25 285.75 251.4375 285.75 199.5 C 285.75 147.5625 243.9375 105.75 192 105.75 Z M 192 124.5 C 233.550781 124.5 267 157.949219 267 199.5 C 267 241.050781 233.550781 274.5 192 274.5 C 150.449219 274.5 117 241.050781 117 199.5 C 117 157.949219 150.449219 124.5 192 124.5 Z M 192 155.75 L 148.25 199.5 L 173.25 199.5 L 173.25 243.25 L 210.75 243.25 L 210.75 199.5 L 235.75 199.5 Z M 192 155.75"
+         style="fill:rgb(0%,0%,0%)" />
+    </g>
+    <filter
+       filterUnits="objectBoundingBox"
+       y="0%"
+       x="0%"
+       height="100%"
+       width="100%"
+       id="alpha-6">
+      <feColorMatrix
+         id="feColorMatrix827"
+         values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"
+         type="matrix"
+         in="SourceGraphic" />
+    </filter>
+    <mask
+       id="mask0-2">
+      <g
+         style="filter:url(#alpha-6)"
+         id="g832"
+         filter="url(#alpha)">
+        <rect
+           id="rect830"
+           style="fill:rgb(0%,0%,0%);fill-opacity:0.301961"
+           y="0"
+           x="0"
+           height="384"
+           width="384" />
+      </g>
+    </mask>
+    <clipPath
+       id="clip1-6">
+      <rect
+         id="rect835"
+         y="0"
+         x="0"
+         height="384"
+         width="384" />
+    </clipPath>
+    <g
+       clip-path="url(#clip1-6)"
+       id="surface5-1">
+      <path
+         id="path838-8"
+         d="M 259.863281 30.855469 C 209.605469 30.855469 168.878906 71.601562 168.878906 121.859375 C 168.878906 172.117188 259.863281 275.234375 259.863281 275.234375 C 259.863281 275.234375 350.867188 172.113281 350.867188 121.859375 C 350.867188 71.601562 310.121094 30.855469 259.863281 30.855469 M 258.296875 79.152344 C 235.585938 79.152344 217.175781 97.5625 217.175781 120.28125 C 217.175781 142.988281 235.585938 161.410156 258.304688 161.410156 C 281.011719 161.410156 299.433594 142.996094 299.433594 120.289062 C 299.433594 97.578125 281.019531 79.164062 258.3125 79.164062"
+         style="fill:rgb(0%,0%,0%);fill-opacity:0.996078" />
+    </g>
+    <mask
+       id="mask1">
+      <g
+         style="filter:url(#alpha-6)"
+         id="g843"
+         filter="url(#alpha)">
+        <rect
+           id="rect841"
+           style="fill:rgb(0%,0%,0%);fill-opacity:0.301961"
+           y="0"
+           x="0"
+           height="384"
+           width="384" />
+      </g>
+    </mask>
+    <clipPath
+       id="clip2">
+      <rect
+         id="rect846"
+         y="0"
+         x="0"
+         height="384"
+         width="384" />
+    </clipPath>
+    <g
+       clip-path="url(#clip2)"
+       id="surface8">
+      <path
+         id="path849"
+         d="M 258.3125 71.5625 C 235.601562 71.5625 217.191406 89.976562 217.191406 112.691406 C 217.191406 135.398438 235.601562 153.820312 258.320312 153.820312 C 281.027344 153.820312 299.449219 135.40625 299.449219 112.699219 C 299.449219 89.988281 281.035156 71.578125 258.324219 71.578125"
+         style="fill:rgb(0%,0%,0%);fill-opacity:0.996078" />
+    </g>
+    <mask
+       id="mask2">
+      <g
+         style="filter:url(#alpha-6)"
+         id="g854"
+         filter="url(#alpha)">
+        <rect
+           id="rect852"
+           style="fill:rgb(0%,0%,0%);fill-opacity:0.301961"
+           y="0"
+           x="0"
+           height="384"
+           width="384" />
+      </g>
+    </mask>
+    <clipPath
+       id="clip3">
+      <rect
+         id="rect857"
+         y="0"
+         x="0"
+         height="384"
+         width="384" />
+    </clipPath>
+    <g
+       clip-path="url(#clip3)"
+       id="surface11">
+      <path
+         id="path860"
+         d="M 258.3125 79.164062 C 235.601562 79.164062 217.191406 97.578125 217.191406 120.292969 C 217.191406 143.003906 235.601562 161.421875 258.320312 161.421875 C 281.027344 161.421875 299.449219 143.011719 299.449219 120.300781 C 299.449219 97.59375 281.035156 79.179688 258.324219 79.179688"
+         style="fill:rgb(0%,0%,0%);fill-opacity:0.996078" />
+    </g>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98944637"
+     inkscape:cx="-94.369479"
+     inkscape:cy="170.1364"
+     inkscape:document-units="px"
+     inkscape:current-layer="g840"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1025"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     units="px" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-257.31248)">
+    <g
+       id="g829"
+       transform="matrix(0.08957248,0,0,0.08957248,-80.58452,169.31962)">
+      <g
+         id="g840"
+         transform="matrix(3.9384617,0,0,3.9384617,-250.59406,-62.154184)">
+        <g
+           id="g933"
+           transform="matrix(0.38692875,0,0,0.38692875,202.29336,229.39867)">
+          <use
+             transform="translate(117.48994,88.685956)"
+             id="use873"
+             xlink:href="#surface5-1"
+             mask="url(#mask0-2)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+          <path
+             id="path875"
+             d="m 377.35322,111.93596 c -50.25781,0 -90.98437,40.74609 -90.98437,91.00391 0,50.25781 90.98437,153.375 90.98437,153.375 0,0 91.00391,-103.1211 91.00391,-153.375 0,-50.25782 -40.7461,-91.00391 -91.00391,-91.00391 m -1.56641,48.29688 c -22.71093,0 -41.12109,18.41406 -41.12109,41.1289 0,22.71094 18.41016,41.12891 41.12891,41.12891 22.70703,0 41.1289,-18.41016 41.1289,-41.1211 0,-22.70703 -18.41406,-41.12109 -41.12109,-41.12109"
+             style="fill:#f54545;fill-opacity:0.99607801"
+             inkscape:connector-curvature="0" />
+          <use
+             transform="translate(117.48994,88.685956)"
+             id="use877"
+             xlink:href="#surface8"
+             mask="url(#mask1)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             transform="translate(117.48994,88.685956)"
+             id="use879"
+             xlink:href="#surface11"
+             mask="url(#mask2)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,140 @@
+<skin>
+	<!--components>
+		<component Sensors="5" type="geminwidgets"/> #Max 10 Sensors
+	</components-->
+	<globals>
+		<value name="geminiwidgets" value="{'Sensors':5,'ShowInfobarPosition':1}"/>
+	</globals>	
+	<screen flags="wfNoBorder" name="InfoBar" position="0,825" size="1920,225">
+		<ePixmap alphatest="off" pixmap="skin_default/infobar.png" position="0,0" size="1920,225" zPosition="-1"/>
+		<widget backgroundColor="background" font="Regular;36" position="50,15" render="Label" size="140,40" source="global.CurrentTime" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget position="40,80" render="Picon" size="220,132" source="session.CurrentService" zPosition="1">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<widget backgroundColor="grey" position="190,34" render="Progress" size="200,2" source="session.Event_Now">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+		<widget pixmap="Default-FHD/skin_default/progress.svg" position="190,30" render="Progress" size="200,10" source="session.Event_Now" transparent="1">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+		<widget backgroundColor="#263c59" font="Regular;38" noWrap="1" position="410,13" render="Label" size="100,45" source="global.gChannelNr" halign="right" transparent="1"/>
+		<widget backgroundColor="#263c59" font="Regular;38" noWrap="1" position="530,13" render="Label" size="650,45" source="global.gServiceInfos" transparent="1"/>
+  		<widget source="global.UpdateIcon" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminiwidgets/images/ico_update.svg" position="1360,3" size="49,23" zPosition="1">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminiwidgets/images/ico_line_off.svg" position="1420,-2" size="74,35"/>
+		<widget source="global.OnlineIcon" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminiwidgets/images/ico_line_on.svg" position="1420,-2" render="Pixmap" size="74,35" zPosition="1">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="global.gSensorData4" halign="right" render="Label" position="1200,32" size="210,30" font="Regular;26" backgroundColor="#263c59" transparent="1"/>
+		<ePixmap pixmap="skin_default/icons/ico_crypt_off.png" position="1435,40" size="74,35"/>
+		<widget pixmap="skin_default/icons/ico_crypt_on.png" position="1435,40" render="Pixmap" size="74,35" source="session.CurrentService" zPosition="1">
+			<convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<ePixmap pixmap="skin_default/icons/ico_dolby_off.png" position="1505,40" size="74,35"/>
+		<widget pixmap="skin_default/icons/ico_dolby_on.png" position="1505,40" render="Pixmap" size="74,35" source="session.CurrentService" zPosition="1">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="global.ResolutionIcon" render="gMultiPixmap" pixmaps="/usr/lib/enigma2/python/Plugins/GP4/geminiwidgets/images/res_uhd.svg,/usr/lib/enigma2/python/Plugins/GP4/geminiwidgets/images/res_hd.svg,/usr/lib/enigma2/python/Plugins/GP4/geminiwidgets/images/res_169.svg,/usr/lib/enigma2/python/Plugins/GP4/geminiwidgets/images/res_43.svg" position="1580,40" size="74,35"/>
+		<ePixmap pixmap="skin_default/icons/ico_txt_off.png" position="1665,40" size="74,35"/>
+		<widget pixmap="skin_default/icons/ico_txt_on.png" position="1665,40" render="Pixmap" size="74,35" source="session.CurrentService" zPosition="1">
+			<convert type="ServiceInfo">HasTelext</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminiwidgets/images/ico_hbbtv_on.svg" position="1740,40" render="Pixmap" size="74,35" source="HbbtvApplication">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminiwidgets/images/ico_sub_on.svg" position="1820,40" render="Pixmap" size="74,35" source="session.CurrentService">
+			<convert type="ServiceInfo">SubservicesAvailable</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget pixmap="Default-FHD/skin_default/icons/hdr.svg" position="1820,40" render="Pixmap" size="74,35" source="session.CurrentService">
+			<convert type="ServiceInfo">IsHdr</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<ePixmap pixmap="skin_default/icons/icon_event.png" position="300,91" size="32,22"/>
+		<widget backgroundColor="background" font="Regular;34" position="350,84" render="Label" size="100,40" source="session.Event_Now" transparent="1">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget backgroundColor="background" font="Regular;34" position="460,84" render="Label" size="1220,40" source="session.Event_Now" transparent="1">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget backgroundColor="background" font="Regular;34" halign="right" position="1700,84" render="Label" size="200,40" source="session.Event_Now" transparent="1">
+			<convert type="EventTime">Remaining</convert>
+			<convert type="RemainingToText">InMinutes</convert>
+		</widget>
+		<widget backgroundColor="background" font="Regular;32" foregroundColor="grey" position="350,138" render="Label" size="95,38" source="session.Event_Next" transparent="1">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget backgroundColor="background" font="Regular;32" foregroundColor="grey" halign="left" position="445,136" render="Label" size="120,38" source="session.Event_Next" transparent="1">
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Format:- %H:%M</convert>
+		</widget>
+		<widget backgroundColor="background" font="Regular;32" foregroundColor="grey" position="570,136" render="Label" size="1120,38" source="session.Event_Next" transparent="1">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget backgroundColor="background" font="Regular;32" foregroundColor="grey" halign="right" position="1720,136" render="Label" size="180,38" source="session.Event_Next" transparent="1">
+			<convert type="EventTime">Remaining</convert>
+			<convert type="RemainingToText">InMinutes</convert>
+		</widget>
+		<eLabel backgroundColor="grey" position="300,180" size="1600,1"/>
+		<widget pixmap="skin_default/icons/icon_rec.png" position="1810,0" render="Pixmap" size="60,30" source="session.RecordState">
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<widget source="global.gSensorData0" render="Label" position="300,185" size="740,35" font="Regular;28" backgroundColor="background" transparent="1"/>
+		<widget source="global.gSensorData1" render="Label" position="1060,185" size="220,35" font="Regular;28" halign="center" backgroundColor="background" transparent="1"/>
+		<widget source="global.gSensorData2" render="Label" position="1300,185" size="290,35" font="Regular;28" halign="center" backgroundColor="background" transparent="1"/>
+		<widget source="global.gSensorData3" render="Label" position="1610,185" size="290,35" font="Regular;28" halign="right" backgroundColor="background" transparent="1"/>
+	</screen>
+	<screen name="WidgetsSetupInfobar" flags="wfNoBorder" position="0,center" size="830,1080">
+		<ePixmap gradient="#40000000,background,vertical" position="0,0" size="830,1080" zPosition="-3"/>
+		<widget name="Logo" position="20,5" size="120,120"/>
+		<widget name="Icon1" position="760,30" size="50,50"/>
+		<widget backgroundColor="transpBlack" font="Regular;34" source="Title" render="Label" position="20,130" size="790,40" transparent="1"/>
+		<eLabel backgroundColor="grey" position="20,180" size="790,2"/>
+		<widget name="config" separation="100" backgroundColor="background" position="20,190" size="790,675" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
+		<eLabel text="Save" backgroundColor="green" position="0,1040" size="830,40" font="Regular;30" halign="center" valign="center"/>
+		<widget alphatest="off" name="SensorPic" position="0,900" size="830,98" pixmaps="/usr/lib/enigma2/python/Plugins/GP4/geminiwidgets/images/sensor1.svg,/usr/lib/enigma2/python/Plugins/GP4/geminiwidgets/images/sensor2.svg,/usr/lib/enigma2/python/Plugins/GP4/geminiwidgets/images/sensor3.svg,/usr/lib/enigma2/python/Plugins/GP4/geminiwidgets/images/sensor4.svg,/usr/lib/enigma2/python/Plugins/GP4/geminiwidgets/images/sensor5.svg" zPosition="1" />
+	</screen>
+	<screen name="gClock" position="30,30" size="100,100" backgroundColor="#ff000000" title=" " flags="wfNoBorder">
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminiwidgets/images/styleclock.svg" position="1,1" size="100,100"/>
+		<widget source="global.CurrentTime" render="gRWatch" position="center,center" size="82,82" zPosition="3" foregroundColor="#ff0000">
+			<convert type="gCWatch">sec,2</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="gRWatch" position="center,center" size="80,80" zPosition="2" foregroundColor="#bbbbbb">
+			<convert type="gCWatch">min,3</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="gRWatch" position="center,center" size="60,60" zPosition="1" foregroundColor="#bbbbbb">
+			<convert type="gCWatch">hour,3</convert>
+		</widget>
+	</screen>
+	<screen name="ClockSetup" position="center,center" size="620,100" title=" " >
+		<widget name="label" position="10,10" size="600,70" halign="center" valign="center" font="Regular;32" />
+	</screen>
+	<screen name="SymbolScreen" position="40,140" size="100,100" backgroundColor="#ff000000" title=" " flags="wfNoBorder" >
+		<widget name="Icon" position="0,0" size="100,100" />
+	</screen>
+	<screen name="gEcmScreen_v2" position="0,440" size="500,380" flags="wfNoBorder">
+		<widget name="text" position="10,10" size="480,360" font="Console;25"/>
+	</screen>
+	<screen name="BootlogoSetupScreen" position="center,100" size="840,380" title="Setup">
+		<widget name="LogoSpinner" position="359,20" size="140,140"/>
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/ok_neutral.svg" position="780,10" size="50,50"/>
+		<eLabel position="0,180" size="840,2" backgroundColor="grey"/>
+		<widget separation="100" name="config" position="10,190" size="820,90" enableWrapAround="1" scrollbarMode="showOnDemand"/>
+		<eLabel position="0,290" size="840,2" backgroundColor="grey"/>
+		<widget name="GreenButton" cornerRadius="20" position="20,310" size="380,50" font="Regular;30" halign="center" valign="center" backgroundColor="green" transparent="1"/>
+		<widget name="YellowButton" cornerRadius="20" position="440,310" size="380,50" font="Regular;30" halign="center" valign="center" backgroundColor="yellow" transparent="1"/>
+	</screen>
+	<screen name="SpinnerSetupScreen" position="center,center" size="840,300" title="Setup">
+		<widget enableWrapAround="1" name="config" position="20,10" scrollbarMode="showOnDemand" size="800,45" />
+		<widget name="Spinner" position="350,85" size="140,140"/>
+		<eLabel text="Save" backgroundColor="green" font="Regular;30" halign="center" position="0,250" size="840,50" valign="center"/>
+	</screen>
+</skin>

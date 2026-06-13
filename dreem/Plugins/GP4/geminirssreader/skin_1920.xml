@@ -1,0 +1,26 @@
+<skin>
+	<screen backgroundColor="#000000" flags="wfNoBorder"  name="RssListerScreen" position="center,center" size="1920,1080">
+		<ePixmap gradient="#40000000,background,vertical" position="0,0" size="1920,1080" zPosition="-2"/>
+		<widget position="55,15" render="Pig" size="50,50" source="session.VideoPicture" zPosition="-3"/>
+		<widget backgroundColor="#000000" foregroundColor="#ffffff" font="Regular;32" halign="right" position="1620,20" render="Label" size="260,40" source="global.CurrentTime" transparent="1">
+			<convert type="ClockToText">Format:%a %d.%b</convert>
+		</widget>
+		<widget name="LogoSpinner" position="45,5" size="110,110"/>
+		<widget name="Icon0" position="200,45" size="60,60"/>
+		<widget name="Icon1" position="290,45" size="60,60"/>
+		<widget name="Icon2" position="380,45" size="60,60"/>
+		<widget name="Icon3" position="470,45" size="60,60"/>
+		<widget backgroundColor="#000000" foregroundColor="#ffffff" font="Regular;32" position="650,50" size="900,40" name="mainlabel" transparent="1"/>
+		<widget backgroundColor="#000000" foregroundColor="#888888" font="Regular;28" position="650,105" size="1230,345" name="maindesc" transparent="1"/>
+		<eLabel backgroundColor="#000000" cornerRadius="30" position="55,130" size="550,310" zPosition="-1"/>
+		<eLabel backgroundColor="#eeeeee" cornerRadius="30" position="50,125" size="560,320" zPosition="-2"/>
+		<widget name="itemPic" position="60,135" size="540,300"/>
+		<widget enableWrapAround="on" position="50,470" render="Listbox" scrollbarMode="showOnDemand" size="1830,600" source="list" transparent="1">
+			<convert type="TemplatedMultiContent">
+			{"template":[MultiContentEntryText(pos=(10,10),size=(1800,35),flags=RT_VALIGN_CENTER,font=0,text=1),
+			MultiContentEntryPixmapAlphaTest(pos=(0,0),size=(1820,2),png=2),],
+			"fonts":[gFont("Regular",28)],"itemHeight":50}
+			</convert>
+		</widget>
+	</screen>
+</skin>

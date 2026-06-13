@@ -1,0 +1,24 @@
+{
+	"de" : {
+		"logo" : "../images/icon_rssreader.svg",
+		"title" : "Gemini-Rss-Reader",
+		"developer" : "GeminiTeam",
+		"author" : "GeminiTeam",
+		"desc" : "Plugin zum Lesen von Rss-Feeds. Man kann einzelne Feeds als Favoriten setzen und auch beobachten lassen",
+		"links" : {"text-1": "pic-0","text-2":"pic-1","text-3":"pic-2","text-4":"pic-3","text-5":"pic-4","text-6":"pic-5"},			
+		"pic-0" : "screenshot0.png",
+		"pic-1" : "screenshot1.png",
+		"pic-2" : "screenshot2.png",
+		"pic-3" : "screenshot3.png",
+		"pic-4" : "screenshot4.png",
+		"pic-5" : "screenshot5.png",								
+		"text-0" : "Wichtig !!!\nDie mitgelieferte Default-Rss-Feed-Liste befindet sich im Plugin-Ordner. Beim ersten Verlassen des Plugin wird auch eine Datei /etc/enigma2/geminirss.json erstellt. Änderungen bitte in dieser vornehmen (z.B. Cookies anpassen). Wer geänderte Feeds auf mehreren Boxen nutzen möchte, kann einen Feed per OPML ex- und auch importieren. User die eigene Feeds hier anbieten wollen, können dies mit den exportierten OPML-Dateien bewerkstelligen.",
+		"text-1" : "Hauptansicht des Plugins\nMit den Favoriten, einem YouTube-Ordner, wo importierte YouTube-Rss-Feeds landen und den einzelnen Ordnern.",
+		"text-2" : "Taste GELB -> wechsel zwischen Listen- oder Kachelansicht.",
+		"text-3" : "Favoriten Ordner mit den Fav.Feeds, es wird bei jedem Feed den man beobachtet ein kleines Icon eingeblendet.",
+		"text-4" : "Taste BLAU Ordner -> Menü für Einstellungen und verschiedene Optionen.",
+		"text-5" : "Taste BLAU Hauptansicht -> Menü für Einstellungen und verschiedene Optionen\nBei 'Alle Feed-Einstellungen zurücksetzen, wird eure Ordner-Konfiguration gelöscht.",
+		"text-6" : "Setup bzw. Einstellungen (zb. Aktualisierung in x min).",
+		"text-7" : "Es ist jetzt möglich YouTube-Rss-Feeds einzubinden. Ein solcher Feed ist mit 'e2world' schon in der Default-Liste enthalten. Wer seine YouTube-Apps mit dem RSS-Reader überwachen will, macht bitte folgendes... Zur Seite https://www.youtube.com/subscription_manager gehen, dort auf Abos-exportieren. Die Datei hat zwar keine OPML-Endung, ist aber eine Solche und kann in den Rss-Reader importiert werden. Jetzt nur noch die Abos zu Favoriten hinzufügen und Beobachten aktivieren."
+	}
+}

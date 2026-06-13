@@ -1,0 +1,68 @@
+<skin>
+	<globals>
+		<value name="gcommander_key_menu" value="{'ani':'slide_right_shrink_top', 'x':1000, 'y':55, 'w':890, 'h':500}"/>
+		<value name="gcommander_key_red" value="{'ani':'slide_bottom_bottom', 'x':15, 'y':565, 'w':890, 'h':500}"/>
+		<value name="gcommander_file_info" value="{'ani':'slide_left_left'}"/>
+		<value name="gcommander_package_info" value="{'ani':'slide_left_left'}"/>
+		<value name="gcommanderlist_icon0" value="{'ani':'slide_right_shrink_top', 'x':875, 'y':136, 'w':890, 'h':500}"/>
+		<value name="gcommanderlist_icon1" value="{'ani':'slide_right_shrink_top', 'x':940, 'y':136, 'w':890, 'h':500}"/>
+		<value name="gcommanderlist_icon2" value="{'ani':'slide_right_shrink_top', 'x':1005, 'y':136, 'w':890, 'h':500}"/>
+		<value name="gcommanderlist_icon3" value="{'ani':'slide_right_shrink_top'}"/>
+		<value name="playlist_select" value="{'ani':'slide_top_top'}"/>
+	</globals>
+	<screen backgroundColor="#000000" flags="wfNoBorder" name="Gcommander" position="center,center" size="1920,1080" title="gCommander">
+		<ePixmap gradient="#40000000,background,vertical" position="0,0" size="1920,1080" zPosition="-2"/>
+		<widget backgroundColor="#000000" foregroundColor="#ffffff" font="Regular;32" halign="right" position="1620,20" render="Label" size="260,40" source="global.CurrentTime" transparent="1">
+			<convert type="ClockToText">Format:%a %d.%b</convert>
+		</widget>
+		<widget position="1740,960" render="Pig" size="20,20" source="session.VideoPicture" zPosition="-3"/>
+		<widget name="InfoPic" position="1780,67" size="40,40" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/info_neutral.svg"/>
+		<widget name="MenuPic" position="1840,67" size="40,40" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/menu_neutral.svg"/>
+		<widget name="LogoSpinner" position="40,0" size="120,120"/>
+		<eLabel backgroundColor="background" cornerRadius="20" position="30,930" size="1860,80" zPosition="-1"/>
+		<widget backgroundColor="#000000" foregroundColor="#ffffff" font="Regular;32" position="200,20" render="Label" size="1300,80" source="InfoLabel" valign="bottom" transparent="1"/>
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/arrow_left.svg" position="center,370" size="110,110"/>
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/arrow_right.svg" position="center,520" size="110,110"/>
+		<eLabel backgroundColor="background" cornerRadius="20" position="25,120" size="900,760" zPosition="-2"/>
+		<widget backgroundColor="green" cornerRadius="44" position="38,128" size="874,44" name="List0PathSel" zPosition="-1"/>
+		<widget backgroundColor="#000000" foregroundColor="#ffffff" font="Regular;28" cornerRadius="40" noWrap="1" position="40,130" render="Label" size="870,40" source="List0Path" valign="center"/>
+		<widget FileNameFont="Regular;26" FreeSizeWidth="400" InfoFont="Regular;26" InfoWidth="120" ItemHeight="45" PictureSize="35" backgroundColor="background" name="listl" position="40,190" scrollbarMode="showOnDemand" size="870,675" transparent="1"/>
+		<eLabel backgroundColor="background" cornerRadius="20" position="995,120" size="900,760" zPosition="-2"/>
+		<widget backgroundColor="green" cornerRadius="44" position="1008,128" size="874,44" name="List1PathSel" zPosition="-1"/>
+		<widget backgroundColor="#000000" foregroundColor="#ffffff" font="Regular;28" cornerRadius="40" noWrap="1" position="1010,130" render="Label" size="870,40" source="List1Path" valign="center"/>
+		<widget FileNameFont="Regular;26" FreeSizeWidth="400" InfoFont="Regular;26" InfoWidth="120" ItemHeight="45" PictureSize="35" backgroundColor="background" name="listr" position="1010,190" scrollbarMode="showOnDemand" size="870,675" transparent="1"/>
+		<ePixmap pixmap="skin_default/buttons/key_1.png" position="40,950" size="80,40"/>
+		<eLabel backgroundColor="background" font="Regular;30" position="125,950" size="140,37" text=" delete" transparent="1"/>
+		<ePixmap pixmap="skin_default/buttons/key_2.png" position="280,950" size="80,40"/>
+		<eLabel backgroundColor="background" font="Regular;30" position="365,950" size="140,37" text=" copy" transparent="1"/>
+		<ePixmap pixmap="skin_default/buttons/key_3.png" position="505,950" size="80,40"/>
+		<eLabel backgroundColor="background" font="Regular;30" position="595,950" size="140,37" text="move " transparent="1"/>
+		<ePixmap pixmap="skin_default/buttons/key_4.png" position="735,950" size="80,40"/>
+		<eLabel backgroundColor="background" font="Regular;30" position="825,950" size="140,37" text="chmod" transparent="1"/>
+		<ePixmap pixmap="skin_default/buttons/key_5.png" position="985,950" size="80,40"/>
+		<eLabel backgroundColor="background" font="Regular;30" position="1075,950" size="140,37" text="rename " transparent="1"/>
+		<ePixmap pixmap="skin_default/buttons/key_6.png" position="1230,950" size="80,40"/>
+		<eLabel backgroundColor="background" font="Regular;30" position="1320,950" size="140,37" text="symlink" transparent="1"/>
+		<ePixmap pixmap="skin_default/buttons/key_7.png" position="1490,950" size="80,40"/>
+		<eLabel backgroundColor="background" font="Regular;30" position="1580,950" size="140,37" text="mkdir" transparent="1"/>
+		<ePixmap pixmap="skin_default/buttons/key_8.png" position="1720,950" size="80,40"/>
+		<eLabel backgroundColor="background" font="Regular;30" position="1810,950" size="80,37" text="new" transparent="1"/>
+		<widget backgroundColor="background" font="Regular;26" foregroundColor="red" halign="center" position="0,1030" render="Label" size="480,50" source="RedButton" transparent="1" valign="center"/>
+		<widget backgroundColor="background" font="Regular;26" foregroundColor="green" halign="center" position="480,1030" render="Label" size="480,50" source="GreenButton" transparent="1" valign="center"/>
+		<widget backgroundColor="background" font="Regular;26" foregroundColor="yellow" halign="center" position="960,1030" render="Label" size="480,50" source="YellowButton" transparent="1" valign="center"/>
+		<widget backgroundColor="background" font="Regular;26" foregroundColor="#2830ff" halign="center" position="1440,1030" render="Label" size="480,50" source="BlueButton" transparent="1" valign="center"/>
+	</screen>
+	<screen flags="wfNoBorder" name="gFileList_small" position="0,center" size="930,1080" title=" ">
+		<ePixmap position="40,20" size="80,80" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/backspace.svg"/>
+		<widget source="Title" render="Label" position="180,18" size="750,90" font="Regular;40" backgroundColor="background" valign="center" transparent="1"/>
+		<widget name="text" position="30,140" size="870,900" font="Console;24" backgroundColor="background" transparent="1"/>
+	</screen>
+	<screen flags="wfNoBorder" name="gFileList_big" position="center,center" size="1920,1080" title=" ">
+		<widget backgroundColor="background" font="Regular;32" halign="right" position="1620,20" render="Label" size="260,40" source="global.CurrentTime" transparent="1">
+			<convert type="ClockToText">Format:%a %d.%b</convert>
+		</widget>
+		<ePixmap position="40,0" size="160,160" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/gemini_logo.svg"/>
+		<widget source="Title" render="Label" position="40,180" size="1840,42" font="Regular;36" backgroundColor="background" transparent="1"/>
+		<widget name="text" position="40,240" size="1840,800" font="Console;28" backgroundColor="background" transparent="1"/>
+	</screen>
+</skin>

@@ -1,0 +1,484 @@
+{
+	"entrys": [
+	{
+		"menu" :"Dreambox",
+		"entry": [
+		{
+			"favorites" : true,
+			"url" : "https://www.i-have-a-dreambox.com/wbb5/forum/index.php?board-feed",
+			"user" : "name",
+			"pass" : "password",
+			"loginurl" : "https://www.i-have-a-dreambox.com/wbb5/index.php?login/",
+			"title" : "Themen - IHAD"
+		},
+		{
+			"url" : "http://dreambox.de/board/index.php?board-feed",
+			"title" : "Themen - Dreamboard"
+		},
+		{
+			"url" : "http://git.opendreambox.org/?p=enigma2-plugins.git;a=rss",
+			"title" : "git.opendreambox.org Git - enigma2-plugins.git/rss log"
+		},
+		{
+			"url" : "http://git.opendreambox.org/?p=opendreambox.git;a=rss;opt=--no-merges",
+			"title" : "git.opendreambox.org Git - opendreambox.git/rss log"
+		},
+		{
+			"url" : "http://feeds.feedburner.com/dreambox-blog/feed",
+			"title" : "Dreambox-Blog"
+		}
+		]
+	},
+	{
+		"menu" :"YouTube Channel-Feeds",
+		"entry": [
+		{
+			"url" : "https://www.youtube.com/feeds/videos.xml?channel_id=UCb3tJ5NKw7mDxyaQ73mwbRg",
+			"title" : "Kontor.TV"
+		},
+		{
+			"url" : "https://www.youtube.com/feeds/videos.xml?channel_id=UC7vVhkEfw4nOGp8TyDk7RcQ",
+			"title" : "Boston Dynamics"
+		},
+		{
+			"url" : "https://www.youtube.com/feeds/videos.xml?channel_id=UCj-NyTs_lCuMG3ff9jxibnQ",
+			"title" : "VAVA Media"
+		},
+		{
+			"url" : "https://www.youtube.com/feeds/videos.xml?channel_id=UC_EZd3lsmxudu3IQzpTzOgw",
+			"title" : "Held der Steine"
+		}
+		]
+	},
+	{
+		"menu" :"Satinformationen",
+		"entry": [
+		{
+			"url" : "http://www.satellifax.de/satellifax-rss.xml",
+			"title" : "SatelliFax"
+		},
+		{
+			"url" : "https://www.infosat.de/News-Feeds/RSS/2.0/schlagzeilen.xml",
+			"title" : "infosat.de - Schlagzeilen"
+		}
+		]
+	},
+	{
+		"menu" :"TV Spielfilm",
+		"entry": [
+		{
+			"url" : "https://www.tvspielfilm.de/tv-programm/rss/heute2015.xml",
+			"title" : "TV Spielfilm.de - Heute um 20:15 Uhr im TV"
+		},
+		{
+			"url" : "https://www.tvspielfilm.de/tv-programm/rss/heute2200.xml",
+			"title" : "TV Spielfilm.de - Heute um 22:00 Uhr im TV"
+		},
+		{
+			"url" : "https://www.tvspielfilm.de/tv-programm/rss/jetzt.xml",
+			"title" : "TV Spielfilm.de - Was läuft jetzt im Fernsehen?"
+		},
+		{
+			"url" : "https://www.tvspielfilm.de/tv-programm/rss/filme.xml",
+			"title" : "TV Spielfilm.de - TV-Programm: Spielfilm-Highlights des Tages – TV SPIELFILM"
+		},
+		{
+			"url" : "https://www.tvspielfilm.de/news/rss.xml",
+			"title" : "TV Spielfilm.de - Aktuelle Kino-News"
+		}
+		]
+	},
+	{
+		"menu" :"Serienjunkies",
+		"entry": [
+		{
+			"url" : "https://www.serienjunkies.de/rss/news.xml",
+			"title" : "Serienjunkies - Alle Serien auf serienjunkies.de"
+		},
+		{
+			"url" : "https://serienjunkies.libsyn.com/rss",
+			"title" : "Der Serienjunkies-Podcast"
+		}
+		]
+	},
+	{
+		"menu" :"Kino.de",
+		"entry": [
+		{
+			"url" : "https://www.kino.de/rss/charts",
+			"title" : "Kinocharts Deutschland"
+		},
+		{
+			"url" : "https://www.kino.de/rss/movienews",
+			"title" : "Filmnews"
+		},
+		{
+			"url" : "https://www.kino.de/rss/stars",
+			"title" : "Starnews"
+		},
+		{
+			"url" : "https://www.kino.de/rss/neu-im-kino",
+			"title" : "Neu im Kino"
+		}
+		]
+	},
+	{
+		"menu" :"Kicker",
+		"entry": [
+		{
+			"url" : "http://rss.kicker.de/news/bundesliga",
+			"title" : "kicker Bundesliga News"
+		},
+		{
+			"url" : "http://rss.kicker.de/news/2bundesliga",
+			"title" : "kicker 2. Bundesliga News"
+		},
+		{
+			"url" : "http://rss.kicker.de/news/3liga",
+			"title" : "kicker 3. Liga News"
+		},
+		{
+			"url" : "http://rss.kicker.de/news/dfbpokal",
+			"title" : "kicker DFB-Pokal News"
+		},
+		{
+			"url" : "http://rss.kicker.de/news/nationalelf",
+			"title" : "kicker Nationalelf News"
+		},
+		{
+			"url" : "http://rss.kicker.de/news/clnews",
+			"title" : "kicker Champions League News"
+		},
+		{
+			"url" : "http://rss.kicker.de/news/uefacup",
+			"title" : "kicker Europa League News"
+		},
+		{
+			"url" : "http://rss.kicker.de/news/f1news",
+			"title" : "kicker Formel-1 News"
+		},
+		{
+			"url" : "http://rss.kicker.de/news/handball",
+			"title" : "kicker Handball News"
+		},
+		{
+			"url" : "http://rss.kicker.de/news/eishockey",
+			"title" : "kicker Eishockey News"
+		},
+		{
+			"url" : "http://rss.kicker.de/news/basketball",
+			"title" : "kicker Basketball News"
+		},
+		{
+			"url" : "http://rss.kicker.de/news/tennis",
+			"title" : "kicker Tennis News"
+		},
+		{
+			"url" : "http://rss.kicker.de/news/aktuell",
+			"title" : "kicker News"
+		}
+		]
+	},
+	{
+		"menu" :"ZDF Feeds/Vodcast",
+		"entry": [
+		{
+			"url" : "http://www.zdf.de/rss/podcast/video/zdf/politik/auslandsjournal",
+			"title" : "auslandsjournal (VIDEO)"
+		},
+		{
+			"url" : "http://www.zdf.de/rss/podcast/video/zdf/politik/berlin-direkt",
+			"title" : "Berlin direkt (VIDEO)"
+		},
+		{
+			"url" : "http://www.zdf.de/rss/podcast/video/zdf/comedy/die-anstalt",
+			"title" : "Die Anstalt (VIDEO)"
+		},
+		{
+			"url" : "http://www.zdf.de/rss/podcast/video/zdf/kultur/forum-am-freitag",
+			"title" : "Forum am Freitag (VIDEO)"
+		},
+		{
+			"url" : "http://www.zdf.de/rss/podcast/video/zdf/wissen/frag-den-lesch",
+			"title" : "Frag den Lesch (VIDEO)"
+		},
+		{
+			"url" : "http://www.zdf.de/rss/podcast/video/zdf/nachrichten/heute-19-uhr",
+			"title" : "heute 19:00 Uhr (VIDEO)"
+		},
+		{
+			"url" : "http://www.zdf.de/rss/podcast/video/zdf/nachrichten/heute-journal",
+			"title" : "heute journal (VIDEO)"
+		},
+		{
+			"url" : "http://www.zdf.de/rss/podcast/video/zdf/nachrichten/heute-plus",
+			"title" : "heute plus (VIDEO)"
+		},
+		{
+			"url" : "http://www.zdf.de/rss/podcast/video/zdf/wissen/leschs-kosmos",
+			"title" : "Leschs Kosmos  (VIDEO)"
+		},
+		{
+			"url" : "http://www.zdf.de/rss/podcast/video/zdf/wissen/lesch-to-go",
+			"title" : "Lesch to go (VIDEO)"
+		},
+		{
+			"url" : "http://www.zdf.de/rss/podcast/video/zdf/kinder/logo",
+			"title" : "logo! (VIDEO)"
+		},
+		{
+			"url" : "http://www.zdf.de/rss/podcast/video/zdf/comedy/neo-magazin-mit-jan-boehmermann",
+			"title" : "NEO MAGAZIN ROYALE (VIDEO)"
+		},
+		{
+			"url" : "http://www.zdf.de/rss/podcast/video/zdf/dokumentation/zdfzoom",
+			"title" : "ZDFzoom (VIDEO)"
+		}
+		]
+	},
+	{
+		"menu" :"Spiegel Online",
+		"entry": [
+		{
+			"url" : "http://www.spiegel.de/schlagzeilen/index.rss",
+			"title" : "DER SPIEGEL - Schlagzeilen"
+		}
+		]
+	},
+	{
+		"menu" :"Nachrichten/Informationen",
+		"entry": [
+		{
+			"url" : "https://www.nzz.ch/recent.rss",
+			"title" : "Neueste Artikel - NZZ Nachrichten"
+		},
+		{
+			"url" : "https://www.n-tv.de/rss",
+			"title" : "n-tv.de - Startseite"
+		},
+		{
+			"url" : "http://www.faz.net/rss/aktuell/",
+			"title" : "Aktuell - FAZ.NET"
+		},
+		{
+			"url" : "https://rss.focus.de/fol/XML/rss_folnews.xml",
+			"title" : "FOCUS Online"
+		},
+		{
+			"url" : "http://feeds.t-online.de/rss/nachrichten",
+			"title" : "Aktuelles zum Thema Nachrichten"
+		},
+		{
+			"url" : "https://www.bild.de/rssfeeds/vw-alles/vw-alles-26970192,dzbildplus=true,sort=1,teaserbildmobil=false,view=rss2,wtmc=ob.feed.bild.xml",
+			"title" : "Bild.de Home"
+		},
+		{
+			"url" : "http://rss.cnn.com/rss/edition_europe.rss",
+			"title" : "CNN.com - RSS Channel - Regions - Europe"
+		},
+		{
+			"url" : "http://rss.cnn.com/rss/cnn_freevideo.rss",
+			"title" : "CNN.com - RSS Channel"
+		}
+		]
+	},
+	{
+		"menu" :"Heise Online",
+		"entry": [
+		{
+			"url" : "https://www.heise.de/heiseshowhd.rss",
+			"title" : "#heiseshow (HD-Video)"
+		},
+		{
+			"url" : "https://www.heise.de/newsticker/heise.rdf",
+			"title" : "heise online News"
+		},
+		{
+			"url" : "https://www.heise.de/newsticker/heise-top-atom.xml",
+			"title" : "heise online Top-News"
+		}
+		]
+	},
+	{
+		"menu" :"Chip Online",
+		"entry": [
+		{
+			"url" : "https://www.chip.de/rss/rss_tests.xml",
+			"title" : "CHIP Online Tests"
+		},
+		{
+			"url" : "https://www.chip.de/rss/rss_technik.xml",
+			"title" : "CHIP Online Hardware-News"
+		},
+		{
+			"url" : "https://www.chip.de/rss/rss_downloads.xml",
+			"title" : "CHIP Online Downloads"
+		},
+		{
+			"url" : "https://www.chip.de/rss/rss_dlspecials.xml",
+			"title" : "CHIP Online Download-Specials"
+		},
+		{
+			"url" : "https://www.chip.de/rss/rss_tipps.xml",
+			"title" : "CHIP Online Tipps & Tricks"
+		},
+		{
+			"url" : "https://www.chip.de/rss/rss_videos.xml",
+			"title" : "CHIP Online Videos"
+		},
+		{
+			"url" : "https://www.chip.de/rss/rss_topnews.xml",
+			"title" : "CHIP Online Topnews"
+		},
+		{
+			"url" : "https://www.chip.de/rss/rss_dslwlan.xml",
+			"title" : "CHIP Online DSL & WLAN"
+		},
+		{
+			"url" : "https://www.chip.de/rss/rss_downhandy.xml",
+			"title" : "CHIP Online Download Handy & Mobile"
+		},
+		{
+			"url" : "https://praxistipps.chip.de/feed",
+			"title" : "chip Praxistipps"
+		}
+		]
+	},
+	{
+		"menu" :"Computer",
+		"entry": [
+		{
+			"url" : "https://rss.golem.de/rss.php?feed=RSS2.0",
+			"title" : "Golem.de"
+		},
+		{
+			"url" : "http://static.winfuture.de/feeds/WinFuture-News-rss2.0.xml",
+			"title" : "WinFuture News"
+		},
+		{
+			"url" : "https://www.zdnet.de/feed/",
+			"title" : "ZDNet.de"
+		},
+		{
+			"url" : "http://www.computerbild.de/rssfeed_2261.html?node=10",
+			"title" : "Home - COMPUTER BILD"
+		}
+		]
+	},
+	{
+		"menu" :"NASA",
+		"entry": [
+		{
+			"url" : "https://www.nasa.gov/rss/dyn/breaking_news.rss",
+			"title" : "NASA Breaking News"
+		},
+		{
+			"url" : "https://www.nasa.gov/rss/dyn/educationnews.rss",
+			"title" : "Education News"
+		},
+		{
+			"url" : "https://www.nasa.gov/rss/dyn/lg_image_of_the_day.rss",
+			"title" : "NASA Image of the Day"
+		},
+		{
+			"url" : "https://blogs.nasa.gov/stationreport/feed/",
+			"title" : "ISS On-Orbit Status Report"
+		},
+		{
+			"url" : "https://www.nasa.gov/rss/dyn/onthestation_rss.rss",
+			"title" : "On the Station - Latest News"
+		},
+		{
+			"url" : "https://www.nasa.gov/rss/dyn/mission_pages/kepler/news/kepler-newsandfeatures-RSS.rss",
+			"title" : "Kepler News and Features"
+		},
+		{
+			"url" : "https://www.nasa.gov/rss/dyn/chandra_images.rss",
+			"title" : "Chandra Images"
+		},
+		{
+			"url" : "https://www.nasa.gov/rss/dyn/shuttle_station.rss",
+			"title" : "Space Station News"
+		},
+		{
+			"url" : "https://www.nasa.gov/rss/dyn/solar_system.rss",
+			"title" : "Solar System and Beyond"
+		},
+		{
+			"url" : "https://www.nasa.gov/rss/dyn/earth.rss",
+			"title" : "Earth News"
+		},
+		{
+			"url" : "https://www.nasa.gov/rss/dyn/aeronautics.rss",
+			"title" : "Aeronautics News"
+		},
+		{
+			"url" : "https://www.nasa.gov/rss/dyn/hurricaneupdate.rss",
+			"title" : "Hurricane Breaking News"
+		}
+		]
+	},
+	{
+		"menu" :"NASA Podcast and Vodcast Feeds",
+		"entry": [
+		{
+			"url" : "https://www.nasa.gov/rss/dyn/Gravity-Assist.rss",
+			"title" : "Gravity Assist"
+		},
+		{
+			"url" : "https://www.nasa.gov/rss/dyn/Houston-We-Have-a-Podcast.rss",
+			"title" : "Houston We Have a Podcast"
+		},
+		{
+			"url" : "https://www.nasa.gov/rss/dyn/NASA-in-Silicon-Valley.rss",
+			"title" : "NASA in Silicon Valley"
+		},
+		{
+			"url" : "https://www.jpl.nasa.gov/multimedia/rss/news.xml",
+			"title" : "News and Features - NASA's Jet Propulsion Laboratory"
+		},
+		{
+			"url" : "https://www.jpl.nasa.gov/multimedia/rss/podfeed-hd.xml",
+			"title" : "HD - NASA's Jet Propulsion Laboratory"
+		},
+		{
+			"url" : "https://www.jpl.nasa.gov/multimedia/rss/slideshows.xml",
+			"title" : "Interactive Features Slideshows - Jet Propulsion Laboratory, NASA, CalTech."
+		},
+		{
+			"url" : "https://www.nasa.gov/rss/dyn/spacetoground_vodcast.rss",
+			"title" : "Space to Ground Video Podcasts"
+		},
+		{
+			"url" : "https://feeds.feedburner.com/NasaSciencecasts",
+			"title" : "NASA ScienceCasts"
+		},
+		{
+			"url" : "https://www.nasa.gov/rss/dyn/NASAEdge_vodcast.rss",
+			"title" : "NASA Edge"
+		}
+		]
+	},
+	{
+		"menu" :"HIFI",
+		"entry": [
+		{
+			"url" : "https://www.fairaudio.de/feed/",
+			"title" : "fairaudio.de - klare worte. guter ton."
+		},
+		{
+			"url" : "https://www.hifitest.de/rss/tests",
+			"title" : "hifitest.de - Alle Tests"
+		},
+		{
+			"url" : "https://www.hifitest.de/rss/news",
+			"title" : "hifitest.de - Alle News"
+		},
+		{
+			"url" : "https://www.cma.audio/blog?sRss=1",
+			"title" : "Blog / RSS Feed"
+		}
+		]
+	}
+	]
+}

@@ -1,0 +1,22 @@
+{
+	"de" : {
+		"logo" : "../images/icon_addonmanager.svg",
+		"title" : "Gemini-AddonManager",
+		"developer" : "GeminiTeam",
+		"author" : "GeminiTeam",
+		"desc" : "Tor zu allen Addons, Skins, Plugins und Piconsammlungen.",
+		"links" : {"text-0": "pic-0","text-1":"pic-1","text-2":"pic-2","text-3":"pic-3","text-4":"pic-4","text-5":"pic-5"},		
+		"pic-0" : "screenshot0.jpg",
+		"pic-1" : "screenshot1.jpg",
+		"pic-2" : "screenshot2.jpg",
+		"pic-3" : "screenshot3.jpg",
+		"pic-4" : "screenshot4.jpg",
+		"pic-5" : "screenshot5.jpg",
+		"text-0" : "Startseite des Plugins.\nWenn es Updates gibt, kann mit der Taste ROT die Aufgabenliste aufgerufen werden.\nMit Taste GRÜN wird ein Update für alle Pakete angestoßen für die es ein Update gibt.\nMit Taste GELB wechselt man zwischen vier verschiedenen Ansichten.\nMit Taste BLAU werden weitere Optionen aufgerufen.",
+		"text-1" : "Kategorie.\nIn einer Kategorie befinden sich die jeweiligen für die Kategorie passenden Plugins/ Treiber und können mit der OK-Taste zum Installieren/ Deinstallieren markiert werden, es wird ein Icon für die gewählte Aufgabe eingeblendet.\nMit Taste GELB kann man die einzelnen Pakete auch manuell verschieben (ordnen) und mit Taste BLAU die Pakete auf HOLD (bis auf Widerruf NIE updaten) setzen.",
+		"text-2" : "Mit der Taste INFO kann, sofern vorhanden, eine kleine Beschreibung für das gewählte Paket aufgerufen werden. Dort findet sich auch, sofern vorhanden, ein kleines Vorschaubild sowie auch Informationen zu möglichen Abhängigkeiten usw.",
+		"text-3" : "Mit der Taste ROT werden die Aufgaben aufgerufen. (Bedeutet: dort stehen die von euch zum Installieren/ Deinstallieren ausgewählten Pakete). Mit Taste GRÜN wird installiert/ deinstalliert.",
+		"text-4" : "Die Taste BLAU bietet weitere Optionen, wie eine Suche, defekte Pakete reparieren sowie auch eine Repository/Quellen-Anzeige uvm..",
+		"text-5" : "Repository/Quellen-Anzeige."
+	}
+}

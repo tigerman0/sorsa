@@ -1,0 +1,32 @@
+{
+	"de" : {
+		"logo" : "../images/icon_netcast.svg",
+		"title" : "Dreamnetcast",
+		"developer" : "GeminiTeam",
+		"author" : "GeminiTeam",
+		"desc" : "\nPortal für Internetradio ,Streams ,Youtube Videos sowie des Netcast EPG Loader.",
+		"links" : {"text-0":"pic-0","text-1":"pic-1","text-2":"pic-2","text-3":"pic-3","text-4":"pic-4","text-5":"pic-5","text-6":"pic-6","text-7":"pic-7","text-8":"pic-8"},	
+		"pic-0" : "screenshot0.png",
+		"pic-1" : "screenshot1.png",
+		"pic-2" : "screenshot2.png",
+		"pic-3" : "screenshot3.png",
+		"pic-4" : "screenshot4.png",
+		"pic-5" : "screenshot5.png",
+		"pic-6" : "screenshot6.png",
+		"pic-7" : "screenshot7.png",
+		"pic-8" : "screenshot8.png",																		
+		"text-0" : "Startseite des Plugins, hier befinden sich mehrere Favoriten Ordner sowie die zahlreichen Netcast Anbieter.\nMit GRÜN kann ein Startordner festgelegt werden.\nMit GELB können die Ansichten umgeschaltet werden.\nMit BLAU kommt man zu den Einstellungen des Plugins sowie der verschiedenen Anbieter.",		
+		"text-1" : "EPG Loader:\nHier können Einstellungen vorgenommen werden für das laden des Netcast EPG sowie das Löschen der kompletten EPG Datenbank",
+		"text-2" : "Auf der Hauptseite können die verschiednen Anbieter angewählt werden und über BLAU gibt es bei verschiedenen Anbietern weitere Einstellungen.",
+        "text-3" : "Befindet man sich bei einem Anbieter so kann der Inhalt abgespielt werden (über den Sound- oder Movie-Player)\nEinzelne Streams können zu den Fav. oder zur Kanalliste hinzugefügt werden.",
+		"text-4" : "Favoriten Live:\nEure angelegten Live Stream Sender\nFavoriten Serien:\nEure angelegten Serien Streams\nFavoriten Musik:\nEure angelegten InternetRadio Sender\nFavoriten Videos:\nEure angelegten Stream Videos\nFavoriten Kanäle:\nEure angelegten Youtube Kanäle\nFavoriten Genres:\nEure angelegten Genre Ordner (gibt es von einigen Anbietern)\nWiedergabeliste:\nEure angelegten Playlisten von Youtube sowie eure m3u Datein aus dem Ordner /data/Netcast.",
+		"text-4" : "In den Favoriten sowie in der Kanalliste kann einem Sender manuell ein EPG zugeordnet werden sowie auch ein Icon sofern es vom Anbieter nicht schon direkt diese Sachen zugeordnet gibt.",
+		"text-5" : "Startet man einen Radiosender, so wird dieser mit dem GP-Soundplayer wiedergegeben und man kann mit der Cursortaste up/down eine Senderliste im Player aufrufen und so direkt im Player Sender zum abspielen suchen oder man schaltet mit Cursortaste right/left die Sender durch.",
+		"text-6" : "Im Soundplayer bieten die Farbtasten weitere Funktionen sowie die Menütaste zahlreiche Einstellungen für Hintergrund und mehr.",
+        "text-7" : "Im Movieplayer bieten die Farbtasten weitere Funktionen sowie die Menütaste zahlreiche Einstellungen.\nDesweiteren kommt man mit der Infotaste in die EPG Ansicht sofern EPG vorhanden ist oder bei Filmen/Streams in den GP Infoscreen.",
+        "text-8" : "Favoriten Live:\nEure angelegten Live Stream Sender\n\nFavoriten Serien:\nEure angelegten Serien Streams\n\nFavoriten Musik:\nEure angelegten InternetRadio Sender\n\nFavoriten Videos:\nEure angelegten Stream Videos\n\nFavoriten Kanäle:\nEure angelegten Youtube Kanäle\n\nFavoriten Genres:\nEure angelegten Genre Ordner (gibt es von einigen Anbietern)\n\nWiedergabeliste:\nEure angelegten Playlisten von Youtube sowie eure m3u Datein aus dem Ordner /data/Netcast.",				
+		"text-9" : "Weitere Stream Anbieter können über eine/mehrere netcastserver_.....json in /etc/enigma2 hinzugefügt werden.\n\nBeispiel Datei netcastserver_gemini.json liegt in etc/enigma2 bei.",
+		"text-10" : "Weitere EPG Anbieter können über eine/mehrere netcastepg_.....json in /etc/enigma2 hinzugefügt werden.\n\nBeispiel Datei netcastepg_gemini.json liegt in etc/enigma2 bei.",		
+		"text-11" : "Eigene Playlisten können genutzt werden ,dazu eine m3u Datei in /data/Netcast anlegen (hat man ein jpg oder png Bild mit dem selben Namen der Playliste wird dieses Bild anstelle des default Icons angezeigt."						
+	}
+}

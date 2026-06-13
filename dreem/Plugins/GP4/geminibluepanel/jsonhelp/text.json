@@ -1,0 +1,22 @@
+{
+	"de" : {	
+		"logo" : "icon.svg",	
+		"title" : "Gemini-BluePanel",
+		"developer" : "GeminiTeam",
+		"author" : "GeminiTeam",
+		"desc" : "Zeigt Funktionen sowie Bedienung des Plugins an.",
+		"links" : {"text-0": "pic-0","text-1":"pic-1","text-2":"pic-2","text-3":"pic-3","text-4":"pic-4","text-5":"pic-5"},			
+		"pic-0" : "screenshot0.png",
+		"pic-1" : "screenshot1.png",
+		"pic-2" : "screenshot2.png",
+		"pic-3" : "screenshot3.png",
+		"pic-4" : "screenshot4.png",
+		"pic-5" : "screenshot5.png",
+		"text-0" : "Zeigt die 7x3 Ansicht, mit GELB kann insgesamt zwischen 4 Ansichten ausgewählt werden.",
+		"text-1" : "Zeigt die 6x2 Ansicht (größere Icons/ Bilder sowie eine etwas größere Schrift).",
+		"text-2" : "Zeigt die Listenansicht (Bilder und Schrift in einer Liste).",
+		"text-3" : "Zeigt die 1x7 Kachelansicht (eine Kachelleiste am unteren Bildrand, im Hintergrund das TV Bild.",
+		"text-4" : "Mit der MENU-Taste können zahlreiche Optionen aufgerufen werden (zb.Plugins im BP sortieren, Plugins hinzufügen, Ordner erstellen, Einträge entfernen, uvm.",
+		"text-5" : "Das BluePanel bietet auch eine einfache Sortierfunktion für den original Pluginbrowser. So können auch dort in der Listenansicht Plugins recht einfach umsortiert werden."
+	}
+}

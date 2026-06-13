@@ -1,0 +1,18 @@
+{
+	"entrys": [
+	{"name":"Gemini Plugins", "hide":0, "sort":1, "desc":"Gemini Project Plugins", "filter":"gemini"},
+	{"name":"Gemini Netcast Addons", "hide":0, "sort":1, "desc":"Extensions for GeminiNetcast", "filter":"libgemini"},
+	{"name":"Gemini Skins", "hide":0, "sort":1, "desc":"Skins only for Gemini Project", "filter":"gp4-skin,enigma2-skin-gp4"},
+	{"name":"Enigma2 Skins", "hide":0, "sort":1, "desc":"Skins for Enigma2", "filter":"enigma2-skin"},
+	{"name":"Mediaportal Skins", "hide":0, "sort":1, "desc":"Skins for Mediaportal Plugin", "filter":"enigma2-skin-mediaportal,mediaportal-skin"},
+	{"name":"Skincomponents", "hide":0, "sort":1, "desc":"Extras for Skins", "filter":"enigma2-plugin-skincomponents,enigma2-plugin-systemplugins-styles"},
+	{"name":"Plugins Extensions", "hide":0, "sort":2, "desc":"Plugin section", "filter":"enigma2-plugin-extensions"},
+	{"name":"Plugins System", "hide":0, "sort":2, "desc":"System plugin section", "filter":"enigma2-plugin-systemplugins"},
+	{"name":"Gemini Icons, Spinner and Bootlogos", "hide":0, "sort":1, "desc":"Icons for BluePanel, Spinner and Boot/Radio-Logos", "filter":"gp4-icons,gp4-spinner,gp4-mvi"},
+	{"name":"Picons Skin", "hide":0, "sort":1, "desc":"Channellogos for Channellist, Infobar and/or Display Skin (5:3)", "filter":"gp4-picon-skin,gp4-picon-xpicon,gp4-picon-hd,gp4-picon-mini"},
+	{"name":"Picons Display", "hide":0, "sort":1, "desc":"Channellogos for embedded or external display (except 5:3)", "filter":"gp4-picon-display"},
+	{"name":"Settings", "hide":0, "sort":1, "desc":"Sat, Cable, Terrestrial and/or others settings", "filter":"gp4-setting"},
+	{"name":"Kernel Module", "hide":0, "sort":1, "desc":"Kernel Module (Driver)", "filter":"kernel-module"},
+	{"name":"All", "hide":0, "sort":1, "desc":"All available packages", "filter":"*"}
+	]
+}

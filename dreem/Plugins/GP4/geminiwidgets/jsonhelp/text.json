@@ -1,0 +1,26 @@
+{
+	"de" : {
+		"logo" : "../images/icon_sensorfield.svg",
+		"title" : "Gemini-Widgets",
+		"developer" : "GeminiTeam",
+		"author" : "GeminiTeam",
+		"desc" : "Gemini-Einstellungen.",
+		"links" : {"text-0": "pic-0","text-1":"pic-1","text-2":"pic-2","text-4":"pic-3","text-5":"pic-4","text-6":"pic-5"},			
+		"pic-0" : "screenshot0.png",
+		"pic-1" : "screenshot1.png",
+		"pic-2" : "screenshot2.png",
+		"pic-3" : "screenshot3.png",
+		"pic-4" : "screenshot4.png",
+		"pic-5" : "screenshot5.png",
+		"text-0" : "Startseite des Plugins und der Bereich zum Aktivieren bzw. Deaktivieren von Funktionen.\nEs können Funktionen wie Zeige Symbol, Display immer als Uhr, Alle Animationen abschalten uvm. an- bzw. abgeschaltet werden.",			
+		"text-1" : "Mit dem Eintrag Icon-Paket kann zwischen verschiedenen Icon-Paketen gewählt werden, (default sind die Standard Icons).\nWeitere Icon-Pakete können im GP Addonmanager unter Gemini Icons, Spinner and Bootlogo geladen werden.",
+		"text-2" : "Einstellungen für die GP Infobar.",
+		"text-3" : "Wichtig!!!\nSensorfelder sowie Zeige Orbitalposition, Zeige Sender-Nr. oder Onlinetest, können nur angezeigt bzw. geschaltet werden, wenn der genutzte Skin die GP-Widgets auch im Skin unterstützt, ist dies nicht der Fall bleiben die Einstellungen ohne Wirkung in der Infobar eures genutzten Skins.",		
+		"text-4" : "Unter Einstellung Spinner kann der Default-Spinner geändert oder abgeschaltet werden.",
+		"text-5" : "Mit der Einstellung Bootlogo können Bootlogo sowie Radiologo geändert werden, es gibt zudem auch die Möglichkeit aus eigenen Bildern eine geeignete MVI zu erstellen. Man nutzt dann sein eigenes Logo.",
+		"text-6" : "Einstellungen für Picon-Ordner.",
+		"text-7" : "Wichtig!!\n# ausgeschaltet, werden die Picons immer in den e2-default-Pfaden gesucht, diese wären:\n\n/usr/share/enigma2/picon\n/usr/share/enigma2/picon_50x30\n/data/picon\n/data/picon_50x30.",	
+		"text-8" : "# angeschaltet, werden die Picons in dem eingetragenen Pfad erwartet, sind die Picons nicht in diesem Ordner den ihr als Endpfad angegeben habt werden auch keine Picons angezeigt.",		
+		"text-9" : "# Picons die vom Gemini Addonmanager bezogen werden laden sich alle nach:\n/data/piconpool/Name des Piconpaket/\n\n# Default steht in der Picon-Einstellung:\n/data/piconpool/\num so schneller zu den Picons des gewünschten Paket navigieren zu können.\n\nWichtig!\nDort befinden sich default keine Picons ,dies muss von euch erst eingestellt werden."					
+	}
+}

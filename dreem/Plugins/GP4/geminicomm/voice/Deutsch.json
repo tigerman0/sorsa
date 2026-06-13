@@ -1,0 +1,26 @@
+[
+	{
+		"key":"[Hh]allo|[Tt]est|[Pp]ing",
+		"answer":["Hallo","Pong"],
+		"event":"test"
+	},
+	{
+		"key":".*([Ww]ie spät ist es|[Ww]ie( |)viel Uhr ist es|[Zz]eitansage|[Uu]hrzeit|[Zz]eit).*",
+		"answer":["Es ist jetzt %s Uhr und %s Minute","Es ist jetzt %s Uhr und %s Minuten"],
+		"event":"clock"
+	},
+	{
+		"key":".*([Ww]elcher [Tt]ag ist [Hh]eute|[Dd]atum).*",
+		"answer":"Heute ist der %s. %s",
+		"event":"date"
+	},
+	{
+		"key":".*([Ll]autstärke um [0-9]+ erhöhen).*|[Ll]auter",
+		"event":"volume_up"
+	},
+	{
+		"key":".*([Ll]autstärke um [0-9]+ verringern).*|[Ll]eiser.*",
+		"event":"volume_down"
+	}
+]
+

@@ -1,0 +1,17 @@
+{
+	"de" : {
+		"logo" : "../images/icon_gpreceive.svg",
+		"title" : "Gemini-Receive",
+		"developer" : "GeminiTeam",
+		"author" : "@zombi",
+		"desc" : "Zeigt Einstellungen des Plugins sowie aktiv/inaktiv an.",
+		"links" : {"text-1": "pic-0","text-2":"pic-1"},			
+		"pic-0" : "screenshot.png",
+		"pic-1" : "screenshot1.png",
+		"text-0" : "Wichtig !!!\nDream bietet einen eigenen UPNP Renderer an ,diesen kann man zusätzlich nutzen oder deaktivieren (nicht deinstallieren),wenn dieser angeschaltet ist wird euch das hier im Plugin mit angezeigt.\nGeminiReceive bietet einen eigenen UPNP Renderer um die gesendeten Daten direkt in unsere Player zu integrieren und somit auch die Vorteile dieser Player zu nutzen.",
+		"text-1" : "Startseite des Plugins,hier können die einzelnen Dienste ein sowie ausgeschaltet werden.",
+		"text-2" : "Wer seine Cachedaten einmal löschen möchte um veraltete Daten von der Box zu löschen kann dies im Plugin auch bewerkstelligen ,hierzu einfach auf Cachedatein löschen gehen und OK drücken.",
+		"text-3" : "Info !!\nMit diesem Plugin kann man vom Handy oder Tablet Daten an die Dream schicken.\nUnterstützt werden lokale Dateien, Youtube, Whatsapp, Telegram, verschiedene andere APPs und auf der One/Two auch Netflix ,Disney und AmazonVideo.\nMan sucht sich also ein Video aus und schick dies mittels teilen an die Dreambox.\nNicht jede App kann alles teilen aber die besten Erfahrungen wurden mit Telegram und Kodi-Remote gemacht. Das verfälscht die Streams nicht und sendet sie ungefiltert an die Dream.",
+		"text-4" : "Erstellen eines Telegram-Bot's !\n-----------------------------------------------------------------------------------------------\nAls ersten Schritt gebe ich im Suchfeld des Telegram-Clients BotFather ein und beginne einen Chat mit ihm.\nMit /newbot wird ein neuer Bot erstellt. Anschließend müssen im Dialog der Botname und der Benutzername angegeben werden.Der Botname wird in der Chat-Liste angezeigt. Hier sollte also irgendetwas hübsches gewählt werden, was dann auf dem Smartphone auch gut aussieht.\nÜber den Benutzernamen kann man den Bot später finden. Hier sollte man etwas eindeutiges, einmaliges wählen, das von Außenstehenden nicht zu leicht zu erraten ist. Der Name muss auf „bot“ enden, wie z.B. dreambox_2020_bot.\nDer BotFather antwortet mit einem Token.Diesen Token tragen wir in die Datei /etc/enigma2/geminitelegramtoken.json ein (also foobar ersetzen).Der Token sollte natürlich niemanden verraten werden wenn man nicht möchte das jemand anderes die Box steuert.\nIst dies durchgeführt sollte man den Chat mit seinem Bot starten,am einfachsten klickt man auf den Link in der Antwort des BotFathers oder sucht seinen bot mit dem Namen. Hier also dreambox_2020_bot.\nEin einfaches Hallo reicht und der Bot steht euch zur Verfügung.\nJetzt muss nur noch im GeminiReceive Der Telegram-Bot aktiviert werden,danach Plugin verlassen und nochmal starten und dann sollte er laufen.Wenn man den Test aktiviert, sollte die Nachrichten, die ihr dem Bot schreibt angezeigt werden."
+	}
+}

@@ -1,0 +1,33 @@
+<skin>
+	<screen name="QbuttonMain" flags="wfNoBorder" position="0,center" size="830,1080">
+		<widget name="LogoSpinner" position="20,5" size="120,120"/>
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/ok_neutral.svg" position="690,30" size="50,50"/>
+		<widget name="PixmapMenu" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/menu_neutral.svg" position="760,30" size="50,50"/>
+		<widget font="Regular;34" source="Title" render="Label" position="20,130" size="790,40"/>
+		<eLabel backgroundColor="grey" position="20,180" size="840,2"/>
+		<widget enableWrapAround="on" position="20,190" render="Listbox" scrollbarMode="showOnDemand" size="800,880" source="list">
+			<convert type="TemplatedMultiContent">
+			{"template":[MultiContentEntryText(pos=(200,8),size=(590,35),font=0,text=3),
+			MultiContentEntryText(pos=(200,45),size=(590,28),font=1,text=5,color=0xbab329, color_sel=0xbab329),
+			MultiContentEntryText(pos=(200,73),size=(590,28),font=1,text=2),
+			MultiContentEntryPixmapAlphaTest(pos=(10,15),size=(160,80),png=1),
+			MultiContentEntryText(pos=(10,0),size=(160,110),font=0,text=4,flags=RT_HALIGN_CENTER|RT_VALIGN_CENTER),],
+			"fonts":[gFont("Regular",30),gFont("Regular",22)],"itemHeight":110}
+			</convert>
+		</widget>
+	</screen>
+	<screen name="QbuttonMenu" flags="wfNoBorder" position="0,center" size="830,1080">
+		<widget name="LogoSpinner" position="20,5" size="120,120"/>
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/ok_neutral.svg" position="690,30" size="50,50"/>
+		<widget name="PixmapMenu" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/menu_neutral.svg" position="760,30" size="50,50"/>
+		<widget font="Regular;34" source="Title" render="Label" position="20,130" size="790,40"/>
+		<eLabel backgroundColor="grey" position="20,180" size="840,2"/>
+		<widget enableWrapAround="on" position="20,190" render="Listbox" scrollbarMode="showOnDemand" size="800,880" source="list">
+			<convert type="TemplatedMultiContent">
+			{"template":[MultiContentEntryText(pos=(5,7),size=(790,35),font=0,text=1),
+			MultiContentEntryText(pos=(5,42),size=(790,30),font=1,text=2,color=0xa0a0a0),],
+			"fonts":[gFont("Regular",30),gFont("Regular",24)],"itemHeight":80}
+			</convert>
+		</widget>
+	</screen>
+</skin>

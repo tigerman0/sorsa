@@ -1,0 +1,164 @@
+{
+	"entrys": [
+	{
+		"module":"Screens.PluginBrowser",
+		"screen":"PluginBrowser",
+		"func":"Plugin Browser"
+	},
+	{
+		"module":"Plugins.GP4.geminibluepanel.gbluepanel",
+		"screen":"gBluePanel",
+		"func":"Blue Panel"
+	},
+	{
+		"code":"InfoBar.showExtensionSelection(InfoBar.instance)",
+		"func":"Extension Selection"
+	},
+    {
+        "code":"InfoBar.subserviceSelection(InfoBar.instance)",
+        "func":"Subservice Selection"
+    },
+	{
+		"code":"myplugin1",
+		"func":"QB-Plugin-Menu 1"
+	},
+	{
+		"code":"myplugin2",
+		"func":"QB-Plugin-Menu 2"
+	},
+	{
+		"menu" :1,
+		"func":"Infobar"
+	},
+	{
+		"code":"InfoBar.startHbbtv(InfoBar.instance)",
+		"func":"HbbTV"
+	},
+	{
+		"code":"from Plugins.Extensions.HbbTV.HbbTV import HbbTV; HbbTV.instance.startApplicationByUri('http://www.hbbig.com')",
+		"func":"hbbig"
+	},
+	{
+		"code":"InfoBar.instantRecord(InfoBar.instance)",
+		"func":"Record"
+	},
+	{
+		"code":"InfoBar.startInstantRecording(InfoBar.instance)",
+		"func":"Sofortaufnahme"
+	},
+	{
+		"code":"InfoBar.openSingleServiceEPG(InfoBar.instance)",
+		"func":"EPG"
+	},
+	{
+		"code":"InfoBar.openMultiServiceEPG(InfoBar.instance)",
+		"func":"Multi EPG"
+	},
+	{
+		"code":"InfoBar.zapUp(InfoBar.instance)",
+		"func":"Previous Channel"
+	},
+	{
+		"code":"InfoBar.zapDown(InfoBar.instance)",
+		"func":"Next Channel"
+	},
+	{
+		"code":"InfoBar.switchChannelUp(InfoBar.instance)",
+		"func":"Open Service List(up)"
+	},
+	{
+		"code":"InfoBar.switchChannelDown(InfoBar.instance)",
+		"func":"Open Service List(down)"
+	},
+	{
+		"code":"InfoBar.openServiceList(InfoBar.instance)",
+		"func":"Open Service List"
+	},
+	{
+		"code":"InfoBar.hide(InfoBar.instance)",
+		"func":"InfoBar Hide"
+	},
+	{
+		"code":"InfoBar.startTeletext(InfoBar.instance)",
+		"func":"Start Teletext"
+	},
+	{
+		"code":"InfoBar.openEventView(InfoBar.instance)",
+		"func":"Info"
+	},
+	{
+		"code":"InfoBar.showEventInfoPlugins(InfoBar.instance)",
+		"func":"EPG Selection"
+	},
+	{
+		"code":"InfoBar.showMovies(InfoBar.instance)",
+		"func":"Movies"
+	},
+	{
+		"code":"switchRadioTV",
+		"func":"Toggle Radio/TV"
+	},
+	{
+		"code":"InfoBar.showTv(InfoBar.instance)",
+		"func":"TV"
+	},
+	{
+		"code":"InfoBar.showRadio(InfoBar.instance)",
+		"func":"Radio"
+	},
+	{
+		"code":"InfoBar.audioSelection(InfoBar.instance)",
+		"func":"Audio Selection"
+	},
+	{
+		"code":"InfoBar.historyBack(InfoBar.instance)",
+		"func":"Back in history"
+	},
+	{
+		"code":"InfoBar.historyNext(InfoBar.instance)",
+		"func":"Next in history"
+	},
+	{
+		"code":"InfoBar.startTimeshift(InfoBar.instance)",
+		"func":"Start Timeshift"
+	},
+	{
+		"code":"InfoBar.showPiP(InfoBar.instance)",
+		"func":"Picture in Picture"
+	},
+	{
+		"code":"InfoBar.toggleShow(InfoBar.instance)",
+		"func":"InfoBar ShowHide"
+	},
+	{
+		"code":"InfoBar.mainMenu(InfoBar.instance)",
+		"func":"InfoBar Main-Menu"
+	},
+	{
+		"code":"def showBouquetList(self):\n\tself.servicelist.showFavourites()\n\tself.session.execDialog(self.servicelist)\nshowBouquetList(InfoBar.instance)",
+		"func":"Open Bouquet List"
+	},
+	{
+		"code":"def showBouquetList(self):\n\tself.servicelist.showFavourites()\n\tself.servicelist.moveDown()\n\tself.session.execDialog(self.servicelist)\nshowBouquetList(InfoBar.instance)",
+		"func":"Open Bouquet List Down"
+	},
+	{
+		"code":"def showBouquetList(self):\n\tself.servicelist.showFavourites()\n\tself.servicelist.moveUp()\n\tself.session.execDialog(self.servicelist)\nshowBouquetList(InfoBar.instance)",
+		"func":"Open Bouquet List UP"
+	},
+	{
+		"module":"Screens.TimerEdit",
+		"screen":"TimerEditList",
+		"func":"Timer"
+	},
+	{
+		"module":"Screens.ScanSetup",
+		"screen":"ScanSetup",
+		"func":"Manual Scan"
+	},
+	{
+		"menu" :1,
+		"func":"Plugins"
+	}
+	]
+}

@@ -1,0 +1,29 @@
+<skin>
+	<screen backgroundColor="#28343b" flags="wfNoBorder" name="RssListerScreen" position="center,center" size="2560,1440" title="entry">
+		<ePixmap gradient="#40000000,transparent,vertical" position="0,0" size="2560,640" zPosition="-2"/>
+		<ePixmap gradient="transparent,#131a1d,vertical" position="0,800" size="2560,640" zPosition="-4"/>
+		<widget font="Regular;48" noWrap="1" position="40,30" render="Label" size="1800,54" source="Title" transparent="1"/>
+		<widget font="Regular;40" halign="right" position="2120,30" render="Label" size="400,40" source="global.CurrentTime" transparent="1">
+			<convert type="ClockToText">Format:%a %d.%m.  %H:%M</convert>
+		</widget>
+		<widget name="Icon3" position="490,125" size="50,50"/>
+		<widget font="Regular;48" name="mainlabel" noWrap="1" position="225,30" size="1600,54" transparent="1"/>
+		<eLabel backgroundColor="#131a1d" cornerDia="40,left" position="35,120" size="510,410" zPosition="-2"/>
+		<eLabel backgroundColor="#131a1d" cornerDia="40,right" position="545,120" size="1990,410" zPosition="-1"/>
+		<widget name="itemPic" position="70,145" size="440,360"/>
+		<widget backgroundColor="#131a1d" font="Regular;36" name="maindesc" position="580,140" size="1940,280" transparent="1"/>
+		<eLabel backgroundColor="#28343b" cornerDia="50" font="Regular;32" halign="center" position="2380,460" size="140,50" text="Bouq." valign="center"/>
+		<widget enableWrapAround="on" position="40,560" render="Listbox" scrollbarMode="showOnDemand" size="2480,770" source="list" transparent="1">
+			<convert type="TemplatedMultiContent">
+			{"template":[MultiContentEntryText(pos=(10,10),size=(2460,50),flags=RT_VALIGN_CENTER,text=1),
+			MultiContentEntryText(pos=(0,0),size=(2480,2),backcolor=MultiContentTemplateColor("#41535c")),],
+			"fonts":[gFont("Regular",36)],"itemHeight":70}
+			</convert>
+		</widget>
+		<eLabel backgroundColor="#28343b" position="20,370" size="2520,980" zPosition="-3"/>
+		<eLabel backgroundColor="#41535c" cornerDia="40,bottom" position="20,1350" size="2520,70" zPosition="-1"/>
+		<eLabel backgroundColor="green" cornerDia="50" font="Regular;32" halign="center" position="40,1360" shadowBlur="5.0" shadowColor="black" size="260,50" text="Browser" valign="center"/>
+		<widget name="Icon1" position="center,1355" size="60,60"/>
+		<eLabel backgroundColor="blue" cornerDia="50" font="Regular;32" halign="center" position="2260,1360" shadowBlur="5.0" shadowColor="black" size="260,50" text="Refresh" valign="center"/>
+	</screen>
+</skin>

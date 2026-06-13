@@ -1,0 +1,15 @@
+{
+	"serverlist": [
+	{
+		"name": "Servername",
+		"mainUrl": "http://bla.bla:8080",
+		"Username": "name",
+		"Password": "pass",
+		"apitype": 0,
+		"epgUpdate": 12,
+		"UpdateTime": 12,
+		"mediatype": "api",
+		"id":"xstreamapi_myid"
+	}
+	]
+}

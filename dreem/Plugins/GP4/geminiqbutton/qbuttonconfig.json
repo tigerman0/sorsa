@@ -1,0 +1,182 @@
+{
+	"entrys": [
+	{
+		"code":"InfoBar.startHbbtv(InfoBar.instance)",
+		"func":"HbbTV",
+		"default":"HbbTV",
+		"key" :"red"
+	},
+	{
+		"code":"InfoBar.instantRecord(InfoBar.instance)",
+		"func":"Record",
+		"default":"Record",
+		"key" :"red_long"
+	},
+	{
+		"module":"Screens.PluginBrowser",
+		"screen":"PluginBrowser",
+		"func":"Plugin Browser",
+		"default":"Plugin Browser",
+		"key" :"green"
+	},
+	{
+		"key" :"green_long"
+	},
+	{
+		"code":"InfoBar.openSingleServiceEPG(InfoBar.instance)",
+		"func":"EPG",
+		"default":"EPG",
+		"key" :"yellow"
+	},
+	{
+		"key" :"yellow_long"
+	},
+	{
+		"module":"Plugins.GP4.geminibluepanel.gbluepanel",
+		"screen":"gBluePanel",
+		"func":"Blue Panel",
+		"default":"Blue Panel",
+		"key" :"blue"
+	},
+	{
+		"code":"InfoBar.showExtensionSelection(InfoBar.instance)",
+		"func":"Extension Selection",
+		"default":"Extension Selection",
+		"key" :"blue_long"
+	},
+	{
+		"neutrino":"nothing",
+		"code":"InfoBar.zapUp(InfoBar.instance)",
+		"func":"Previous Channel",
+		"default":"Previous Channel",
+		"key" :"left"
+	},
+	{
+		"neutrino":"nothing",
+		"code":"InfoBar.zapDown(InfoBar.instance)",
+		"func":"Next Channel",
+		"default":"Next Channel",
+		"key" :"right"
+	},
+	{
+		"neutrino" :"Next Channel",
+		"code":"InfoBar.switchChannelUp(InfoBar.instance)",
+		"func":"Open Service List(up)",
+		"default":"Open Service List(up)",
+		"key" :"up"
+	},
+	{
+		"neutrino":"Previous Channel",
+		"code":"InfoBar.switchChannelDown(InfoBar.instance)",
+		"func":"Open Service List(down)",
+		"default":"Open Service List(down)",
+		"key" :"down"
+	},
+	{
+		"neutrino":"Open Service List",
+		"code":"InfoBar.openServiceList(InfoBar.instance)",
+		"func":"Open Service List",
+		"default":"Open Service List",
+		"key" :"bouquetup"
+	},
+	{
+		"neutrino":"Open Bouquet List",
+		"code":"InfoBar.openServiceList(InfoBar.instance)",
+		"func":"Open Service List",
+		"default":"Open Service List",
+		"key" :"bouquetdown"
+	},
+	{
+		"neutrino":"Open Service List",
+		"code":"InfoBar.toggleShow(InfoBar.instance)",
+		"func":"InfoBar ShowHide",
+		"default":"InfoBar ShowHide",
+		"key" :"ok"
+	},
+	{
+		"key" :"ok_long"
+	},
+	{
+		"neutrino":"InfoBar ShowHide",
+		"code":"InfoBar.hide(InfoBar.instance)",
+		"func":"InfoBar Hide",
+		"default":"InfoBar Hide",
+		"key" :"exit"
+	},
+	{
+		"code":"InfoBar.startTeletext(InfoBar.instance)",
+		"func":"Start Teletext",
+		"default":"Start Teletext",
+		"key" :"text"
+	},
+	{
+		"key" :"text_long"
+	},
+	{
+		"code":"InfoBar.mainMenu(InfoBar.instance)",
+		"func":"InfoBar Main-Menu",
+		"default":"InfoBar Main-Menu",
+		"key" :"mainMenu"
+	},
+	{
+		"code":"InfoBar.openEventView(InfoBar.instance)",
+		"func":"Info",
+		"default":"Info",
+		"key" :"info"
+	},
+	{
+		"code":"InfoBar.showEventInfoPlugins(InfoBar.instance)",
+		"func":"EPG Selection",
+		"default":"EPG Selection",
+		"key" :"info_long"
+	},
+	{
+		"code":"InfoBar.audioSelection(InfoBar.instance)",
+		"func":"Audio Selection",
+		"default":"Audio Selection",
+		"key" :"audio"
+	},
+	{
+		"code":"InfoBar.showMovies(InfoBar.instance)",
+		"func":"Movies",
+		"default":"Movies",
+		"key" :"pvr"
+	},
+	{
+		"key" :"pvr_long"
+	},
+	{
+		"code":"InfoBar.showTv(InfoBar.instance)",
+		"func":"TV",
+		"default":"TV",
+		"key" :"tv"
+	},
+	{
+		"key" :"tv_long"
+	},
+	{
+		"code":"InfoBar.showRadio(InfoBar.instance)",
+		"func":"Radio",
+		"default":"Radio",
+		"key" :"radio"
+	},
+	{
+		"key" :"radio_long"
+	},
+	{
+		"key" :"help_long"
+	},
+	{
+		"code":"InfoBar.historyBack(InfoBar.instance)",
+		"func":"Back in history",
+		"default":"Back in history",
+		"key" :"historyBack"
+	},
+	{
+		"code":"InfoBar.historyNext(InfoBar.instance)",
+		"func":"Next in history",
+		"default":"Next in history",
+		"key" :"historyNext"
+	}
+	]
+}

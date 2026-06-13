@@ -1,0 +1,54 @@
+<e2:screen external_module="Plugins.GP4.geministreamripper.WebScreen.SrScreen" name="SrScreen">
+	<html>
+		<head>
+			<meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+			<title>Streamripper Plugin</title>
+			
+			<link href="/web-data/tpl/default/style.css" type="text/css" rel="stylesheet" />
+			<link rel="dm icon" href="/web-data/img/favicon.ico" type="image/x-icon" />
+			<script type="text/javascript">
+				function formSubmit()
+				{
+				document.getElementById("frm1").submit();
+				}
+			</script>
+		</head>
+		<body>
+		<h1 style="text-align: center;">Streamripper Webif Plugin</h1>
+		
+			<table align="center" border="0" >
+				<tr>
+					<td colspan="2"><e2:element source="Sr_Info"><e2:convert type="web:TextToHTML" /></e2:element></td>
+				</tr>
+				<tr>
+					<td colspan="2"><hr/></td>
+				</tr>
+				<form id="frm1" action="/streamripper/web/record.html" method="get" enctype="text/plain">
+				<tr>
+					<td><e2:element source="ConstStream_txt"><e2:convert type="web:TextToHTML" /></e2:element></td>
+					<td>&lt;input name="conststream" type="checkbox" <e2:element source="ConstStream"><e2:convert type="web:TextToHTML" /></e2:element> /></td>
+				</tr>
+				<tr>
+					<td><e2:element source="RecDir_txt"><e2:convert type="web:TextToHTML" /></e2:element></td>
+					<td>&lt;input name="recpath" type="text" size="30" maxlength="256" value=&quot;<e2:element source="RecDir"><e2:convert type="web:TextToHTML" /></e2:element>&quot; /></td>
+				</tr>
+				</form>
+				<tr>
+					<td colspan="2"><hr/></td>
+				</tr>
+				<tr>
+					<td colspan="2"  align="right" >
+						<button onclick="formSubmit()">
+							<e2:element source="Btn_Submit"><e2:convert type="web:TextToHTML" /></e2:element>
+						</button>
+						<button onClick="window.close()">
+							<img src="/web-data/img/cross.png" style="vertical-align:middle;"/>
+								<e2:element source="Btn_Close"><e2:convert type="web:TextToHTML" /></e2:element>
+						</button>
+					</td>
+				</tr>
+			</table>
+
+	</body>
+</html>
+</e2:screen>

@@ -1,0 +1,92 @@
+<skin>
+	<globals>
+		<value name="gcommander_key_menu" value="{'ani':'slide_left_left'}"/>
+		<value name="gcommander_key_red" value="{'ani':'slide_left_left'}"/>
+		<value name="gcommander_file_info" value="{'ani':'slide_top_top'}"/>
+		<value name="gcommanderlist_icon0" value="{'ani':'slide_left_left'}"/>
+		<value name="gcommanderlist_icon1" value="{'ani':'slide_left_left'}"/>
+		<value name="gcommanderlist_icon2" value="{'ani':'slide_left_left'}"/>
+		<value name="gcommanderlist_icon3" value="{'ani':'slide_left_left'}"/>
+		<value name="playlist_select" value="{'ani':'slide_left_left'}"/>
+	</globals>
+	<screen backgroundColor="#28343b" flags="wfNoBorder" name="Gcommander" position="center,center" size="2560,1440">
+		<ePixmap gradient="#40000000,transparent,vertical" position="0,0" size="2560,640" zPosition="-2"/>
+		<ePixmap gradient="transparent,#131a1d,vertical" position="0,800" size="2560,640" zPosition="-4"/>
+		<widget font="Regular;48" noWrap="1" position="40,30" render="Label" size="1800,54" source="Title" transparent="1"/>
+		<widget font="Regular;40" halign="right" position="2120,30" render="Label" size="400,40" source="global.CurrentTime" transparent="1">
+			<convert type="ClockToText">Format:%a %d.%m.  %H:%M</convert>
+		</widget>
+		<eLabel backgroundColor="#28343b" cornerDia="60" position="50,160" size="1150,1000" zPosition="-1"/>
+		<ePixmap gradient="#28343b,white,horizontal" position="70,245" size="555,3"/>
+		<ePixmap gradient="white,#28343b,horizontal" position="625,245" size="555,3"/>
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/arrow_left.svg" position="center,400" size="150,150"/>
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/arrow_right.svg" position="center,750" size="150,150"/>
+		<eLabel backgroundColor="#28343b" cornerDia="60" position="1360,160" size="1150,1000" zPosition="-1"/>
+		<ePixmap gradient="#28343b,white,horizontal" position="1380,245" size="555,3"/>
+		<ePixmap gradient="white,#28343b,horizontal" position="1935,245" size="555,3"/>
+		<widget name="LogoSpinner" position="50,10" size="140,140"/>
+		<widget font="Regular;48" position="260,80" render="Label" size="2200,58" source="InfoLabel" transparent="1"/>
+		<eLabel backgroundColor="#28343b" font="Regular;32" halign="center" position="center,1075" size="120,40" text="Info"/>
+		<eLabel backgroundColor="#28343b" font="Regular;32" halign="center" position="center,1115" size="120,40" text="menu"/>
+		<eLabel backgroundColor="#28343b" cornerDia="40" position="center,1070" size="140,90" zPosition="-1"/>
+		<eLabel backgroundColor="red" cornerDia="42" position="74,181" size="42,42" zPosition="2"/>
+		<eLabel backgroundColor="#bababa" cornerDia="50" position="70,177" size="50,50" zPosition="1"/>
+		<widget backgroundColor="green" cornerDia="42" name="List0PathSel" position="74,181" size="42,42" zPosition="3"/>
+		<widget font="Regular;42" noWrap="1" position="170,180" render="Label" size="1010,50" source="List0Path" transparent="1"/>
+		<widget FileNameFont="Regular;34" FreeSizeWidth="500" InfoFont="Regular;34" InfoWidth="180" ItemHeight="60" PictureSize="50" name="listl" position="70,270" scrollbarMode="showOnDemand" size="1110,840" transparent="1"/>
+		<eLabel backgroundColor="red" cornerDia="42" position="1394,181" size="42,42" zPosition="2"/>
+		<eLabel backgroundColor="#bababa" cornerDia="50" position="1390,177" size="50,50" zPosition="1"/>
+		<widget backgroundColor="green" cornerDia="42" name="List1PathSel" position="1394,181" size="42,42" zPosition="3"/>
+		<widget font="Regular;42" noWrap="1" position="1480,180" render="Label" size="1010,50" source="List1Path" transparent="1"/>
+		<widget FileNameFont="Regular;34" FreeSizeWidth="500" InfoFont="Regular;34" InfoWidth="180" ItemHeight="60" PictureSize="50" name="listr" position="1380,270" scrollbarMode="showOnDemand" size="1110,840" transparent="1"/>
+		<eLabel backgroundColor="#28343b" cornerDia="100" position="50,1220" size="2460,100" zPosition="-2"/>
+		<eLabel backgroundColor="#41535c" cornerDia="50" font="Regular;36" foregroundColor="#ffffff" halign="center" position="130,1245" size="100,50" text="1" valign="center"/>
+		<eLabel font="Regular;34" position="250,1250" size="160,40" text=" delete" transparent="1"/>
+		<eLabel backgroundColor="#41535c" cornerDia="50" font="Regular;36" foregroundColor="#ffffff" halign="center" position="430,1245" size="100,50" text="2" valign="center"/>
+		<eLabel font="Regular;34" position="550,1250" size="160,40" text=" copy" transparent="1"/>
+		<eLabel backgroundColor="#41535c" cornerDia="50" font="Regular;36" foregroundColor="#ffffff" halign="center" position="730,1245" size="100,50" text="3" valign="center"/>
+		<eLabel font="Regular;34" position="850,1250" size="160,40" text="move " transparent="1"/>
+		<eLabel backgroundColor="#41535c" cornerDia="50" font="Regular;36" foregroundColor="#ffffff" halign="center" position="1030,1245" size="100,50" text="4" valign="center"/>
+		<eLabel font="Regular;34" position="1150,1250" size="160,40" text="chmod" transparent="1"/>
+		<eLabel backgroundColor="#41535c" cornerDia="50" font="Regular;36" foregroundColor="#ffffff" halign="center" position="1330,1245" size="100,50" text="5" valign="center"/>
+		<eLabel font="Regular;34" position="1450,1250" size="160,40" text="rename " transparent="1"/>
+		<eLabel backgroundColor="#41535c" cornerDia="50" font="Regular;36" foregroundColor="#ffffff" halign="center" position="1630,1245" size="100,50" text="6" valign="center"/>
+		<eLabel font="Regular;34" position="1750,1250" size="160,40" text="symlink" transparent="1"/>
+		<eLabel backgroundColor="#41535c" cornerDia="50" font="Regular;36" foregroundColor="#ffffff" halign="center" position="1930,1245" size="100,50" text="7" valign="center"/>
+		<eLabel font="Regular;34" position="2050,1250" size="160,40" text="mkdir" transparent="1"/>
+		<eLabel backgroundColor="#41535c" cornerDia="50" font="Regular;36" foregroundColor="#ffffff" halign="center" position="2230,1245" size="100,50" text="8" valign="center"/>
+		<eLabel font="Regular;34" position="2360,1250" size="100,40" text="new" transparent="1"/>
+		<eLabel backgroundColor="red" position="0,1425" size="640,15"/>
+		<eLabel backgroundColor="green" position="640,1425" size="640,15"/>
+		<eLabel backgroundColor="yellow" position="1280,1425" size="640,15"/>
+		<eLabel backgroundColor="blue" position="1920,1425" size="640,15"/>
+		<widget font="Regular;36" halign="center" position="0,1360" render="Label" size="640,45" source="RedButton" transparent="1"/>
+		<widget font="Regular;36" halign="center" position="640,1360" render="Label" size="640,45" source="GreenButton" transparent="1"/>
+		<widget font="Regular;36" halign="center" position="1280,1360" render="Label" size="640,45" source="YellowButton" transparent="1"/>
+		<widget font="Regular;36" halign="center" position="1920,1360" render="Label" size="640,45" source="BlueButton" transparent="1"/>
+	</screen>
+	<screen backgroundColor="#28343b" flags="wfNoBorder" name="gFileList_big" position="center,center" size="2560,1440">
+		<ePixmap gradient="#40000000,transparent,vertical" position="0,0" size="2560,640" zPosition="-2"/>
+		<ePixmap gradient="transparent,#131a1d,vertical" position="0,800" size="2560,640" zPosition="-4"/>
+		<widget font="Regular;48" noWrap="1" position="40,30" render="Label" size="1800,54" source="Title" transparent="1"/>
+		<widget font="Regular;40" halign="right" position="2120,30" render="Label" size="400,40" source="global.CurrentTime" transparent="1">
+			<convert type="ClockToText">Format:%a %d.%m.  %H:%M</convert>
+		</widget>
+		<eLabel backgroundColor="#28343b" cornerDia="60" position="center,240" size="1960,1030" zPosition="-1"/>
+		<eLabel backgroundColor="#41535c" cornerDia="90" position="center,1225" size="90,90"/>
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/arrow_up.svg" position="center,1230" size="80,80" zPosition="1"/>
+		<widget backgroundColor="#28343b" font="Console;32" name="text" position="center,280" size="1900,900"/>
+	</screen>
+	<screen backgroundColor="#28343b" flags="wfNoBorder" name="gFileList_small" position="center,center" size="2560,1440">
+		<ePixmap gradient="#40000000,transparent,vertical" position="0,0" size="2560,640" zPosition="-2"/>
+		<ePixmap gradient="transparent,#131a1d,vertical" position="0,800" size="2560,640" zPosition="-4"/>
+		<widget font="Regular;48" noWrap="1" position="40,30" render="Label" size="1800,54" source="Title" transparent="1"/>
+		<widget font="Regular;40" halign="right" position="2120,30" render="Label" size="400,40" source="global.CurrentTime" transparent="1">
+			<convert type="ClockToText">Format:%a %d.%m.  %H:%M</convert>
+		</widget>
+		<eLabel backgroundColor="#28343b" cornerDia="60" position="center,240" size="1960,1030" zPosition="-1"/>
+		<eLabel backgroundColor="#41535c" cornerDia="90" position="center,1225" size="90,90"/>
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/arrow_up.svg" position="center,1230" size="80,80" zPosition="1"/>
+		<widget backgroundColor="#28343b" font="Console;32" name="text" position="center,280" size="1900,900"/>
+	</screen>
+</skin>

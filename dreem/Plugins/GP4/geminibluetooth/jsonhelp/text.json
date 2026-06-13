@@ -1,0 +1,24 @@
+{
+	"de" : {
+		"logo" : "../images/icon_gbluez.svg",
+		"title" : "Gemini-Bluetooth",
+		"developer" : "GeminiTeam",
+		"author" : "@zombi",
+		"desc" : "Zeigt Funktionen sowie Bedienung des Plugins an.",
+		"links" : {"text-1": "pic-0","text-2":"pic-1","text-3":"pic-2","text-4":"pic-3","text-5":"pic-4","text-6":"pic-5"},			
+		"pic-0" : "screenshot0.png",
+		"pic-1" : "screenshot1.png",
+		"pic-2" : "screenshot2.png",
+		"pic-3" : "screenshot3.png",
+		"pic-4" : "screenshot4.png",
+		"pic-5" : "screenshot5.png",
+		"text-0" : "Wichtig !!!\nBei den aktuellen Dreamboxen mit BT. intern muss dies zuerst aktiviert werden ,dazu geht man ins Hauptmenü/Einstellungen/Netzwerk/Netzwerkeinstellungen schaltet dort Bluetooth an und macht einen e2 Neustart.",
+		"text-1" : "Startseite des Plugins,wenn ein BT Empfänger angesteckt oder der interne angeschaltet ist wird er dort angezeigt. Unter der blauen Taste findet man weitere Optionen und mit OK kommt man in die Geräteliste.",
+		"text-2" : "Geräteliste der nutzbaren BT Geräte.",
+		"text-3" : "Mit der Taste gelb können BT.Geräte gesucht werden,diese müssen angeschaltet und in Reichweite des Empfängers sein.",		
+		"text-4" : "Es erscheint ein Pop-up Fenster mit dem Scanvorgang.",
+		"text-5" : "Unter der blauben Taste befinden sich weitere Optionen (Pairing,Geräte blockieren uvm.).",		
+		"text-6" : "Ist ein BT.Gerät eingebunden und betriebsbereit kann dieses Gerät mit dem GP4.1 Soundplayer genutzt werden,dazu Soundplayer starten und gelbe Taste drücken,nun seht ihr die Auswahl der Wiedergabegeräte.",
+		"text-7" : "Hinweis!!! \nNach jedem erneuten Verbinden mit einem BT.Gerät sollte man immer einen e2 Neustart machen damit wird es erst im System richtig erkannt."
+	}
+}

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="200"
+   height="80"
+   viewBox="0 0 52.916665 21.166667"
+   version="1.1"
+   id="svg1839"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="geminicalendar.svg"
+   inkscape:export-filename="/media/store/Dropbox/Dreambox/Look_n_Feel/GP4/Extension/cammanager.svg.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs1833">
+    <filter
+       height="1.0864"
+       y="-0.0432"
+       width="1.0332308"
+       x="-0.016615385"
+       id="filter922"
+       style="color-interpolation-filters:sRGB"
+       inkscape:collect="always">
+      <feGaussianBlur
+         id="feGaussianBlur924"
+         stdDeviation="0.3571875"
+         inkscape:collect="always" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.221453"
+     inkscape:cx="102.3001"
+     inkscape:cy="36.828036"
+     inkscape:document-units="px"
+     inkscape:current-layer="g940"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1052"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:snap-global="false" />
+  <metadata
+     id="metadata1836">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-275.83332)">
+    <g
+       id="g940">
+      <path
+         id="path838-0"
+         d="m 1.2610179,278.81597 v 12.40467 c 0,1.15685 2.9708826,1.9549 5.7065673,1.98443 H 46.3355 c 2.736892,0 5.706567,-0.82758 5.706567,-1.98443 v -12.40467 z m 0,0"
+         style="fill:#ebebeb;stroke-width:0.09321012"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:#d41919;stroke-width:0.36793703"
+         d="M 178.15039 2.9550781 L 17.898438 2.9570312 C 1.6496226 2.9570312 5.2441406 2.9100468 5.2441406 22.660156 L 197.93945 22.648438 C 197.92585 3.1843228 194.39397 2.9550781 178.15039 2.9550781 z M 66.183594 9.6796875 C 68.154935 9.6796875 69.751953 11.076561 69.751953 12.800781 C 69.751953 14.525002 68.154935 15.923828 66.183594 15.923828 C 64.213602 15.923828 62.615234 14.525002 62.615234 12.800781 C 62.615234 11.076561 64.213602 9.6796875 66.183594 9.6796875 z M 141.75586 9.7070312 C 143.6346 9.7082029 145.15882 11.039726 145.16016 12.683594 C 145.16016 14.328633 143.63594 15.662854 141.75586 15.664062 C 139.87443 15.664062 138.34961 14.329843 138.34961 12.683594 C 138.35061 11.037345 139.87578 9.7070312 141.75586 9.7070312 z "
+         transform="matrix(0.26458333,0,0,0.26458333,0,275.83332)"
+         id="path919" />
+      <path
+         id="path844"
+         d="m 2.9222892,288.14173 -1.1747096,6.13132 c 0,1.30523 2.8188494,2.23935 5.4178266,2.23935 H 46.890845 c 2.598978,0 5.417825,-0.93412 5.417825,-2.23935 l -1.174707,-6.13132 z m 0,0"
+         style="fill:#ffffff;stroke-width:0.10470315"
+         inkscape:connector-curvature="0" />
+      <g
+         id="text6295"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.39383507px;line-height:1.25;font-family:'Concielian Alpha';-inkscape-font-specification:'Concielian Alpha';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.18484586"
+         aria-label="G " />
+      <g
+         id="g944"
+         transform="translate(-3.7041664,-0.48986494)">
+        <path
+           inkscape:connector-curvature="0"
+           style="fill:#4a4a4a;stroke-width:0.08004677"
+           d="m 24.635833,291.04249 c 0,1.72601 1.391436,3.10838 3.128702,3.10838 1.710377,0 3.115259,-1.38237 3.115259,-3.10838 0,-1.22697 -0.746686,-2.31948 -1.825756,-2.79789 0.685715,-0.39804 1.160678,-1.09251 1.160678,-1.96896 0,-1.32828 -1.099391,-2.38014 -2.436423,-2.38014 -1.337029,0 -2.429857,1.05186 -2.429857,2.38014 h 0.604104 c 0,-0.97776 0.807658,-1.7801 1.825753,-1.7801 1.017783,0 1.825444,0.80234 1.825444,1.7801 0,1.01153 -0.841432,1.6788 -1.825444,1.6788 v 0.60691 c 1.377682,0 2.504277,1.12597 2.504277,2.48114 0,1.37549 -1.126595,2.50834 -2.504277,2.50834 -1.384558,0 -2.504589,-1.13285 -2.504589,-2.50834 z m 0,0"
+           id="path846" />
+        <path
+           inkscape:connector-curvature="0"
+           style="fill:#4a4a4a;stroke-width:0.08004677"
+           d="m 35.078184,294.04956 h 0.610982 v -10.06619 l -2.042757,1.20663 0.305179,0.53282 1.099707,-0.65413 z m 0,0"
+           id="path848" />
+      </g>
+      <g
+         transform="translate(-1.8846513e-7,-3.2441405e-6)"
+         id="g862">
+        <rect
+           style="opacity:1;fill:none;fill-opacity:1;stroke:#13243c;stroke-width:1.32291663;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect5504"
+           width="51.59375"
+           height="19.84375"
+           x="0.66145831"
+           y="276.49478"
+           rx="1.311837"
+           ry="1.2952173" />
+        <g
+           transform="translate(1.8659043e-7,2.7664328e-6)"
+           id="layer1-3"
+           inkscape:label="Ebene 1">
+          <g
+             id="text6295-5"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.39383507px;line-height:1.25;font-family:'Concielian Alpha';-inkscape-font-specification:'Concielian Alpha';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.18484586"
+             aria-label="G " />
+          <g
+             id="g862-6">
+            <rect
+               transform="matrix(0.9926512,0,0,0.9814432,0.31020407,-16.661441)"
+               ry="1.2952173"
+               rx="1.311837"
+               y="298.88672"
+               x="0.54483372"
+               height="19.84375"
+               width="51.59375"
+               id="rect882"
+               style="opacity:1;fill:none;fill-opacity:0.41568627;stroke:#13243c;stroke-width:1.32291663;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.57480319;filter:url(#filter922)" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

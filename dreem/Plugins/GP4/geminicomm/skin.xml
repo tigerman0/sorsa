@@ -1,0 +1,866 @@
+<skin>
+	<globals>
+		<value name="gcomm_player_icon_menu" value="{'ani':'slide_bottom_bottom', 'x':200, 'y':410}"/>
+		<value name="gcomm_player_icon_res" value="{'ani':'slide_bottom_bottom', 'x':50, 'y':410}"/>
+		<value name="gcomm_player_icon_audio" value="{'ani':'slide_bottom_bottom', 'x':100, 'y':410}"/>
+		<value name="gcomm_player_icon_sub" value="{'ani':'slide_bottom_bottom', 'x':150, 'y':410}"/>
+		<value name="gcomm_player_stop" value="{'ani':'slide_top_top'}"/>
+		<value name="gcomm_file_browser" value="{'ani':'slide_left_left'}"/>
+		<value name="gcomm_setup_screen" value="{'ani':'slide_top_top'}"/>
+		<value name="gcomm_setup_screen_left" value="{'ani':'slide_left_left'}"/>
+		<value name="gcomm_menu_screen" value="{'ani':'slide_top_top'}"/>
+		<value name="gcomm_splayer_slideshow" value="{'ani':'simple_fade_long'}"/>
+		<value name="gcommanderlist_tile_2_6" value="{'lines':2, 'columns':6}"/>
+		<value name="gcommanderlist_tile_3_7" value="{'lines':3, 'columns':7}"/>
+		<value name="gcommanderlist_tile_1_7" value="{'lines':1, 'columns':7}"/>
+		<value name="gcommanderlist_list_8_1" value="{'lines':8, 'columns':1}"/>
+		<value name="gcommanderlist_list_small" value="{'lines':7, 'columns':1}"/>
+		<value name="gcommanderlist_biglist_small" value="{'lines':11, 'columns':1}"/>
+		<value name="gcommanderlist_list_4Line" value="{'lines':5, 'columns':1}"/>
+		<value name="gcomm_text_box" value="{'ani':'slide_top_top'}"/>
+		<value name="gcomm_text_box_big" value="{'ani':'slide_top_top'}"/>
+		<value name="gcomm_move_screen" value="{'ani':'slide_top_top'}"/>
+		<!--Menue-Keys-Big-Tile-->
+		<value name="blue_key_big_tile" value="{'ani':'slide_right_shrink_top', 'x':760, 'y':100, 'w':500, 'h':300}"/>
+		<value name="yellow_key_big_tile" value="{'ani':'slide_right_shrink_top', 'x':710, 'y':100, 'w':500, 'h':300}"/>
+		<value name="green_key_big_tile" value="{'ani':'slide_right_shrink_top', 'x':660, 'y':100, 'w':500, 'h':300}"/>
+		<value name="red_key_big_tile" value="{'ani':'slide_right_shrink_top', 'x':610, 'y':100, 'w':500, 'h':300}"/>
+		<!--Menue-Keys-Small-Tile-->
+		<value name="blue_key_small_tile" value="{'ani':'slide_top_top', 'x':390, 'y':20, 'w':500, 'h':300}"/>
+		<value name="yellow_key_small_tile" value="{'ani':'slide_top_top', 'x':390, 'y':20, 'w':500, 'h':300}"/>
+		<value name="green_key_small_tile" value="{'ani':'slide_top_top', 'x':390, 'y':20, 'w':500, 'h':300}"/>
+		<value name="red_key_small_tile" value="{'ani':'slide_top_top', 'x':390, 'y':20, 'w':500, 'h':300}"/>
+		<!--Menue-Keys-Big-List-->
+		<value name="blue_key_big_list" value="{'ani':'slide_right_shrink_top', 'x':760, 'y':100, 'w':500, 'h':300}"/>
+		<value name="yellow_key_big_list" value="{'ani':'slide_right_shrink_top', 'x':710, 'y':100, 'w':500, 'h':300}"/>
+		<value name="green_key_big_list" value="{'ani':'slide_right_shrink_top', 'x':660, 'y':100, 'w':500, 'h':300}"/>
+		<value name="red_key_big_list" value="{'ani':'slide_right_shrink_top', 'x':610, 'y':100, 'w':500, 'h':300}"/>
+		<!--Menue-Keys-Small-List-->
+		<value name="blue_key_small_list" value="{'ani':'slide_top_top', 'x':415, 'y':45, 'w':500, 'h':300}"/>
+		<value name="yellow_key_small_list" value="{'ani':'slide_top_top', 'x':375, 'y':45, 'w':500, 'h':300}"/>
+		<value name="green_key_small_list" value="{'ani':'slide_top_top', 'x':335, 'y':45, 'w':500, 'h':300}"/>
+		<value name="red_key_small_list" value="{'ani':'slide_top_top', 'x':295, 'y':45, 'w':500, 'h':300}"/>
+	</globals>
+	<!--LCD-->
+	<screen id="100" name="Gcommander_summary" position="0,0" size="240,80">
+		<eLabel font="Display;38" halign="center" position="0,0" size="240,80" text="gCommander" valign="center"/>
+	</screen>
+	<screen id="100" name="RssListerScreen_summary" position="0,0" size="240,80">
+		<eLabel font="Display;38" halign="center" position="0,0" size="240,80" text="RSS Feeds" valign="center"/>
+	</screen>
+	<screen id="100" name="GPSummary2Label" position="0,0" size="240,80">
+		<widget font="Display;38" halign="center" render="Label" source="LabelLCDInfo" position="0,0" size="240,80" valign="center"/>
+	</screen>
+	<screen id="100" name="GPSummary2LabelPic" position="0,0" size="240,80">
+		<widget font="Display;38" halign="center" render="Label" source="LabelLCDTitle" position="0,0" size="240,80" valign="center"/>
+	</screen>
+	<screen id="100" name="GPSummaryPicture" position="0,0" size="240,80">
+		<widget font="Display;38" halign="center" render="Label" source="LabelLCDInfo" position="0,0" size="240,80" valign="center"/>
+	</screen>
+	<screen id="100" name="GPSummarySound" position="0,0" size="240,80">
+		<widget name="PictureLCD" position="-10,-10" size="100,100"/>
+		<widget font="Display;26" halign="center" render="Label" source="LabelLCDTitle" position="100,0" size="135,54" valign="center"/>
+		<widget font="Display;27" foregroundColor="#faff00" halign="center" render="Label" source="LabelLCDTime" position="100,55" size="135,27" transparent="1"/>
+		<widget font="Display;27" foregroundColor="#faff00" halign="center" position="100,54" render="Label" size="135,27" source="session.Event_Now" transparent="1">
+			<convert type="EventTime">Remaining</convert>
+			<convert type="RemainingToText">inMinutes</convert>
+		</widget>
+	</screen>
+	<screen id="100" name="GPSummaryMovie_v2" position="0,0" size="240,80">
+		<widget name="PictureLCD" position="0,0" size="53,80"/>
+		<widget render="Label" source="LabelLCDTitle" foregroundColor="#faff00" font="Display;26" halign="center" position="60,0" size="175,54" valign="center"/>
+		<widget render="Label" source="LabelLCDTime" font="Display;27" halign="center" position="60,54" size="175,26"/>
+	</screen>
+	<screen name="GPSummaryMovie_v2" position="0,0" size="400,240" id="3">
+		<widget name="PictureLCD" position="10,0" size="200,160"/>
+		<widget render="Label" source="LabelLCDTitle" font="Display;35" foregroundColor="#faff00" halign="center" position="230,10" size="160,138" valign="center"/>
+		<widget backgroundColor="grey" pixmap="Default-FHD/skin_default/progress.svg" position="10,165" render="Progress" size="380,15" source="session.CurrentService">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget pixmap="Default-FHD/skin_default/progress.svg" position="10,165" render="Progress" size="380,15" source="session.Event_Now" transparent="1" zPosition="1">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+		<widget render="Label" source="LabelLCDTime" font="Display;50" halign="center" position="10,190" size="390,50"/>
+	</screen>
+	<screen name="GPSummary2Label" position="0,0" size="400,240" id="3">
+		<widget name="LabelLCD_BG" position="0,0" size="400,240" backgroundColor="grey" zPosition="-1"/>
+		<widget render="Label" source="LabelLCDTitle" position="10,3" size="387,110" font="Display;48" halign="center" valign="center"/>
+		<widget render="Label" source="LabelLCDInfo" position="10,116" size="387,121" font="Display;48" halign="center" valign="center"/>
+	</screen>
+	<screen name="GPSummaryPicture" position="0,0" size="400,240" id="3">
+		<widget name="PictureLCD" position="-14,0" size="427,240" zPosition="-1"/>
+		<widget render="Label" source="LabelLCDInfo" position="0,0" size="0,0"/>
+		<widget source="Progress" render="Progress" position="10,225" size="380,15" foregroundColor="#ffff00"/>
+	</screen>
+	<screen name="GPSummarySound" position="0,0" size="400,240" id="3">
+		<widget name="PictureLCD" position="10,5" size="170,170" zPosition="-1"/>
+		<eLabel backgroundColor="white" position="0,189" size="400,1"/>
+		<widget source="Progress" render="Progress" foregroundColor="#faff00" position="0,187" size="400,5"/>
+		<widget render="Label" source="LabelLCDTitle" position="200,5" size="200,80" font="Display;40" halign="center" valign="center"/>
+		<widget render="Label" source="LabelLCDInfo" position="200,100" foregroundColor="#faff00" size="200,80" font="Display;40" halign="center" valign="center"/>
+		<widget render="Label" source="LabelLCDCount" position="10,194" size="160,45" font="Display;45"/>
+		<widget render="Label" source="LabelLCDTime" backgroundColor="background" halign="right" position="200,194" size="190,45" font="Display;45" transparent="1"/>
+		<widget font="Display;45" backgroundColor="background" halign="right" position="200,194" render="Label" size="190,45" source="session.Event_Now" transparent="1">
+			<convert type="EventTime">Remaining</convert>
+			<convert type="RemainingToText">OnlyMinutes</convert>
+		</widget>
+	</screen>
+	<screen name="GPSummary2LabelPic" position="0,0" size="400,240" id="3">
+		<widget name="PictureLCD" position="5,0" size="156,240"/>
+		<widget render="Label" source="LabelLCDTitle" font="Display;40" foregroundColor="#faff00" halign="center" position="175,10" size="220,160" valign="center"/>
+		<widget render="Label" source="LabelLCDInfo" position="175,185" size="220,50" font="Display;50" halign="center"/>
+	</screen>
+	<screen name="GPSummary2Label" position="0,0" size="96,64" id="2">
+		<widget name="LabelLCD_BG" position="0,0" size="96,64" backgroundColor="grey" zPosition="-1"/>
+		<widget render="Label" source="LabelLCDTitle" position="1,1" size="94,28" font="Display;14" halign="center" valign="center"/>
+		<widget render="Label" source="LabelLCDInfo" position="1,31" size="94,32" font="Display;16" halign="center" valign="center"/>
+	</screen>
+	<screen name="GPSummary2Label" position="0,0" size="132,64" id="1">
+		<widget name="LabelLCD_BG" position="0,0" size="132,64" backgroundColor="grey" zPosition="-1"/>
+		<widget render="Label" source="LabelLCDTitle" position="2,2" size="128,28" font="Display;14" halign="center" valign="center"/>
+		<widget render="Label" source="LabelLCDInfo" position="0,32" size="132,30" font="Display;16" halign="center" valign="center"/>
+	</screen>
+	<!--Screens-->
+	<screen flags="wfNoBorder" name="SmallFileBrowser1" position="0,center" size="570,720" title=" ">
+		<ePixmap gradient="#40000000,background,vertical" position="0,0" size="570,720" zPosition="-3"/>
+		<widget source="global.CurrentTime" backgroundColor="#000000" foregroundColor="#dddddd" render="Label" position="450,14" size="100,25" font="Regular;22" halign="right" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+ 		<ePixmap position="30,0" size="50,50" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/backspace.svg"/>
+		<widget name="LabelTitle" position="110,13" size="200,30" font="Regular;24" backgroundColor="background" transparent="1"/>
+		<widget name="LabelPath" backgroundColor="background" font="Regular;20" foregroundColor="yellow" position="30,52" size="510,45" valign="center" transparent="1"/>
+		<widget name="list" scrollbarMode="showOnDemand" position="20,105" size="530,570" backgroundColor="background" transparent="1"/>
+		<widget name="LabelGreen" position="0,685" size="570,35" font="Regular;22" halign="center" valign="center" backgroundColor="green"/>
+	</screen>
+	<screen backgroundColor="grey" flags="wfNoBorder" name="GeminiCBox" position="center,40" size="500,300">
+		<eLabel backgroundColor="#000000" position="2,2" size="496,296" zPosition="-2"/>
+		<ePixmap gradient="background,background,vertical" position="2,2" size="496,296" zPosition="-1"/>
+		<widget name="InfoLabel" backgroundColor="background" font="Regular;23" position="30,11" size="330,30" transparent="1"/>
+		<widget name="Icon" position="455,10" size="35,35"/>
+		<widget backgroundColor="background" backgroundColorSelected="background" backgroundPixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/default.png" foregroundColor="foreground" foregroundColorSelected="foreground" selectionPixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/cursor_neutral.svg" enableWrapAround="on" position="20,70" render="Listbox" scrollbarMode="showOnDemand" size="460,210" source="list" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template":[MultiContentEntryText(pos=(15,9),size=(440,24),text=1),
+				MultiContentEntryPixmapAlphaTest(pos=(15,33),size=(700,2),png=2)],
+				"fonts":[gFont("Regular",20)],"itemHeight":35}
+			</convert>
+		</widget>
+	</screen>
+	<screen backgroundColor="grey" flags="wfNoBorder" name="GeminiCBoxWithPic" position="center,40" size="500,300">
+		<eLabel backgroundColor="#000000" position="2,2" size="496,296" zPosition="-2"/>
+		<ePixmap gradient="background,background,vertical" position="2,2" size="496,296" zPosition="-1"/>
+		<widget name="InfoLabel" backgroundColor="background" font="Regular;23" position="30,11" size="330,30" transparent="1"/>
+		<widget name="Icon" position="455,10" size="35,35"/>
+		<widget backgroundColor="background" backgroundColorSelected="background" backgroundPixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/default.png" foregroundColor="foreground" foregroundColorSelected="foreground" selectionPixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/cursor_neutral.svg" enableWrapAround="on" position="20,70" render="Listbox" scrollbarMode="showOnDemand" size="460,200" source="list" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template":[MultiContentEntryText(pos=(85,0),size=(370,50),flags=RT_VALIGN_CENTER,text=1),
+				MultiContentEntryPixmapAlphaTest(pos=(15,2),size=(46,46),png=2)],
+				"fonts":[gFont("Regular",26)],"itemHeight":50}
+			</convert>
+		</widget>
+	</screen>
+	<screen name="GeminiSetup_Small" flags="wfNoBorder" position="center,center" size="610,720" title="Setup">
+		<ePixmap gradient="#40000000,background,vertical" position="0,0" size="610,720" zPosition="-3"/>
+		<widget source="global.CurrentTime" backgroundColor="#000000" foregroundColor="#dddddd" render="Label" position="480,14" size="100,25" font="Regular;22" halign="right" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget name="Logo" position="20,5" size="70,70"/>
+		<widget name="Icon0" position="520,80" size="30,30"/>
+		<widget name="Icon1" position="560,80" size="30,30"/>
+		<widget backgroundColor="transpBlack" font="Regular;24" source="Title" render="Label" position="20,80" size="430,30" transparent="1"/>
+		<eLabel backgroundColor="grey" position="20,120" size="570,2"/>
+		<widget name="config" separation="100" backgroundColor="background" position="20,130" size="570,540" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="GreenLabel" position="0,685" size="610,35" font="Regular;22" halign="center" valign="center" backgroundColor="green"/>
+	</screen>
+	<screen name="GeminiSetup_Big" flags="wfNoBorder" position="center,center" size="610,720" title="Setup">
+		<ePixmap gradient="#40000000,background,vertical" position="0,0" size="610,720" zPosition="-3"/>
+		<widget source="global.CurrentTime" backgroundColor="#000000" foregroundColor="#dddddd" render="Label" position="480,14" size="100,25" font="Regular;22" halign="right" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget name="Logo" position="20,5" size="70,70"/>
+		<widget name="Icon0" position="480,80" size="30,30"/>
+		<widget name="Icon1" position="520,80" size="30,30"/>
+		<widget name="Icon2" position="560,80" size="30,30"/>
+		<widget backgroundColor="transpBlack" font="Regular;24" source="Title" render="Label" position="20,80" size="430,30" transparent="1"/>
+		<eLabel backgroundColor="grey" position="20,120" size="570,2"/>
+		<widget name="config" itemHeight="35" separation="100" backgroundColor="background" position="20,130" size="570,420" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
+		<eLabel backgroundColor="grey" position="20,555" size="570,2"/>
+		<widget name="StatusLabel" position="20,562" size="570,110" font="Regular;18" halign="center" backgroundColor="background" foregroundColor="yellow" transparent="1"/>
+		<widget name="GreenLabel" position="0,685" size="610,35" font="Regular;22" halign="center" valign="center" backgroundColor="green"/>
+	</screen>
+	<screen backgroundColor="#000000" flags="wfNoBorder" name="GeminiSearchScreenv1" position="center,center" size="1280,720">
+		<ePixmap gradient="#40000000,background,vertical" position="0,0" size="1280,720" zPosition="-2"/>
+		<eLabel backgroundColor="background" cornerRadius="90" position="20,10" size="90,90" zPosition="-1"/>
+		<widget name="LogoSpinner" position="35,25" size="60,60"/>
+		<widget name="HelpWindow" position="250,20"/>
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/search_neutral.svg" position="30,166" size="30,30"/>
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/txt_neutral.svg" position="70,166" size="30,30"/>
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/menu_neutral.svg" position="110,166" size="30,30"/>
+		<widget name="LabelEntrys" backgroundColor="black" foregroundColor="yellow" font="Regular;18" position="170,170" size="300,24"/>
+		<widget backgroundColorSelected="black" foregroundColorSelected="#dddddd" position="160,166" size="690,30" separation="400" name="config"/>
+		<eLabel backgroundColor="background" cornerRadius="10" position="20,160" size="840,42" zPosition="-1"/>
+		<widget name="Pic" position="930,24" size="310,170" zPosition="1"/>
+		<widget name="ExtraPic" position="1188,34" size="42,25" zPosition="2"/>
+		<eLabel backgroundColor="grey" position="20,220" size="1240,2"/>
+		<widget backgroundColor="background" backgroundColorSelected="background" backgroundPixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/default.png" foregroundColor="foreground" foregroundColorSelected="foreground" selectionPixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/cursor_neutral.svg" source="itemlist" render="Listbox" position="20,230" size="1240,480" scrollbarMode="showOnDemand" enableWrapAround="on" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template":[MultiContentEntryPixmapAlphaTest(pos=(5,58),size=(1230,2),png=1),
+				MultiContentEntryText(pos=(20,6),size=(900,28),font=0,text=2),
+				MultiContentEntryText(pos=(950,7),size=(280,25),flags=RT_HALIGN_RIGHT,font=1,text=3,color=0xa0a0a0),
+				MultiContentEntryText(pos=(20,34),size=(1210,23),font=1,text=4,color=0xa0a0a0),],
+				"fonts":[gFont("Regular",22),gFont("Regular",17)],"itemHeight":60}
+			</convert>
+		</widget>
+	</screen>
+	<screen backgroundColor="grey" flags="wfNoBorder" name="GeminiTBoxSmall" position="center,40" size="500,300">
+		<eLabel backgroundColor="#000000" position="2,2" size="496,296" zPosition="-2"/>
+		<ePixmap gradient="background,background,vertical" position="2,2" size="496,296" zPosition="-1"/>
+		<widget name="InfoLabel" backgroundColor="background" font="Regular;25" position="30,11" size="330,30" transparent="1"/>
+		<widget name="Icon" position="455,10" size="35,35"/>
+		<widget name="ScrollLabel" backgroundColor="background" font="Regular;20" position="20,70" size="460,210" transparent="1"/>
+	</screen>
+	<screen backgroundColor="grey" flags="wfNoBorder" name="GeminiTBoxPicture" position="center,40" size="600,450">
+		<eLabel backgroundColor="#000000" position="2,2" size="596,446" zPosition="-2"/>
+		<ePixmap gradient="background,background,vertical" position="2,2" size="596,446" zPosition="-1"/>
+		<widget name="Icon" position="90,8" size="420,236"/>
+		<widget name="InfoLabel" backgroundColor="background" foregroundColor="yellow" valign="center" font="Regular;22" position="20,250" size="560,50" transparent="1"/>
+		<widget name="ScrollLabel" backgroundColor="background" font="Regular;18" position="20,305" size="560,140" transparent="1"/>
+	</screen>
+	<screen backgroundColor="grey" flags="wfNoBorder" name="GeminiTBoxBig" position="center,40" size="800,500">
+		<eLabel backgroundColor="#000000" position="2,2" size="796,496" zPosition="-2"/>
+		<ePixmap gradient="background,background,vertical" position="2,2" size="796,496" zPosition="-1"/>
+		<widget name="InfoLabel" backgroundColor="background" font="Regular;25" position="30,11" size="530,30" transparent="1"/>
+		<widget name="Icon" position="755,10" size="35,35"/>
+		<widget name="ScrollLabel" backgroundColor="background" font="Regular;20" position="20,70" size="760,410" transparent="1"/>
+	</screen>
+	<screen backgroundColor="#000000" flags="wfNoBorder" name="GeminiMoveScreen_v1" position="center,center" size="610,720">
+		<ePixmap gradient="#40000000,background,vertical" position="0,0" size="610,720" zPosition="-3"/>
+		<widget source="global.CurrentTime" backgroundColor="#000000" foregroundColor="#dddddd" render="Label" position="480,14" size="100,25" font="Regular;22" halign="right" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget name="InfoLabel" backgroundColor="background" font="Regular;24" position="30,70" size="400,30" transparent="1"/>
+		<widget name="Icon" position="550,50" size="35,35"/>
+		<widget backgroundColor="background" backgroundColorSelected="background" backgroundPixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/default.png" foregroundColor="foreground" foregroundColorSelected="foreground" selectionPixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/cursor_neutral.svg" enableWrapAround="on" position="20,110" render="Listbox" scrollbarMode="showOnDemand" size="570,585" source="list" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template":[MultiContentEntryPixmapAlphaTest(pos=(15,5),size=(138,55),png=1),
+				MultiContentEntryText(pos=(170,8),size=(390,29),font=0,text=2),
+				MultiContentEntryText(pos=(170,40),size=(390,24),font=1,text=3)],
+				"fonts":[gFont("Regular",24),gFont("Regular",17)],"itemHeight":65}
+			</convert>
+		</widget>
+	</screen>
+	<screen backgroundColor="#000000" flags="wfNoBorder" name="GeminiPicPlayer" position="center,center" size="1280,720">
+		<ePixmap gradient="#40000000,background,vertical" position="0,0" size="1280,720" zPosition="-2"/>
+		<widget name="Pic" position="0,0" size="1280,720" zPosition="-1"/>
+		<widget name="List_BG" backgroundColor="background" cornerRadius="20" position="840,80" size="400,530" zPosition="1"/>
+		<widget backgroundColor="background" backgroundColorSelected="background" foregroundColor="foreground" foregroundColorSelected="foreground" backgroundPixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/default.png" selectionPixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/cursor_neutral.svg" enableWrapAround="on" position="850,100" render="Listbox" scrollbarMode="showNever" size="380,490" source="List" transparent="1" zPosition="2">
+			<convert type="TemplatedMultiContent">
+				{"template":[MultiContentEntryText(pos=(15,9),size=(50,25),text=1),
+				MultiContentEntryText(pos=(65,9),size=(310,25),text=2)],
+				"fonts":[gFont("Regular",18)],"itemHeight":35}
+			</convert>
+		</widget>
+		<widget name="Infobar_BG" gradient="#ff000000,background,vertical" position="0,620" size="1280,100" zPosition="-1"/>
+		<widget name="Progress" backgroundColor="grey" pixmap="Default-FHD/skin_default/progress.svg" position="40,655" size="1200,6"/>
+		<widget name="IconWait" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/action_neutral.svg" position="5,5" size="40,40"/>
+		<widget name="SlideShowCount" backgroundColor="#000000" foregroundColor="#dddddd" font="Regular;20" position="1240,5" size="40,40" halign="center" valign="center" transparent="1" noWrap="1"/>
+		<widget name="Icon0" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/menu_neutral.svg" position="40,672" size="35,35"/>
+		<widget name="Icon1" pixmaps="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/circle_play.svg,/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/circle_pause.svg" position="85,672" size="35,35"/>
+		<widget name="Icon2" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/info_neutral.svg" position="130,672" size="35,35"/>
+		<widget name="LabelCount" backgroundColor="background" font="Regular;20" position="180,680" size="100,30" transparent="1" noWrap="1"/>
+		<widget name="LabelTitle" backgroundColor="background" font="Regular;20" position="300,680" size="940,30" halign="right" transparent="1"/>
+	</screen>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="GeminiMoviePlayer_v2" position="center,center" size="1280,720">
+		<eLabel backgroundColor="background" position="0,560" size="1280,160" zPosition="-2"/>
+		<widget name="Cover_Pic" position="40,510" size="130,130"/>
+		<widget name="List_BG" backgroundColor="background" cornerRadius="20" position="800,15" size="450,530" zPosition="-1"/>
+		<widget backgroundColor="background" backgroundColorSelected="background" foregroundColor="foreground" foregroundColorSelected="foreground" backgroundPixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/default.png" selectionPixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/cursor_neutral.svg" enableWrapAround="on" position="810,35" render="Listbox" scrollbarMode="showNever" size="430,490" source="List" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template":[MultiContentEntryText(pos=(15,9),size=(410,25),text=1)],
+				"fonts":[gFont("Regular",18)],"itemHeight":35}
+			</convert>
+		</widget>
+		<widget name="LabelServiceName" font="Regular;24" position="200,570" size="800,30"/>
+		<widget name="LabelClock" font="Regular;24" position="1040,570" halign="right" size="200,30"/>
+		<widget name="LabelVideoInfo" foregroundColor="grey" font="Regular;18" position="200,605" size="1040,42"/>
+		<widget source="session.CurrentService" render="Progress" backgroundColor="grey" pixmap="Default-FHD/skin_default/progress.svg" position="40,655" size="1200,6">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="session.CurrentService" render="PositionGauge" position="40,655" size="1200,6" transparent="1" zPosition="1">
+			<convert type="ServicePosition">Gauge</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Progress" pixmap="Default-FHD/skin_default/progress.svg" position="40,655" transparent="1" size="1200,6" zPosition="1">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+		<widget name="ProgressMyEPG" pixmap="Default-FHD/skin_default/progress.svg" position="40,655" transparent="1" size="1200,6" zPosition="2"/>
+		<widget name="Icon_Res" pixmaps="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/res_neutral.svg,/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/res_red.svg" position="50,672" size="35,35"/>
+		<widget name="Icon_Audio" pixmaps="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/audio_neutral.svg,/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/audio_green.svg" position="100,672" size="35,35"/>
+		<widget name="Icon_Sub" pixmaps="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/sub_neutral.svg,/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/sub_yellow.svg" position="150,672" size="35,35"/>
+		<widget name="Icon_Menu" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/menu_blue.svg" position="200,672" size="35,35"/>
+		<widget name="Icon_Info" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/info_neutral.svg" position="250,672" size="35,35"/>
+		<widget name="LabelServiceTime" font="Regular;22" position="center,680" halign="center" size="320,25"/>
+		<widget name="LabelVideoPara" backgroundColor="background" font="Regular;20" position="820,680" size="420,30" halign="right"/>
+	</screen>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="GeminiSoundPlayer_v1" position="center,center" size="1280,720">
+		<widget name="MainPic" position="0,0" size="1280,720" zPosition="-3"/>
+		<widget name="Infobar_BG" gradient="background,background,vertical" position="0,570" size="1280,150" zPosition="-1"/>
+		<widget name="Cover_Pic" position="40,510" size="130,130"/>
+		<widget name="List_BG" backgroundColor="background" cornerRadius="20" position="850,10" size="420,550" zPosition="-1"/>
+		<widget backgroundColor="background" backgroundColorSelected="background" foregroundColor="foreground" foregroundColorSelected="foreground" backgroundPixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/default.png" selectionPixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/cursor_neutral.svg" enableWrapAround="on" position="860,30" render="Listbox" scrollbarMode="showNever" size="400,490" source="List" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template":[MultiContentEntryText(pos=(15,9),size=(50,25),text=1),
+				MultiContentEntryText(pos=(65,9),size=(330,25),text=2)],
+				"fonts":[gFont("Regular",18)],"itemHeight":35}
+			</convert>
+		</widget>
+		<widget name="LabelTitle" backgroundColor="background" font="Regular;24" position="200,573" size="800,30" transparent="1"/>
+		<widget name="LabelClock" backgroundColor="background" font="Regular;24" position="1040,573" halign="right" size="200,30" transparent="1"/>
+		<widget name="LabelArtist" backgroundColor="background" foregroundColor="grey" font="Regular;18" position="200,605" size="1040,22" transparent="1"/>
+		<widget name="LabelInfo" backgroundColor="background" foregroundColor="grey" font="Regular;18" position="200,630" size="700,22" transparent="1"/>
+		<widget name="LabelCount" backgroundColor="background" foregroundColor="grey" font="Regular;18" position="960,630" size="280,30" halign="right" transparent="1"/>
+		<widget name="LabelTime" backgroundColor="background" font="Regular;22" position="center,685" halign="center" size="320,25" transparent="1"/>
+		<widget backgroundColor="grey" name="Progress" pixmap="Default-FHD/skin_default/progress.svg" position="40,655" size="1200,6" transparent="1"/>
+		<widget name="SlideShowCount" backgroundColor="#000000" foregroundColor="#dddddd" font="Regular;20" position="1230,10" size="40,20" halign="right" zPosition="-2" transparent="1"/>
+		<widget source="VolumeLabel" backgroundColor="background" foregroundColor="#bababa" position="1170,677" size="50,20" render="Label" halign="right" font="Regular;20" transparent="1"/>
+		<widget source="VolumeProgress" render="Progress" backgroundColor="grey" position="1136,700" size="91,4" pixmap="Default-FHD/skin_default/progress.svg"/>
+		<widget name="VolumeMute" position="1123,673" size="117,35" pixmaps="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/mute_off.svg,/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/mute_on.svg"/>
+		<widget name="IconRec" pixmaps="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/rec_neutral.svg,/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/rec.svg" position="50,672" size="35,35"/>
+		<widget name="IconAudio" pixmaps="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/audio_neutral.svg,/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/audio_green.svg" position="100,672" size="35,35"/>
+		<widget name="IconDevice" pixmaps="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/device_neutral.svg,/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/device_yellow.svg" position="150,672" size="35,35"/>
+		<widget name="Icon0" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/menu_blue.svg" position="200,672" size="35,35"/>
+		<widget name="IconInfo" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/info_neutral.svg" position="250,672" size="35,35"/>
+		<widget name="Icon1" pixmaps="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/circle_play.svg,/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/circle_pause.svg,/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/circle_stop.svg,/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/circle_forward.svg,/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/circle_rewind.svg" position="300,672" size="35,35"/>
+		<widget name="Icon2" position="350,672" size="35,35"/>
+	</screen>
+	<screen backgroundColor="#000000" flags="wfNoBorder" name="gcommanderlist_tile_2_6" position="center,center" size="1280,720">
+		<ePixmap gradient="#40000000,background,vertical" position="0,0" size="1280,720" zPosition="-3"/>
+		<widget name="LogoSpinner" position="30,20" size="100,100"/>
+		<widget source="global.CurrentTime" backgroundColor="#000000" foregroundColor="#dddddd" render="Label" position="1040,10" size="200,25" font="Regular;22" halign="right" transparent="1">
+			<convert type="ClockToText">Format:%a %d.%m.  %H:%M</convert>
+		</widget>
+		<widget name="IconInfo" position="1210,55" size="35,35" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/info_neutral.svg"/>
+		<widget name="Icon0" position="1060,110" size="35,35"/>
+		<widget name="Icon1" position="1110,110" size="35,35"/>
+		<widget name="Icon2" position="1160,110" size="35,35"/>
+		<widget name="Icon3" position="1210,110" size="35,35"/>
+ 		<eLabel backgroundColor="grey" cornerRadius="36" position="1060,55" size="135,36"/>
+ 		<widget name="PageLabel" backgroundColor="#000000" cornerRadius="30" font="Regular;18" position="1063,58" size="129,30" halign="center" valign="center" zPosition="1"/>
+ 		<eLabel backgroundColor="grey" cornerRadius="76" position="170,15" size="810,76" valign="center"/>
+		<eLabel backgroundColor="#000000" cornerRadius="72" position="172,17" size="806,72" valign="center"/>
+		<widget name="Rating_bg" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/rating_bg.svg" position="200,22" size="170,17" zPosition="1"/>
+		<widget name="Rating_on" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/rating_on.svg" position="200,22" size="170,17" transparent="1" zPosition="2"/>
+		<widget name="HighlightTitle" backgroundColor="#000000" foregroundColor="#dddddd" font="Regular;25" position="205,43" size="740,30" zPosition="1"/>
+		<widget name="VideoProgress" backgroundColor="#dddddd" foregroundColor="red" position="205,80" size="740,5" zPosition="2"/>
+		<widget name="HighlightInfo" backgroundColor="#000000" foregroundColor="#888888" font="Regular;18" position="174,110" size="800,42" transparent="1"/>
+		<widget name="List0Back0" backgroundColor="black" cornerRadius="20" position="40,170" size="190,260" zPosition="-1"/>
+		<widget name="List0Sel0" backgroundColor="#bababa" cornerRadius="20" position="38,168" size="194,264" zPosition="-2"/>
+		<widget name="List0Pic0" position="65,175" size="140,210"/>
+		<widget name="List0Sym0" position="202,173" size="25,25" zPosition="1"/>
+		<widget name="List0Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;17" position="45,385" size="180,42"/>
+		<widget name="List0Back1" backgroundColor="black" cornerRadius="20" position="242,170" size="190,260" zPosition="-1"/>
+		<widget name="List0Sel1" backgroundColor="#bababa" cornerRadius="20" position="240,168" size="194,264" zPosition="-2"/>
+		<widget name="List0Pic1" position="267,175" size="140,210"/>
+		<widget name="List0Sym1" position="404,173" size="25,25" zPosition="1"/>
+		<widget name="List0Text1" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;17" position="247,385" size="180,42"/>
+		<widget name="List0Back2" backgroundColor="black" cornerRadius="20" position="444,170" size="190,260" zPosition="-1"/>
+		<widget name="List0Sel2" backgroundColor="#bababa" cornerRadius="20" position="442,168" size="194,264" zPosition="-2"/>
+		<widget name="List0Pic2" position="469,175" size="140,210"/>
+		<widget name="List0Sym2" position="606,173" size="25,25" zPosition="1"/>
+		<widget name="List0Text2" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;17" position="449,385" size="180,42"/>
+		<widget name="List0Back3" backgroundColor="black" cornerRadius="20" position="646,170" size="190,260" zPosition="-1"/>
+		<widget name="List0Sel3" backgroundColor="#bababa" cornerRadius="20" position="644,168" size="194,264" zPosition="-2"/>
+		<widget name="List0Pic3" position="671,175" size="140,210"/>
+		<widget name="List0Sym3" position="808,173" size="25,25" zPosition="1"/>
+		<widget name="List0Text3" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;17" position="651,385" size="180,42"/>
+		<widget name="List0Back4" backgroundColor="black" cornerRadius="20" position="848,170" size="190,260" zPosition="-1"/>
+		<widget name="List0Sel4" backgroundColor="#bababa" cornerRadius="20" position="846,168" size="194,264" zPosition="-2"/>
+		<widget name="List0Pic4" position="873,175" size="140,210"/>
+		<widget name="List0Sym4" position="1010,173" size="25,25" zPosition="1"/>
+		<widget name="List0Text4" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;17" position="853,385" size="180,42"/>
+		<widget name="List0Back5" backgroundColor="black" cornerRadius="20" position="1050,170" size="190,260" zPosition="-1"/>
+		<widget name="List0Sel5" backgroundColor="#bababa" cornerRadius="20" position="1048,168" size="194,264" zPosition="-2"/>
+		<widget name="List0Pic5" position="1075,175" size="140,210"/>
+		<widget name="List0Sym5" position="1212,173" size="25,25" zPosition="1"/>
+		<widget name="List0Text5" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;17" position="1055,385" size="180,42"/>
+		<widget name="List1Back0" backgroundColor="black" cornerRadius="20" position="40,440" size="190,260" zPosition="-1"/>
+		<widget name="List1Sel0" backgroundColor="#bababa" cornerRadius="20" position="38,438" size="194,264" zPosition="-2"/>
+		<widget name="List1Pic0" position="65,443" size="140,210"/>
+		<widget name="List1Sym0" position="202,441" size="25,25" zPosition="1"/>
+		<widget name="List1Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;17" position="45,653" size="180,42"/>
+		<widget name="List1Back1" backgroundColor="black" cornerRadius="20" position="242,440" size="190,260" zPosition="-1"/>
+		<widget name="List1Sel1" backgroundColor="#bababa" cornerRadius="20" position="240,438" size="194,264" zPosition="-2"/>
+		<widget name="List1Pic1" position="267,443" size="140,210"/>
+		<widget name="List1Sym1" position="404,441" size="25,25" zPosition="1"/>
+		<widget name="List1Text1" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;17" position="247,653" size="180,42"/>
+		<widget name="List1Back2" backgroundColor="black" cornerRadius="20" position="444,440" size="190,260" zPosition="-1"/>
+		<widget name="List1Sel2" backgroundColor="#bababa" cornerRadius="20" position="442,438" size="194,264" zPosition="-2"/>
+		<widget name="List1Pic2" position="469,443" size="140,210"/>
+		<widget name="List1Sym2" position="606,441" size="25,25" zPosition="1"/>
+		<widget name="List1Text2" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;17" position="449,653" size="180,42"/>
+		<widget name="List1Back3" backgroundColor="black" cornerRadius="20" position="646,440" size="190,260" zPosition="-1"/>
+		<widget name="List1Sel3" backgroundColor="#bababa" cornerRadius="20" position="644,438" size="194,264" zPosition="-2"/>
+		<widget name="List1Pic3" position="671,443" size="140,210"/>
+		<widget name="List1Sym3" position="808,441" size="25,25" zPosition="1"/>
+		<widget name="List1Text3" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;17" position="651,653" size="180,42"/>
+		<widget name="List1Back4" backgroundColor="black" cornerRadius="20" position="848,440" size="190,260" zPosition="-1"/>
+		<widget name="List1Sel4" backgroundColor="#bababa" cornerRadius="20" position="846,438" size="194,264" zPosition="-2"/>
+		<widget name="List1Pic4" position="873,443" size="140,210"/>
+		<widget name="List1Sym4" position="1010,441" size="25,25" zPosition="1"/>
+		<widget name="List1Text4" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;17" position="853,653" size="180,42"/>
+		<widget name="List1Back5" backgroundColor="black" cornerRadius="20" position="1050,440" size="190,260" zPosition="-1"/>
+		<widget name="List1Sel5" backgroundColor="#bababa" cornerRadius="20" position="1048,438" size="194,264" zPosition="-2"/>
+		<widget name="List1Pic5" position="1075,443" size="140,210"/>
+		<widget name="List1Sym5" position="1212,441" size="25,25" zPosition="1"/>
+		<widget name="List1Text5" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;17" position="1055,653" size="180,42"/>
+	</screen>
+	<screen backgroundColor="#000000" flags="wfNoBorder" name="gcommanderlist_tile_3_7" position="center,center" size="1280,720">
+		<ePixmap gradient="#40000000,background,vertical" position="0,0" size="1280,720" zPosition="-3"/>
+		<widget name="LogoSpinner" position="30,20" size="100,100"/>
+		<widget source="global.CurrentTime" backgroundColor="#000000" foregroundColor="#dddddd" render="Label" position="1040,10" size="200,25" font="Regular;22" halign="right" transparent="1">
+			<convert type="ClockToText">Format:%a %d.%m.  %H:%M</convert>
+		</widget>
+		<widget name="IconInfo" position="1210,55" size="35,35" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/info_neutral.svg"/>
+		<widget name="Icon0" position="1060,110" size="35,35"/>
+		<widget name="Icon1" position="1110,110" size="35,35"/>
+		<widget name="Icon2" position="1160,110" size="35,35"/>
+		<widget name="Icon3" position="1210,110" size="35,35"/>
+ 		<eLabel backgroundColor="grey" cornerRadius="36" position="1060,55" size="135,36"/>
+ 		<widget name="PageLabel" backgroundColor="#000000" cornerRadius="30" font="Regular;18" position="1063,58" size="129,30" halign="center" valign="center" zPosition="1"/>
+ 		<eLabel backgroundColor="grey" cornerRadius="76" position="170,15" size="810,76" valign="center"/>
+		<eLabel backgroundColor="#000000" cornerRadius="72" position="172,17" size="806,72" valign="center"/>
+		<widget name="Rating_bg" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/rating_bg.svg" position="200,22" size="170,17" zPosition="1"/>
+		<widget name="Rating_on" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/rating_on.svg" position="200,22" size="170,17" transparent="1" zPosition="2"/>
+		<widget name="HighlightTitle" backgroundColor="#000000" foregroundColor="#dddddd" font="Regular;25" position="205,43" size="740,30" zPosition="1"/>
+		<widget name="VideoProgress" backgroundColor="#dddddd" foregroundColor="red" position="205,80" size="740,5" zPosition="2"/>
+		<widget name="HighlightInfo" backgroundColor="#000000" foregroundColor="#888888" font="Regular;18" position="174,110" size="800,42" transparent="1"/>
+
+		<widget name="List0Back0" backgroundColor="black" cornerRadius="20" position="20,170" size="160,170" zPosition="-1"/>
+		<widget name="List0Pic0" position="45,175" size="110,110"/>
+		<widget name="List0Sym0" position="153,173" size="25,25" zPosition="1"/>
+		<widget name="List0Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;15" position="25,300" size="150,34" transparent="1" zPosition="1"/>
+		<widget name="List0Sel0" backgroundColor="#bababa" cornerRadius="20" position="18,168" size="164,174" zPosition="-2"/>
+		<widget name="List0Back1" backgroundColor="black" cornerRadius="20" position="200,170" size="160,170" zPosition="-1"/>
+		<widget name="List0Pic1" position="225,175" size="110,110"/>
+		<widget name="List0Sym1" position="333,173" size="25,25" zPosition="1"/>
+		<widget name="List0Text1" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;15" position="205,300" size="150,34" transparent="1" zPosition="1"/>
+		<widget name="List0Sel1" backgroundColor="#bababa" cornerRadius="20" position="198,168" size="164,174" zPosition="-2"/>
+		<widget name="List0Back2" backgroundColor="black" cornerRadius="20" position="380,170" size="160,170" zPosition="-1"/>
+		<widget name="List0Pic2" position="405,175" size="110,110"/>
+		<widget name="List0Sym2" position="513,173" size="25,25" zPosition="1"/>
+		<widget name="List0Text2" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;15" position="385,300" size="150,34" transparent="1" zPosition="1"/>
+		<widget name="List0Sel2" backgroundColor="#bababa" cornerRadius="20" position="378,168" size="164,174" zPosition="-2"/>
+		<widget name="List0Back3" backgroundColor="black" cornerRadius="20" position="560,170" size="160,170" zPosition="-1"/>
+		<widget name="List0Pic3" position="585,175" size="110,110"/>
+		<widget name="List0Sym3" position="693,173" size="25,25" zPosition="1"/>
+		<widget name="List0Text3" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;15" position="565,300" size="150,34" transparent="1" zPosition="1"/>
+		<widget name="List0Sel3" backgroundColor="#bababa" cornerRadius="20" position="558,168" size="164,174" zPosition="-2"/>
+		<widget name="List0Back4" backgroundColor="black" cornerRadius="20" position="740,170" size="160,170" zPosition="-1"/>
+		<widget name="List0Pic4" position="765,175" size="110,110"/>
+		<widget name="List0Sym4" position="873,173" size="25,25" zPosition="1"/>
+		<widget name="List0Text4" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;15" position="745,300" size="150,34" transparent="1" zPosition="1"/>
+		<widget name="List0Sel4" backgroundColor="#bababa" cornerRadius="20" position="738,168" size="164,174" zPosition="-2"/>
+		<widget name="List0Back5" backgroundColor="black" cornerRadius="20" position="920,170" size="160,170" zPosition="-1"/>
+		<widget name="List0Pic5" position="945,175" size="110,110"/>
+		<widget name="List0Sym5" position="1053,173" size="25,25" zPosition="1"/>
+		<widget name="List0Text5" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;15" position="925,300" size="150,34" transparent="1" zPosition="1"/>
+		<widget name="List0Sel5" backgroundColor="#bababa" cornerRadius="20" position="918,168" size="164,174" zPosition="-2"/>
+		<widget name="List0Back6" backgroundColor="black" cornerRadius="20" position="1100,170" size="160,170" zPosition="-1"/>
+		<widget name="List0Pic6" position="1125,175" size="110,110"/>
+		<widget name="List0Sym6" position="1233,173" size="25,25" zPosition="1"/>
+		<widget name="List0Text6" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;15" position="1105,300" size="150,34" transparent="1" zPosition="1"/>
+		<widget name="List0Sel6" backgroundColor="#bababa" cornerRadius="20" position="1098,168" size="164,174" zPosition="-2"/>
+		<widget name="List1Back0" backgroundColor="black" cornerRadius="20" position="20,350" size="160,170" zPosition="-1"/>
+		<widget name="List1Pic0" position="45,355" size="110,110"/>
+		<widget name="List1Sym0" position="153,353" size="25,25" zPosition="1"/>
+		<widget name="List1Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;15" position="25,480" size="150,34" transparent="1" zPosition="1"/>
+		<widget name="List1Sel0" backgroundColor="#bababa" cornerRadius="20" position="18,348" size="164,174" zPosition="-2"/>
+		<widget name="List1Back1" backgroundColor="black" cornerRadius="20" position="200,350" size="160,170" zPosition="-1"/>
+		<widget name="List1Pic1" position="225,355" size="110,110"/>
+		<widget name="List1Sym1" position="333,353" size="25,25" zPosition="1"/>
+		<widget name="List1Text1" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;15" position="205,480" size="150,34" transparent="1" zPosition="1"/>
+		<widget name="List1Sel1" backgroundColor="#bababa" cornerRadius="20" position="198,348" size="164,174" zPosition="-2"/>
+		<widget name="List1Back2" backgroundColor="black" cornerRadius="20" position="380,350" size="160,170" zPosition="-1"/>
+		<widget name="List1Pic2" position="405,355" size="110,110"/>
+		<widget name="List1Sym2" position="513,353" size="25,25" zPosition="1"/>
+		<widget name="List1Text2" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;15" position="385,480" size="150,34" transparent="1" zPosition="1"/>
+		<widget name="List1Sel2" backgroundColor="#bababa" cornerRadius="20" position="378,348" size="164,174" zPosition="-2"/>
+		<widget name="List1Back3" backgroundColor="black" cornerRadius="20" position="560,350" size="160,170" zPosition="-1"/>
+		<widget name="List1Pic3" position="585,355" size="110,110"/>
+		<widget name="List1Sym3" position="693,353" size="25,25" zPosition="1"/>
+		<widget name="List1Text3" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;15" position="565,480" size="150,34" transparent="1" zPosition="1"/>
+		<widget name="List1Sel3" backgroundColor="#bababa" cornerRadius="20" position="558,348" size="164,174" zPosition="-2"/>
+		<widget name="List1Back4" backgroundColor="black" cornerRadius="20" position="740,350" size="160,170" zPosition="-1"/>
+		<widget name="List1Pic4" position="765,355" size="110,110"/>
+		<widget name="List1Sym4" position="873,353" size="25,25" zPosition="1"/>
+		<widget name="List1Text4" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;15" position="745,480" size="150,34" transparent="1" zPosition="1"/>
+		<widget name="List1Sel4" backgroundColor="#bababa" cornerRadius="20" position="738,348" size="164,174" zPosition="-2"/>
+		<widget name="List1Back5" backgroundColor="black" cornerRadius="20" position="920,350" size="160,170" zPosition="-1"/>
+		<widget name="List1Pic5" position="945,355" size="110,110"/>
+		<widget name="List1Sym5" position="1053,353" size="25,25" zPosition="1"/>
+		<widget name="List1Text5" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;15" position="925,480" size="150,34" transparent="1" zPosition="1"/>
+		<widget name="List1Sel5" backgroundColor="#bababa" cornerRadius="20" position="918,348" size="164,174" zPosition="-2"/>
+		<widget name="List1Back6" backgroundColor="black" cornerRadius="20" position="1100,350" size="160,170" zPosition="-1"/>
+		<widget name="List1Pic6" position="1125,355" size="110,110"/>
+		<widget name="List1Sym6" position="1233,353" size="25,25" zPosition="1"/>
+		<widget name="List1Text6" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;15" position="1105,480" size="150,34" transparent="1" zPosition="1"/>
+		<widget name="List1Sel6" backgroundColor="#bababa" cornerRadius="20" position="1098,348" size="164,174" zPosition="-2"/>
+		<widget name="List2Back0" backgroundColor="black" cornerRadius="20" position="20,530" size="160,170" zPosition="-1"/>
+		<widget name="List2Pic0" position="45,535" size="110,110"/>
+		<widget name="List2Sym0" position="153,533" size="25,25" zPosition="1"/>
+		<widget name="List2Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;15" position="25,660" size="150,34" transparent="1" zPosition="1"/>
+		<widget name="List2Sel0" backgroundColor="#bababa" cornerRadius="20" position="18,528" size="164,174" zPosition="-2"/>
+		<widget name="List2Back1" backgroundColor="black" cornerRadius="20" position="200,530" size="160,170" zPosition="-1"/>
+		<widget name="List2Pic1" position="225,535" size="110,110"/>
+		<widget name="List2Sym1" position="333,533" size="25,25" zPosition="1"/>
+		<widget name="List2Text1" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;15" position="205,660" size="150,34" transparent="1" zPosition="1"/>
+		<widget name="List2Sel1" backgroundColor="#bababa" cornerRadius="20" position="198,528" size="164,174" zPosition="-2"/>
+		<widget name="List2Back2" backgroundColor="black" cornerRadius="20" position="380,530" size="160,170" zPosition="-1"/>
+		<widget name="List2Pic2" position="405,535" size="110,110"/>
+		<widget name="List2Sym2" position="513,533" size="25,25" zPosition="1"/>
+		<widget name="List2Text2" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;15" position="385,660" size="150,34" transparent="1" zPosition="1"/>
+		<widget name="List2Sel2" backgroundColor="#bababa" cornerRadius="20" position="378,528" size="164,174" zPosition="-2"/>
+		<widget name="List2Back3" backgroundColor="black" cornerRadius="20" position="560,530" size="160,170" zPosition="-1"/>
+		<widget name="List2Pic3" position="585,535" size="110,110"/>
+		<widget name="List2Sym3" position="693,533" size="25,25" zPosition="1"/>
+		<widget name="List2Text3" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;15" position="565,660" size="150,34" transparent="1" zPosition="1"/>
+		<widget name="List2Sel3" backgroundColor="#bababa" cornerRadius="20" position="558,528" size="164,174" zPosition="-2"/>
+		<widget name="List2Back4" backgroundColor="black" cornerRadius="20" position="740,530" size="160,170" zPosition="-1"/>
+		<widget name="List2Pic4" position="765,535" size="110,110"/>
+		<widget name="List2Sym4" position="873,533" size="25,25" zPosition="1"/>
+		<widget name="List2Text4" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;15" position="745,660" size="150,34" transparent="1" zPosition="1"/>
+		<widget name="List2Sel4" backgroundColor="#bababa" cornerRadius="20" position="738,528" size="164,174" zPosition="-2"/>
+		<widget name="List2Back5" backgroundColor="black" cornerRadius="20" position="920,530" size="160,170" zPosition="-1"/>
+		<widget name="List2Pic5" position="945,535" size="110,110"/>
+		<widget name="List2Sym5" position="1053,533" size="25,25" zPosition="1"/>
+		<widget name="List2Text5" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;15" position="925,660" size="150,34" transparent="1" zPosition="1"/>
+		<widget name="List2Sel5" backgroundColor="#bababa" cornerRadius="20" position="918,528" size="164,174" zPosition="-2"/>
+		<widget name="List2Back6" backgroundColor="black" cornerRadius="20" position="1100,530" size="160,170" zPosition="-1"/>
+		<widget name="List2Pic6" position="1125,535" size="110,110"/>
+		<widget name="List2Sym6" position="1233,533" size="25,25" zPosition="1"/>
+		<widget name="List2Text6" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;15" position="1105,660" size="150,34" transparent="1" zPosition="1"/>
+		<widget name="List2Sel6" backgroundColor="#bababa" cornerRadius="20" position="1098,528" size="164,174" zPosition="-2"/>
+	</screen>
+	<screen backgroundColor="#000000" flags="wfNoBorder" name="gcommanderlist_list_small" position="center,center" size="610,720">
+		<ePixmap gradient="#40000000,background,vertical" position="0,0" size="610,720" zPosition="-3"/>
+		<widget name="LogoSpinner" position="30,20" size="65,65"/>
+		<widget source="global.CurrentTime" backgroundColor="#000000" foregroundColor="#dddddd" render="Label" position="480,14" size="100,25" font="Regular;22" halign="right" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget name="Icon0" position="420,55" size="35,35"/>
+		<widget name="Icon1" position="460,55" size="35,35"/>
+		<widget name="Icon2" position="500,55" size="35,35"/>
+		<widget name="Icon3" position="540,55" size="35,35"/>
+		<widget name="IconInfo" position="380,55" size="35,35" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/info_neutral.svg"/>
+		<widget name="PageLabel" backgroundColor="background" font="Regular;18" position="380,690" size="200,25" transparent="1" halign="right"/>
+		<widget name="HighlightTitle" backgroundColor="#000000" foregroundColor="#dddddd" font="Regular;25" position="120,14" size="360,30" transparent="1" noWrap="1"/>
+		<widget name="HighlightInfo" backgroundColor="#000000" foregroundColor="#888888" font="Regular;18" position="120,50" size="240,42" transparent="1"/>
+		<eLabel backgroundColor="background" cornerRadius="20" position="30,100" size="550,570" zPosition="-2"/>
+		<widget name="List0Sel0" backgroundColor="#bababa" position="40,115" size="7,60"/>
+		<widget name="List0Pic0" position="65,115" size="60,60"/>
+		<widget name="List0Sym0" position="530,125" size="40,40"/>
+		<widget name="List0Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;22" position="150,110" size="350,27" transparent="1"/>
+		<widget name="List0Desc0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;18" position="150,140" size="350,44" valign="center" transparent="1"/>
+		<eLabel backgroundColor="#dddddd" position="40,190" size="530,1"/>
+		<widget name="List1Sel0" backgroundColor="#bababa" position="40,200" size="7,60"/>
+		<widget name="List1Pic0" position="65,200" size="60,60"/>
+		<widget name="List1Sym0" position="530,210" size="40,40"/>
+		<widget name="List1Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;22" position="150,195" size="350,27" transparent="1"/>
+		<widget name="List1Desc0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;18" position="150,225" size="350,44" valign="center" transparent="1"/>
+		<eLabel backgroundColor="#dddddd" position="40,270" size="530,1"/>
+		<widget name="List2Sel0" backgroundColor="#bababa" position="40,280" size="7,60"/>
+		<widget name="List2Pic0" position="65,280" size="60,60"/>
+		<widget name="List2Sym0" position="530,290" size="40,40"/>
+		<widget name="List2Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;22" position="150,275" size="350,27" transparent="1"/>
+		<widget name="List2Desc0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;18" position="150,305" size="350,44" valign="center" transparent="1"/>
+		<eLabel backgroundColor="#dddddd" position="40,350" size="530,1"/>
+		<widget name="List3Sel0" backgroundColor="#bababa" position="40,360" size="7,60"/>
+		<widget name="List3Pic0" position="65,360" size="60,60"/>
+		<widget name="List3Sym0" position="530,370" size="40,40"/>
+		<widget name="List3Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;22" position="150,355" size="350,27" transparent="1"/>
+		<widget name="List3Desc0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;18" position="150,385" size="350,44" valign="center" transparent="1"/>
+		<eLabel backgroundColor="#dddddd" position="40,430" size="530,1"/>
+		<widget name="List4Sel0" backgroundColor="#bababa" position="40,440" size="7,60"/>
+		<widget name="List4Pic0" position="65,440" size="60,60"/>
+		<widget name="List4Sym0" position="530,450" size="40,40"/>
+		<widget name="List4Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;22" position="150,435" size="350,27" transparent="1"/>
+		<widget name="List4Desc0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;18" position="150,465" size="350,44" valign="center" transparent="1"/>
+		<eLabel backgroundColor="#dddddd" position="40,510" size="530,1"/>
+		<widget name="List5Sel0" backgroundColor="#bababa" position="40,520" size="7,60"/>
+		<widget name="List5Pic0" position="65,520" size="60,60"/>
+		<widget name="List5Sym0" position="530,530" size="40,40"/>
+		<widget name="List5Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;22" position="150,515" size="350,27" transparent="1"/>
+		<widget name="List5Desc0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;18" position="150,545" size="350,44" valign="center" transparent="1"/>
+		<eLabel backgroundColor="#dddddd" position="40,590" size="530,1"/>
+		<widget name="List6Sel0" backgroundColor="#bababa" position="40,600" size="7,60"/>
+		<widget name="List6Pic0" position="65,600" size="60,60"/>
+		<widget name="List6Sym0" position="530,610" size="40,40"/>
+		<widget name="List6Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;22" position="150,595" size="350,27" transparent="1"/>
+		<widget name="List6Desc0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;18" position="150,625" size="350,44" valign="center" transparent="1"/>
+	</screen>
+	<screen backgroundColor="#000000" flags="wfNoBorder" name="gcommanderlist_biglist_small" position="center,center" size="610,720">
+		<ePixmap gradient="#40000000,background,vertical" position="0,0" size="610,720" zPosition="-3"/>
+		<widget name="LogoSpinner" position="30,20" size="65,65"/>
+		<widget source="global.CurrentTime" backgroundColor="#000000" foregroundColor="#dddddd" render="Label" position="480,14" size="100,25" font="Regular;22" halign="right" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget name="Icon0" position="420,55" size="35,35"/>
+		<widget name="Icon1" position="460,55" size="35,35"/>
+		<widget name="Icon2" position="500,55" size="35,35"/>
+		<widget name="Icon3" position="540,55" size="35,35"/>
+		<widget name="IconInfo" position="380,55" size="35,35" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/info_neutral.svg"/>
+		<widget name="PageLabel" backgroundColor="background" font="Regular;18" position="380,690" size="200,25" transparent="1" halign="right"/>
+		<widget name="HighlightTitle" backgroundColor="#000000" foregroundColor="#dddddd" font="Regular;25" position="120,14" size="360,30" transparent="1" noWrap="1"/>
+		<widget name="HighlightInfo" backgroundColor="#000000" foregroundColor="#888888" font="Regular;18" position="120,50" size="240,42" valign="center" transparent="1"/>
+		<eLabel backgroundColor="background" cornerRadius="20" position="30,100" size="550,570" zPosition="-2"/>
+		<widget name="List0Sel0" backgroundColor="#bababa" position="40,115" size="7,40"/>
+		<widget name="List0Pic0" position="65,115" size="67,40"/>
+		<widget name="List0Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;22" position="160,122" size="400,27" noWrap="1" transparent="1"/>
+		<eLabel backgroundColor="#dddddd" position="40,160" size="530,1"/>
+		<widget name="List1Sel0" backgroundColor="#bababa" position="40,165" size="7,40"/>
+		<widget name="List1Pic0" position="65,165" size="67,40"/>
+		<widget name="List1Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;22" position="160,172" size="400,27" noWrap="1" transparent="1"/>
+		<eLabel backgroundColor="#dddddd" position="40,210" size="530,1"/>
+		<widget name="List2Sel0" backgroundColor="#bababa" position="40,215" size="7,40"/>
+		<widget name="List2Pic0" position="65,215" size="67,40"/>
+		<widget name="List2Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;22" position="160,222" size="400,27" noWrap="1" transparent="1"/>
+		<eLabel backgroundColor="#dddddd" position="40,260" size="530,1"/>
+		<widget name="List3Sel0" backgroundColor="#bababa" position="40,265" size="7,40"/>
+		<widget name="List3Pic0" position="65,265" size="67,40"/>
+		<widget name="List3Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;22" position="160,272" size="400,27" noWrap="1" transparent="1"/>
+		<eLabel backgroundColor="#dddddd" position="40,310" size="530,1"/>
+		<widget name="List4Sel0" backgroundColor="#bababa" position="40,315" size="7,40"/>
+		<widget name="List4Pic0" position="65,315" size="67,40"/>
+		<widget name="List4Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;22" position="160,322" size="400,27" noWrap="1" transparent="1"/>
+		<eLabel backgroundColor="#dddddd" position="40,360" size="530,1"/>
+		<widget name="List5Sel0" backgroundColor="#bababa" position="40,365" size="7,40"/>
+		<widget name="List5Pic0" position="65,365" size="67,40"/>
+		<widget name="List5Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;22" position="160,372" size="400,27" noWrap="1" transparent="1"/>
+		<eLabel backgroundColor="#dddddd" position="40,410" size="530,1"/>
+		<widget name="List6Sel0" backgroundColor="#bababa" position="40,415" size="7,40"/>
+		<widget name="List6Pic0" position="65,415" size="67,40"/>
+		<widget name="List6Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;22" position="160,422" size="400,27" noWrap="1" transparent="1"/>
+		<eLabel backgroundColor="#dddddd" position="40,460" size="530,1"/>
+		<widget name="List7Sel0" backgroundColor="#bababa" position="40,465" size="7,40"/>
+		<widget name="List7Pic0" position="65,465" size="67,40"/>
+		<widget name="List7Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;22" position="160,472" size="400,27" noWrap="1" transparent="1"/>
+		<eLabel backgroundColor="#dddddd" position="40,510" size="530,1"/>
+		<widget name="List8Sel0" backgroundColor="#bababa" position="40,515" size="7,40"/>
+		<widget name="List8Pic0" position="65,515" size="67,40"/>
+		<widget name="List8Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;22" position="160,522" size="400,27" noWrap="1" transparent="1"/>
+		<eLabel backgroundColor="#dddddd" position="40,560" size="530,1"/>
+		<widget name="List9Sel0" backgroundColor="#bababa" position="40,565" size="7,40"/>
+		<widget name="List9Pic0" position="65,565" size="67,40"/>
+		<widget name="List9Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;22" position="160,572" size="400,27" noWrap="1" transparent="1"/>
+		<eLabel backgroundColor="#dddddd" position="40,610" size="530,1"/>
+		<widget name="List10Sel0" backgroundColor="#bababa" position="40,615" size="7,40"/>
+		<widget name="List10Pic0" position="65,615" size="67,40"/>
+		<widget name="List10Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;22" position="150,620" size="400,27" noWrap="1" transparent="1"/>
+	</screen>
+	<screen backgroundColor="#000000" flags="wfNoBorder" name="gcommanderlist_list_8_1" position="center,center" size="1280,720">
+		<ePixmap gradient="#40000000,background,vertical" position="0,0" size="1280,720" zPosition="-3"/>
+		<widget name="LogoSpinner" position="30,20" size="100,100"/>
+		<widget source="global.CurrentTime" backgroundColor="#000000" foregroundColor="#dddddd" render="Label" position="1040,10" size="200,25" font="Regular;22" halign="right" transparent="1">
+			<convert type="ClockToText">Format:%a %d.%m.  %H:%M</convert>
+		</widget>
+		<widget name="IconInfo" position="1210,55" size="35,35" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/info_neutral.svg"/>
+		<widget name="Icon0" position="1060,110" size="35,35"/>
+		<widget name="Icon1" position="1110,110" size="35,35"/>
+		<widget name="Icon2" position="1160,110" size="35,35"/>
+		<widget name="Icon3" position="1210,110" size="35,35"/>
+ 		<eLabel backgroundColor="grey" cornerRadius="36" position="1060,55" size="135,36"/>
+ 		<widget name="PageLabel" backgroundColor="#000000" cornerRadius="30" font="Regular;18" position="1063,58" size="129,30" halign="center" valign="center" zPosition="1"/>
+ 		<eLabel backgroundColor="grey" cornerRadius="76" position="170,15" size="810,76" valign="center"/>
+		<eLabel backgroundColor="#000000" cornerRadius="72" position="172,17" size="806,72" valign="center"/>
+		<widget name="HighlightTitle" backgroundColor="#000000" foregroundColor="#dddddd" font="Regular;25" position="205,43" size="740,30" zPosition="1"/>
+		<widget name="VideoProgress" backgroundColor="#dddddd" foregroundColor="red" position="205,80" size="740,5" zPosition="2"/>
+		<widget name="HighlightInfo" backgroundColor="#000000" foregroundColor="#888888" font="Regular;18" position="174,110" size="800,42" transparent="1"/>
+		<eLabel backgroundColor="background" cornerRadius="20" position="50,168" size="1180,540" zPosition="-2"/>
+		<widget name="List0Sel0" backgroundColor="#bababa" position="60,173" size="7,61"/>
+		<widget name="List0Pic0" position="85,173" size="60,60"/>
+		<widget name="List0Sym0" position="1170,183" size="40,40"/>
+		<widget name="List0Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;19" position="170,180" size="900,25" transparent="1"/>
+		<widget name="List0Desc0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;16" position="170,210" size="900,20" transparent="1"/>
+		<eLabel backgroundColor="#dddddd" position="60,237" size="1160,1"/>
+		<widget name="List1Sel0" backgroundColor="#bababa" position="60,240" size="7,61"/>
+		<widget name="List1Pic0" position="85,240" size="60,60"/>
+		<widget name="List1Sym0" position="1170,250" size="40,40"/>
+		<widget name="List1Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;19" position="170,240" size="900,25" transparent="1"/>
+		<widget name="List1Desc0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;16" position="170,270" size="900,20" transparent="1"/>
+		<eLabel backgroundColor="#dddddd" position="60,304" size="1160,1"/>
+		<widget name="List2Sel0" backgroundColor="#bababa" position="60,307" size="7,61"/>
+		<widget name="List2Pic0" position="85,307" size="60,60"/>
+		<widget name="List2Sym0" position="1170,317" size="40,40"/>
+		<widget name="List2Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;19" position="170,317" size="900,25" transparent="1"/>
+		<widget name="List2Desc0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;16" position="170,347" size="900,20" transparent="1"/>
+		<eLabel backgroundColor="#dddddd" position="60,371" size="1160,1"/>
+		<widget name="List3Sel0" backgroundColor="#bababa" position="60,374" size="7,61"/>
+		<widget name="List3Pic0" position="85,374" size="60,60"/>
+		<widget name="List3Sym0" position="1170,384" size="40,40"/>
+		<widget name="List3Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;19" position="170,384" size="900,25" transparent="1"/>
+		<widget name="List3Desc0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;16" position="170,414" size="900,20" transparent="1"/>
+		<eLabel backgroundColor="#dddddd" position="60,438" size="1160,1"/>
+		<widget name="List4Sel0" backgroundColor="#bababa" position="60,441" size="7,61"/>
+		<widget name="List4Pic0" position="85,441" size="60,60"/>
+		<widget name="List4Sym0" position="1170,451" size="40,40"/>
+		<widget name="List4Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;19" position="170,451" size="900,25" transparent="1"/>
+		<widget name="List4Desc0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;16" position="170,481" size="900,20" transparent="1"/>
+		<eLabel backgroundColor="#dddddd" position="60,505" size="1160,1"/>
+		<widget name="List5Sel0" backgroundColor="#bababa" position="60,508" size="7,61"/>
+		<widget name="List5Pic0" position="85,508" size="60,60"/>
+		<widget name="List5Sym0" position="1170,518" size="40,40"/>
+		<widget name="List5Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;19" position="170,518" size="900,25" transparent="1"/>
+		<widget name="List5Desc0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;16" position="170,548" size="900,20" transparent="1"/>
+		<eLabel backgroundColor="#dddddd" position="60,572" size="1160,1"/>
+		<widget name="List6Sel0" backgroundColor="#bababa" position="60,575" size="7,61"/>
+		<widget name="List6Pic0" position="85,575" size="60,60"/>
+		<widget name="List6Sym0" position="1170,585" size="40,40"/>
+		<widget name="List6Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;19" position="170,585" size="900,25" transparent="1"/>
+		<widget name="List6Desc0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;16" position="170,615" size="900,20" transparent="1"/>
+		<eLabel backgroundColor="#dddddd" position="60,639" size="1160,1"/>
+		<widget name="List7Sel0" backgroundColor="#bababa" position="60,642" size="7,61"/>
+		<widget name="List7Pic0" position="85,642" size="60,60"/>
+		<widget name="List7Sym0" position="1170,652" size="40,40"/>
+		<widget name="List7Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;19" position="170,652" size="900,25" transparent="1"/>
+		<widget name="List7Desc0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;16" position="170,682" size="900,20" transparent="1"/>
+	</screen>
+	<screen flags="wfNoBorder" name="gcommanderlist_tile_1_7" position="center,440" size="1280,280">
+		<ePixmap gradient="#80000000,background,vertical" position="0,0" size="1280,280" zPosition="-3"/>
+		<widget name="LogoSpinner" position="30,0" size="90,90"/>
+		<widget name="HighlightTitle" backgroundColor="#000000" foregroundColor="#dddddd" font="Regular;25" position="174,15" size="770,30" transparent="1" valign="centerOrBottom"/>
+		<widget name="HighlightInfo" backgroundColor="#000000" foregroundColor="#888888" font="Regular;18" position="174,50" size="800,42" transparent="1"/>
+		<widget name="PageLabel" backgroundColor="background" font="Regular;18" position="1100,15" size="140,25" transparent="1" halign="right"/>
+		<widget name="IconInfo" position="990,50" size="35,35" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/info_neutral.svg"/>
+		<widget name="Icon0" position="1060,50" size="35,35"/>
+		<widget name="Icon1" position="1110,50" size="35,35"/>
+		<widget name="Icon2" position="1160,50" size="35,35"/>
+		<widget name="Icon3" position="1210,50" size="35,35"/>
+		<widget name="Rating_bg" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/rating_bg.svg" position="870,16" size="200,20"/>
+		<widget name="Rating_on" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/rating_on.svg" position="870,16" size="200,20" transparent="1" zPosition="1"/>
+		<widget name="List0Back0" backgroundColor="black" cornerRadius="20" position="20,100" size="160,170" zPosition="-1"/>
+		<widget name="List0Pic0" position="45,105" size="110,110"/>
+		<widget name="List0Sym0" position="153,103" size="25,25" zPosition="1"/>
+		<widget name="List0Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;15" position="25,230" size="150,34" transparent="1" zPosition="1"/>
+		<widget name="List0Sel0" backgroundColor="#bababa" cornerRadius="20" position="18,98" size="164,174" zPosition="-2"/>
+		<widget name="List0Back1" backgroundColor="black" cornerRadius="20" position="200,100" size="160,170" zPosition="-1"/>
+		<widget name="List0Pic1" position="225,105" size="110,110"/>
+		<widget name="List0Sym1" position="333,103" size="25,25" zPosition="1"/>
+		<widget name="List0Text1" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;15" position="205,230" size="150,34" transparent="1" zPosition="1"/>
+		<widget name="List0Sel1" backgroundColor="#bababa" cornerRadius="20" position="198,98" size="164,174" zPosition="-2"/>
+		<widget name="List0Back2" backgroundColor="black" cornerRadius="20" position="380,100" size="160,170" zPosition="-1"/>
+		<widget name="List0Pic2" position="405,105" size="110,110"/>
+		<widget name="List0Sym2" position="513,103" size="25,25" zPosition="1"/>
+		<widget name="List0Text2" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;15" position="385,230" size="150,34" transparent="1" zPosition="1"/>
+		<widget name="List0Sel2" backgroundColor="#bababa" cornerRadius="20" position="378,98" size="164,174" zPosition="-2"/>
+		<widget name="List0Back3" backgroundColor="black" cornerRadius="20" position="560,100" size="160,170" zPosition="-1"/>
+		<widget name="List0Pic3" position="585,105" size="110,110"/>
+		<widget name="List0Sym3" position="693,103" size="25,25" zPosition="1"/>
+		<widget name="List0Text3" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;15" position="565,230" size="150,34" transparent="1" zPosition="1"/>
+		<widget name="List0Sel3" backgroundColor="#bababa" cornerRadius="20" position="558,98" size="164,174" zPosition="-2"/>
+		<widget name="List0Back4" backgroundColor="black" cornerRadius="20" position="740,100" size="160,170" zPosition="-1"/>
+		<widget name="List0Pic4" position="765,105" size="110,110"/>
+		<widget name="List0Sym4" position="873,103" size="25,25" zPosition="1"/>
+		<widget name="List0Text4" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;15" position="745,230" size="150,34" transparent="1" zPosition="1"/>
+		<widget name="List0Sel4" backgroundColor="#bababa" cornerRadius="20" position="738,98" size="164,174" zPosition="-2"/>
+		<widget name="List0Back5" backgroundColor="black" cornerRadius="20" position="920,100" size="160,170" zPosition="-1"/>
+		<widget name="List0Pic5" position="945,105" size="110,110"/>
+		<widget name="List0Sym5" position="1053,103" size="25,25" zPosition="1"/>
+		<widget name="List0Text5" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;15" position="925,230" size="150,34" transparent="1" zPosition="1"/>
+		<widget name="List0Sel5" backgroundColor="#bababa" cornerRadius="20" position="918,98" size="164,174" zPosition="-2"/>
+		<widget name="List0Back6" backgroundColor="black" cornerRadius="20" position="1100,100" size="160,170" zPosition="-1"/>
+		<widget name="List0Pic6" position="1125,105" size="110,110"/>
+		<widget name="List0Sym6" position="1233,103" size="25,25" zPosition="1"/>
+		<widget name="List0Text6" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" valign="center" halign="center" font="Regular;15" position="1105,230" size="150,34" transparent="1" zPosition="1"/>
+		<widget name="List0Sel6" backgroundColor="#bababa" cornerRadius="20" position="1098,98" size="164,174" zPosition="-2"/>
+	</screen>
+	<screen backgroundColor="#000000" flags="wfNoBorder" name="gcommanderlist_list_4Line" position="center,center" size="1280,720">
+		<ePixmap gradient="#40000000,background,vertical" position="0,0" size="1280,720" zPosition="-3"/>
+		<widget name="LogoSpinner" position="50,5" size="90,90"/>
+		<widget source="global.CurrentTime" backgroundColor="#000000" foregroundColor="#dddddd" render="Label" position="1030,14" size="200,25" font="Regular;22" halign="right" transparent="1">
+			<convert type="ClockToText">Format:%a %d.%m.  %H:%M</convert>
+		</widget>
+		<widget name="IconInfo" position="970,55" size="35,35" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/info_neutral.svg"/>
+		<widget name="Icon0" position="1040,55" size="35,35"/>
+		<widget name="Icon1" position="1090,55" size="35,35"/>
+		<widget name="Icon2" position="1140,55" size="35,35"/>
+		<widget name="Icon3" position="1190,55" size="35,35"/>
+		<widget name="PageLabel" backgroundColor="background" font="Regular;18" position="1030,690" size="200,25" transparent="1" halign="right"/>
+		<widget name="HighlightTitle" backgroundColor="#000000" foregroundColor="#dddddd" font="Regular;25" position="170,14" size="780,30" transparent="1" noWrap="1"/>
+		<widget name="HighlightInfo" backgroundColor="#000000" foregroundColor="#888888" font="Regular;18" position="170,50" size="780,42" transparent="1"/>
+		<eLabel backgroundColor="background" cornerRadius="20" position="50,100" size="1180,570" zPosition="-2"/>
+		<widget name="List0Sel0" backgroundColor="#bababa" position="60,110" size="7,90"/>
+		<widget name="List0Pic0" position="85,110" size="90,90"/>
+		<widget name="List0Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;19" position="200,110" size="1020,25" transparent="1"/>
+		<widget name="List0TextExt0" backgroundColors="#000000,#000000" foregroundColors="#e5b243,#6699ff" font="Regular;18" position="200,140" size="1020,22" transparent="1"/>
+		<widget name="List0Desc0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;16" position="200,165" size="1020,37" transparent="1"/>
+		<eLabel backgroundColor="#dddddd" position="60,210" size="1160,1"/>
+		<widget name="List1Sel0" backgroundColor="#bababa" position="60,220" size="7,90"/>
+		<widget name="List1Pic0" position="85,220" size="90,90"/>
+		<widget name="List1Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;19" position="200,220" size="1020,25" transparent="1"/>
+		<widget name="List1TextExt0" backgroundColors="#000000,#000000" foregroundColors="#e5b243,#6699ff" font="Regular;18" position="200,250" size="1020,22" transparent="1"/>
+		<widget name="List1Desc0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;16" position="200,275" size="1020,37" transparent="1"/>
+		<eLabel backgroundColor="#dddddd" position="60,320" size="1160,1"/>
+		<widget name="List2Sel0" backgroundColor="#bababa" position="60,330" size="7,90"/>
+		<widget name="List2Pic0" position="85,330" size="90,90"/>
+		<widget name="List2Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;19" position="200,330" size="1020,25" transparent="1"/>
+		<widget name="List2TextExt0" backgroundColors="#000000,#000000" foregroundColors="#e5b243,#6699ff" font="Regular;18" position="200,360" size="1020,22" transparent="1"/>
+		<widget name="List2Desc0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;16" position="200,385" size="1020,37" transparent="1"/>
+		<eLabel backgroundColor="#dddddd" position="60,430" size="1160,1"/>
+		<widget name="List3Sel0" backgroundColor="#bababa" position="60,440" size="7,90"/>
+		<widget name="List3Pic0" position="85,440" size="90,90"/>
+		<widget name="List3Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;19" position="200,440" size="1020,25" transparent="1"/>
+		<widget name="List3TextExt0" backgroundColors="#000000,#000000" foregroundColors="#e5b243,#6699ff" font="Regular;18" position="200,470" size="1020,22" transparent="1"/>
+		<widget name="List3Desc0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;16" position="200,495" size="1020,37" transparent="1"/>
+		<eLabel backgroundColor="#dddddd" position="60,540" size="1160,1"/>
+		<widget name="List4Sel0" backgroundColor="#bababa" position="60,550" size="7,90"/>
+		<widget name="List4Pic0" position="85,550" size="90,90"/>
+		<widget name="List4Text0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;19" position="200,550" size="1020,25" transparent="1"/>
+		<widget name="List4TextExt0" backgroundColors="#000000,#000000" foregroundColors="#e5b243,#6699ff" font="Regular;18" position="200,580" size="1020,22" transparent="1"/>
+		<widget name="List4Desc0" backgroundColors="#000000,#000000" foregroundColors="#dddddd,#6699ff" font="Regular;16" position="200,605" size="1020,37" transparent="1"/>
+	</screen>
+	<screen backgroundColor="#000000" flags="wfNoBorder" name="GeminiInfoScreen" position="center,center" size="1280,720">
+		<ePixmap gradient="#40000000,background,vertical" position="0,0" size="1280,720" zPosition="-2"/>
+		<widget name="Rating_bg" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/rating_bg.svg" position="130,50" size="300,30"/>
+		<widget name="Rating_on" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/rating_on.svg" position="130,50" size="300,30" transparent="1" zPosition="1"/>
+		<widget source="global.CurrentTime" backgroundColor="#000000" foregroundColor="#dddddd" render="Label" position="1040,14" size="200,25" font="Regular;22" halign="right" transparent="1">
+			<convert type="ClockToText">Format:%a %d.%m.  %H:%M</convert>
+		</widget>
+		<widget name="CoverPic" position="30,100" size="500,500"/>
+		<widget name="ArrowR" position="155,650" size="40,40" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/circle_arrowleft.svg"/>
+		<widget name="IconPic" position="257,650" size="40,40"/>
+		<widget name="ArrowL" position="360,650" size="40,40" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/circle_arrowright.svg"/>
+		<eLabel backgroundColor="background" cornerRadius="20" position="590,60" size="660,640" zPosition="-1"/>
+		<widget source="list" backgroundColor="background" render="Listbox" position="600,70" size="640,364" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template":[MultiContentEntryText(pos=(2,0),size=(220,25),flags=RT_VALIGN_CENTER,text=0),
+				MultiContentEntryText(pos=(230,0),size=(370,25),flags=RT_VALIGN_CENTER,text=1),
+				MultiContentEntryPixmapAlphaTest(pos=(0,26),size=(810,2),png=2)],
+				"fonts":[gFont("Regular",20)],"itemHeight":28}
+			</convert>
+		</widget>
+		<widget name="LabelText" position="600,470" size="640,170" font="Regular;18" backgroundColor="background" transparent="1"/>
+		<widget name="LabelOk" backgroundColor="grey" cornerRadius="30" font="Regular;20" foregroundColor="black" halign="center" position="1145,660" size="100,30" valign="center"/>
+	</screen>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="CharJump" position="center,center" size="100,100">
+ 		<ePixmap position="center,center" size="100,100" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/circle.svg"/>
+		<widget name="text" backgroundColor="background" foregroundColor="#eeeeee" cornerRadius="100" font="Regular;55" position="0,2" size="100,98" halign="center" valign="center"/>
+	</screen>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="GPMessagebox" position="center,center" size="520,240">
+		<eLabel backgroundColor="blue" cornerRadius="30" position="0,0" size="520,240" zPosition="-3"/>
+		<eLabel backgroundColor="background" cornerRadius="30" position="5,5" size="510,230" zPosition="-2"/>
+		<widget name="Counter" font="Regular;26" position="20,20" size="60,60" transparent="1"/>
+		<widget name="Logo" position="center,20" size="185,50"/>
+		<widget font="Regular;24" halign="center" name="text" position="center,95" size="500,60" transparent="1"/>
+		<widget name="YesButton" position="190,170" size="36,36"/>
+		<widget backgroundColor="green" cornerRadius="50" name="YesSel" position="183,163" size="50,50" zPosition="-1"/>
+		<widget name="NoButton" position="300,170" size="36,36"/>
+		<widget backgroundColor="red" cornerRadius="50" name="NoSel" position="293,163" size="50,50" zPosition="-1"/>
+		<widget name="Backlabel" position="1,1" size="0,0"/>
+	</screen>
+	<screen flags="wfNoBorder" name="GBPinBox" position="center,center" size="400,200">
+		<widget name="Logo" position="center,20" size="185,50"/>
+		<widget name="text" font="Regular;22" position="20,90" size="360,28" halign="center"/>
+		<widget name="Pos0" position="60,140" size="40,40" pixmaps="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/pin_off.svg,/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/pin_on.svg"/>
+		<widget name="Pos1" position="140,140" size="40,40" pixmaps="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/pin_off.svg,/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/pin_on.svg"/>
+		<widget name="Pos2" position="220,140" size="40,40" pixmaps="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/pin_off.svg,/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/pin_on.svg"/>
+		<widget name="Pos3" position="300,140" size="40,40" pixmaps="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/pin_off.svg,/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/pin_on.svg"/>
+	</screen>
+</skin>

@@ -1,0 +1,30 @@
+{
+	"de" : {
+		"logo" : "../images/icon_filebrowser.svg",
+		"title" : "Gemini-Browser",
+		"developer" : "GeminiTeam",
+		"author" : "GeminiTeam",
+		"desc" : "\nInformation über die Gemini-Browser.",
+		"links" : {"text-0": "pic-0","text-1":"pic-1","text-2":"pic-2","text-3":"pic-3","text-4":"pic-4","text-5":"pic-5","text-6":"pic-6","text-7":"pic-7","text-8":"pic-8","text-9":"pic-9"},
+		"pic-0" : "screenshot0.png",
+		"pic-1" : "screenshot1.png",
+		"pic-2" : "screenshot2.png",
+		"pic-3" : "screenshot3.png",
+		"pic-4" : "screenshot4.png",
+		"pic-5" : "screenshot5.png",
+		"pic-6" : "screenshot6.png",
+		"pic-7" : "screenshot7.png",
+		"pic-8" : "screenshot8.png",
+		"pic-9" : "screenshot9.png",
+		"text-0" : "Dateibrowser:\nEin Dateibrowser mit vielen Funktionen, so kann man mit ROT Dateien markieren und mit GRÜN Befehle ausführen (Löschen, Kopieren, Rechtevergabe, uvm.)\nMit GELB können die Ansichten geschaltet werden sowie auch die Sortierung der Daten.\nUnter der Taste BLAU liegen die Einstellungen und man kann dort auch Daten, Ordner usw. verstecken.",
+		"text-1" : "gCommander:\nDies ist ein zwei Seiten Dateibrowser mit vielen Funktionen wie man sie von Tools ähnlich Total Commander/Midnight Commander her kennt.",
+		"text-2" : "Videos:\nEin Videobrowser mit Cover-Ansicht sowie Funktionen Cover und Filminformationen zu laden.\nMit ROT können Favoriten angelegt und ein Startverzeichnis definiert werden.\nMit GRÜN können Mediainformationen gesucht,Playlisten erstellt bzw. bei IPTV Playlisten diese zur Senderliste hinzugefügt werden.\nMit GELB können die Ansichten geschaltet werden sowie auch die Sortierung der Daten.\nUnter der Taste BLAU gibt es die Einstellungen.",
+		"text-3" : "Filminformationen können über IMDB und TMDB abgerufen werden.",
+		"text-4" : "Sind Filminformationen gefunden worden ist es möglich mit GRÜN diese abzuspeichern,mit BLAU kann eine neue Suche gestartet werden.",
+		"text-5" : "Bilder:\nEin Bilderbrowser mit Bildvorschau.\nMit ROT können Favoriten angelegt und ein Startverzeichnis definiert werden.\nMit GELB können die Ansichten geschaltet werden sowie auch die Sortierung der Daten.\nUnter der Taste BLAU gibt es die Einstellungen.",
+		"text-6" : "Musik:\nEin Musikbrowser mit Cover-Ansicht.\nMit ROT können Favoriten angelegt und ein Startverzeichnis definiert werden.\nMit GRÜN können Playlisten erstellt werden.\nMit GELB können die Ansichten geschaltet werden sowie auch die Sortierung der Daten.\nUnter der Taste BLAU gibt es die Einstellungen.",
+		"text-7" : "UPnP/DLNA:\nEin UPnP-Browser mit vielen Funktionen, wie z.B. Verwaltung eingebundener UPnP-Server.\nMit GELB können die Ansichten geschaltet werden.\nUnter der Taste BLAU befinden sich die Einstellungen.",
+		"text-8" : "Eingebundene UPnP-Server können so leicht und bequem genutzt werden. Die Navigation durch Ordner mit Bildern, Musik und Videos geht sehr schnell und leicht, es gibt eine Bildervorschau uvm.",
+		"text-9" : "Eingebundene Mediaserver die LiveTV/Radio anbieten (Mediaserver der Dreambox) können bequem genutzt werden, auch mit Piconanzeige sofern vorhanden.\nMit GRÜN kann man die einzelnen Sender zur Kanalliste hinzufügen und mit GELB können die Ansichten umgestellt werden."
+	}
+}

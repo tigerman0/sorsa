@@ -1,0 +1,21 @@
+Erstellen eine Telegram-Bot's
+-----------------------------
+
+Als ersten Schritt gebe ich im Suchfeld des Telegram-Clients "BotFather" ein und beginne einen Chat mit ihm.
+
+Mit "/newbot" wird ein neuer Bot erstellt. Anschließend müssen im Dialog der Botname und der Benutzername angegeben werden.
+Der Botname wird in der Chat-Liste angezeigt. Hier sollte also irgendetwas hübsches gewählt werden, was dann auf dem Smartphone auch gut aussieht.
+Über den Benutzernamen kann man den Bot später finden. Hier sollte man etwas eindeutiges, einmaliges wählen, das von Außenstehenden nicht zu leicht zu erraten ist. Der Name muss auf „bot“ enden, wie z.B. dreambox_2020_bot.
+
+Der BotFather antwortet, mit einem Token.
+Disen Token tragen wir in die Datei /etc/enigma2/geminitelegramtoken.json ein (also foobar ersetzen).
+Der Token sollte natürlich iemanden verraten werden, wenn man nicht möchte das jemand anderes die Box steuert.  :D
+
+Ist das durchgeführt, sollte man den Chat mit seinem Bot starten.
+Am einfachsten klickt man auf den Link in der Antwort des BotFathers oder sucht seinen bot mit dem Namen. Hier also "dreambox_2020_bot".
+Ein einfaches "Hallo" reicht und der Bot steht euch zur Verfügung.
+
+Jetzt muss nur noch im GeminiReceive Der Telegram-Bot aktiviert werden. Plugin verlassen und nochmal starten und dann sollte er laufen.
+Man man den Test aktiviert, sollte die Nachrichten, die ihr dem Bot schreibt angezeigt werden.
+
+

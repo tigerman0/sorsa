@@ -1,0 +1,218 @@
+<skin>
+	<!--components>
+		<component Sensors="5" type="geminwidgets"/> #Max 10 Sensors old
+	</components-->
+	<globals>
+		<value name="geminiwidgets" value="{'Sensors':5,'ShowInfobarPosition':0}"/>
+	</globals>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="InfoBar" position="center,center" size="2560,1440" zPosition="1">
+		<ePixmap gradient="transparent,#131a1d,vertical" position="0,680" size="2560,700" zPosition="-3"/>
+		<eLabel backgroundColor="#131a1d" position="0,1340" size="2560,100" zPosition="-3"/>
+		<widget pixmap="Default-WQHD/skin_default/icons/record_long.svg" position="2360,30" render="Pixmap" size="170,50" source="session.RecordState">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget font="Regular;36" shadowColor="black" shadowBlur="5.0" position="375,940" render="Label" size="200,40" source="global.gSensorData0" transparent="1"/>
+		<widget font="Regular;36" shadowColor="black" shadowBlur="5.0" halign="center" position="585,940" render="Label" size="200,40" source="global.gSensorData1" transparent="1"/>
+		<widget font="Regular;36" shadowColor="black" shadowBlur="5.0" halign="center" position="795,940" render="Label" size="300,40" source="global.gSensorData2" transparent="1"/>
+		<widget font="Regular;36" shadowColor="black" shadowBlur="5.0" halign="center" position="1005,940" render="Label" size="500,40" source="global.gSensorData3" transparent="1"/>
+		<widget font="Regular;36" shadowColor="black" shadowBlur="5.0" halign="right" position="1515,940" render="Label" size="1000,40" source="global.gSensorData4" transparent="1"/>
+		<widget font="Regular;55" halign="center" position="90,930" size="203,70" render="Label" shadowBlur="10.0" shadowColor="#131a1d" source="global.gChannelNr" transparent="1"/>
+		<widget font="Regular;55" noWrap="1" position="375,1000" render="Label" shadowBlur="10.0" shadowColor="#131a1d" foregroundColor="#768b94" size="2140,65" source="global.gServiceInfos" transparent="1"/>
+		<widget font="Regular;42" noWrap="1" position="375,1070" render="Label" shadowBlur="10.0" shadowColor="#131a1d" size="2140,50" source="session.Event_Now" transparent="1">
+			<convert type="EventName">NameShortDescription,noShortDescNewline,singleShortDesc</convert>
+		</widget>
+		<widget font="Regular;36" position="377,1130" render="Label" shadowBlur="5.0" shadowColor="#131a1d" size="2140,90" source="session.Event_Now" transparent="1">
+			<convert type="EventName">ExtendedDescription,noExtDescDoubleNewline</convert>
+		</widget>
+		<widget font="Regular;38" foregroundColor="#cccccc" position="380,1235" render="Label" size="110,44" source="session.Event_Next" transparent="1">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget font="Regular;38" foregroundColor="#cccccc" position="487,1235" render="Label" size="140,44" source="session.Event_Next" transparent="1">
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Format:- %H:%M</convert>
+		</widget>
+		<widget font="Regular;38" foregroundColor="#cccccc" noWrap="1" position="650,1235" render="Label" size="1870,44" source="session.Event_Next" transparent="1">
+			<convert type="EventName">NameShortDescription,noShortDescNewline,singleShortDesc</convert>
+		</widget>
+		<widget backgroundColor="#41535c" cornerDia="80" font="Regular;34" foregroundColor="#ffffff" halign="center" position="1940,1340" render="FixedLabel" size="140,80" source="HbbtvApplication" text="HBBTV" valign="center">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget backgroundColor="#41535c" cornerDia="80" font="Regular;34" foregroundColor="#ffffff" halign="center" position="2330,1340" render="FixedLabel" size="80,80" source="session.CurrentService" text="UHD" valign="center">
+			<convert type="ServiceInfo">VideoWidth</convert>
+			<convert type="ValueRange">2160,4320</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget backgroundColor="#41535c" cornerDia="80" font="Regular;34" foregroundColor="#ffffff" halign="center" position="2330,1340" render="FixedLabel" size="80,80" source="session.CurrentService" text="FHD" valign="center">
+			<convert type="ServiceInfo">VideoWidth</convert>
+			<convert type="ValueRange">1920,2159</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget backgroundColor="#41535c" cornerDia="80" font="Regular;34" foregroundColor="#ffffff" halign="center" position="2330,1340" render="FixedLabel" size="80,80" source="session.CurrentService" text="HD" valign="center">
+			<convert type="ServiceInfo">VideoWidth</convert>
+			<convert type="ValueRange">1280,1919</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget backgroundColor="#41535c" cornerDia="80" font="Regular;34" foregroundColor="#ffffff" halign="center" position="2330,1340" render="FixedLabel" size="80,80" source="session.CurrentService" text="qHD" valign="center">
+			<convert type="ServiceInfo">VideoWidth</convert>
+			<convert type="ValueRange">960,1279</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<eLabel backgroundColor="#41535c" cornerDia="80" font="Regular;34" foregroundColor="#ffffff" halign="center" position="2330,1340" size="80,80" text="SD" valign="center" zPosition="-1"/>
+		<eLabel backgroundColor="#41535c" cornerDia="80" font="Regular;34" foregroundColor="#ffffff" halign="center" position="2220,1340" size="80,80" text="4:3" valign="center"/>
+		<widget backgroundColor="#41535c" cornerDia="80" font="Regular;34" foregroundColor="#ffffff" halign="center" position="2220,1340" render="FixedLabel" size="80,80" source="session.CurrentService" text="16:9" valign="center" zPosition="1">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<eLabel backgroundColor="#41535c" cornerDia="80" position="85,1007" size="213,80"/>
+		<widget backgroundColor="#131a1d" cornerDia="70" font="Regular;50" halign="center" position="90,1012" render="Label" size="203,70" source="global.CurrentTime" valign="center" zPosition="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget position="50,1100" render="Picon" size="283,170" source="session.CurrentService" zPosition="2">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<eLabel backgroundColor="#41535c" cornerDia="36" position="40,1050" size="303,230" zPosition="-2"/>
+		<eLabel backgroundColor="#131a1d" cornerDia="36" position="45,1095" size="293,180"/>
+		<eLabel backgroundColor="#28343b" position="40,1303" size="2480,6" zPosition="-1"/>
+		<widget backgroundColor="dark" pixmap="Default-WQHD/images/progress.svg" position="40,1300" render="Progress" size="2480,12" source="session.Event_Now">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+		<widget font="Regular;55" halign="right" position="1065,1355" render="Label" size="200,55" source="session.Event_Now" transparent="1">
+			<convert type="EventTime">Remaining</convert>
+			<convert type="RemainingToText">OnlyMinutes</convert>
+		</widget>
+		<eLabel font="Regular;55" halign="center" position="1265,1355" size="40,55" text="/" transparent="1"/>
+		<widget font="Regular;55" position="1305,1355" render="Label" size="260,55" source="session.Event_Now" transparent="1">
+			<convert type="EventTime">Duration</convert>
+			<convert type="ClockToText">InMinutes</convert>
+		</widget>
+		<widget backgroundColor="#41535c" cornerDia="80" font="Regular;34" foregroundColor="#ffffff" halign="center" position="2440,1340" render="TunerLabel,0,input" size="80,80" source="session.FrontendInfo" valign="center" zPosition="2">
+			<convert type="FrontendInfo">INPUT</convert>
+			<convert type="ValueRange">0,0</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget backgroundColor="#41535c" cornerDia="80" font="Regular;34" foregroundColor="#ffffff" halign="center" position="2440,1340" render="TunerLabel,1,input" size="80,80" source="session.FrontendInfo" valign="center" zPosition="2">
+			<convert type="FrontendInfo">INPUT</convert>
+			<convert type="ValueRange">1,1</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget backgroundColor="#41535c" cornerDia="80" font="Regular;34" foregroundColor="#ffffff" halign="center" position="2440,1340" render="TunerLabel,2,input" size="80,80" source="session.FrontendInfo" valign="center" zPosition="2">
+			<convert type="FrontendInfo">INPUT</convert>
+			<convert type="ValueRange">2,2</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget backgroundColor="#41535c" cornerDia="80" font="Regular;34" foregroundColor="#ffffff" halign="center" position="2440,1340" render="TunerLabel,3,input" size="80,80" source="session.FrontendInfo" valign="center" zPosition="2">
+			<convert type="FrontendInfo">INPUT</convert>
+			<convert type="ValueRange">3,3</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget backgroundColor="#41535c" cornerDia="80" font="Regular;34" foregroundColor="#ffffff" halign="center" position="2440,1340" render="TunerLabel,4,input" size="80,80" source="session.FrontendInfo" valign="center" zPosition="2">
+			<convert type="FrontendInfo">INPUT</convert>
+			<convert type="ValueRange">4,4</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget backgroundColor="#41535c" cornerDia="80" font="Regular;34" foregroundColor="#ffffff" halign="center" position="2440,1340" render="TunerLabel,5,input" size="80,80" source="session.FrontendInfo" valign="center" zPosition="2">
+			<convert type="FrontendInfo">INPUT</convert>
+			<convert type="ValueRange">5,5</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget backgroundColor="#41535c" cornerDia="80" font="Regular;34" foregroundColor="#ffffff" halign="center" position="2440,1340" render="TunerLabel,6,input" size="80,80" source="session.FrontendInfo" valign="center" zPosition="2">
+			<convert type="FrontendInfo">INPUT</convert>
+			<convert type="ValueRange">6,6</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget backgroundColor="#41535c" cornerDia="80" font="Regular;34" foregroundColor="#ffffff" halign="center" position="2440,1340" render="TunerLabel,7,input" size="80,80" source="session.FrontendInfo" valign="center" zPosition="2">
+			<convert type="FrontendInfo">INPUT</convert>
+			<convert type="ValueRange">7,7</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<eLabel backgroundColor="#41535c" cornerDia="80,right" position="165,1340" size="545,80" zPosition="-1"/>
+		<eLabel backgroundColor="#28343b" cornerDia="80" position="40,1340" size="155,80" zPosition="-1"/>
+		<ePixmap pixmap="/usr/share/enigma2/Default-WQHD/skin_default/icons/dolbydigital_off.svg" position="65,1358" size="105,46"/>
+		<widget pixmap="/usr/share/enigma2/Default-WQHD/skin_default/icons/dolbydigital.svg" position="65,1358" render="Pixmap" size="105,46" source="session.CurrentService" zPosition="1">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget backgroundColor="#41535c" font="Regular;36" foregroundColor="#ffffff" halign="center" position="200,1350" render="Label" size="490,60" source="session.CurrentService" valign="center">
+			<convert type="ServiceResolution">VideoInfoCodec</convert>
+		</widget>
+		<widget pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminiwidgets/images/ico_line_on.svg" position="730,1350" size="140,70" render="Pixmap" source="global.OnlineIcon">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget backgroundColor="#41535c" cornerDia="80" font="Regular;34" foregroundColor="#ffffff" halign="center" position="2110,1340" render="FixedLabel" size="80,80" source="session.CurrentService" text="TXT" valign="center" zPosition="1">
+			<convert type="ServiceInfo">HasTelext</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<eLabel backgroundColor="#41535c" cornerDia="80" font="Regular;34" foregroundColor="grey" halign="center" position="2110,1340" size="80,80" text="TXT" valign="center"/>
+		<widget backgroundColor="#28343b" cornerDia="80" font="Regular;34" halign="center" position="1940,1340" render="FixedLabel" size="140,80" source="session.CurrentService" text="SUB" valign="center" zPosition="1">
+			<convert type="ServiceInfo">SubservicesAvailable</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<eLabel backgroundColor="#41535c" cornerDia="80" position="2440,1340" size="80,80"/>
+		<ePixmap pixmap="Default-WQHD/images/streamserver.svg" position="2450,1350" size="60,60" zPosition="1"/>
+	</screen>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="WidgetsSetupInfobar" position="center,center" size="1920,1080">
+		<eLabel backgroundColor="#41535c" cornerDia="40,top" position="0,0" size="1920,70" zPosition="-1"/>
+		<eLabel backgroundColor="#28343b" cornerDia="40,bottom" position="0,70" size="1920,1010" zPosition="-3"/>
+		<widget backgroundColor="#41535c" font="Bold;42" foregroundColor="#ffffff" position="60,12" render="Label" size="1300,48" source="Title"/>
+		<widget backgroundColor="#41535c" font="Bold;40" foregroundColor="#ffffff" halign="right" position="1460,14" render="Label" size="400,40" source="global.CurrentTime">
+			<convert type="ClockToText">Format:%a %d.%m.  %H:%M</convert>
+		</widget>
+		<eLabel backgroundColor="#131a1d" cornerDia="40" position="20,100" size="1880,880" zPosition="-2"/>
+		<widget enableWrapAround="1" name="config" position="40,120" scrollbarMode="showOnDemand" size="1840,490" transparent="1"/>
+		<eLabel backgroundColor="#41535c" cornerDia="90" font="Regular;34" foregroundColor="#ffffff" halign="center" position="center,660" size="490,90" text="Sensorfelder" valign="center" zPosition="1"/>
+		<eLabel backgroundColor="#28343b" cornerDia="40" position="center,705" size="1830,250"/>
+		<widget name="SensorPic" pixmaps="/usr/lib/enigma2/python/Plugins/GP4/geminiwidgets/images/wqhd1.png,/usr/lib/enigma2/python/Plugins/GP4/geminiwidgets/images/wqhd2.png,/usr/lib/enigma2/python/Plugins/GP4/geminiwidgets/images/wqhd3.png,/usr/lib/enigma2/python/Plugins/GP4/geminiwidgets/images/wqhd4.png,/usr/lib/enigma2/python/Plugins/GP4/geminiwidgets/images/wqhd5.png" position="center,780" size="1800,70" zPosition="1"/>
+		<eLabel backgroundColor="#28343b" font="Regular;36" halign="center" position="750,1000" size="420,44" text="Save"/>
+		<eLabel backgroundColor="green" cornerDia="40,bottom" position="0,1062" size="1920,18"/>
+	</screen>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="SpinnerSetupScreen" position="center,center" size="1500,650" title="Setup Spinner">
+		<eLabel backgroundColor="#28343b" cornerDia="40" position="0,80" size="1500,550" zPosition="-1"/>
+		<eLabel backgroundColor="#41535c" cornerDia="160" position="40,0" size="160,160" zPosition="-1"/>
+		<widget backgroundColor="#28343b" font="Regular;48" halign="right" noWrap="1" position="260,100" render="Label" size="1200,58" source="Title"/>
+		<ePixmap gradient="#41535c,white,horizontal" position="20,480" size="240,3"/>
+		<ePixmap gradient="white,#41535c,horizontal" position="1240,480" size="240,3"/>
+		<eLabel backgroundColor="#41535c" cornerDia="80" font="Regular;32" foregroundColor="#ffffff" halign="center" position="center,440" size="900,80" text="Use the left and right buttons to change an option." valign="center"/>
+		<eLabel backgroundColor="green" cornerDia="40,bottom" font="Regular;36" halign="center" position="0,580" shadowBlur="5.0" shadowColor="black" size="1500,70" text="Save" valign="center"/>
+		<widget name="Spinner" position="60,20" size="120,120"/>
+		<widget enableWrapAround="1" name="config" selectionDia="70" position="40,240" scrollbarMode="showOnDemand" size="1420,70"/>
+	</screen>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="BootlogoSetupScreen" position="center,center" size="1500,650" title="Bootlogo Setup">
+		<eLabel backgroundColor="#28343b" cornerDia="40" position="0,80" size="1500,550" zPosition="-1"/>
+		<eLabel backgroundColor="#41535c" cornerDia="160" position="40,0" size="160,160" zPosition="-1"/>
+		<widget backgroundColor="#28343b" font="Regular;48" halign="right" noWrap="1" position="260,100" render="Label" size="1200,58" source="Title"/>
+		<widget name="LogoSpinner" position="60,20" size="120,120"/>
+		<widget backgroundColor="#28343b" enableWrapAround="1" name="config" selectionDia="70" position="40,200" scrollbarMode="showOnDemand" size="1420,140"/>
+		<ePixmap gradient="#41535c,white,horizontal" position="20,440" size="380,3"/>
+		<ePixmap gradient="white,#41535c,horizontal" position="1100,440" size="380,3"/>
+		<eLabel backgroundColor="#41535c" cornerDia="80" font="Regular;32" foregroundColor="#ffffff" halign="center" position="center,400" size="620,80" text="Press OK to edit the settings." valign="center"/>
+		<widget backgroundColor="green" cornerDia="70" font="Regular;36" halign="center" name="GreenButton" position="40,540" shadowBlur="5.0" shadowColor="black" size="680,70" valign="center"/>
+		<widget backgroundColor="yellow" cornerDia="70" font="Regular;36" foregroundColor="black" halign="center" name="YellowButton" position="780,540" size="680,70" valign="center"/>
+	</screen>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="InfobarPreview" position="center,center" size="2560,1440">
+		<eLabel font="Regular;70" halign="center" shadowBlur="10.0" shadowColor="black" position="center,1130" render="Label" size="2000,75" text="Infobar-Position" transparent="1"/>
+		<widget font="Regular;38" shadowBlur="5.0" shadowColor="black" halign="center" name="label" position="center,1210" size="2000,210" transparent="1" valign="center"/>
+	</screen>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="gEcmScreen_v2" position="0,0" size="800,1440" zPosition="1000">
+		<ePixmap gradient="#40000000,transparent,horizontal" position="center,0" size="800,1440" zPosition="-1"/>
+		<widget font="Regular;34" name="text" position="50,450" size="700,480" transparent="1"/>
+	</screen>
+	<screen name="ClockSetup" position="center,center" size="800,135">
+		<widget font="Regular;36" halign="center" name="label" position="20,25" size="760,82"/>
+	</screen>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="gClock" size="140,140">
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminiwidgets/images/styleclock.svg" position="0,0" size="140,140"/>
+		<widget foregroundColor="#ff0000" position="center,center" render="gRWatch" size="120,120" source="global.CurrentTime" zPosition="3">
+			<convert type="gCWatch">sec,2</convert>
+		</widget>
+		<widget foregroundColor="#bbbbbb" position="center,center" render="gRWatch" size="120,120" source="global.CurrentTime" zPosition="2">
+			<convert type="gCWatch">min,3</convert>
+		</widget>
+		<widget foregroundColor="#bbbbbb" position="center,center" render="gRWatch" size="100,100" source="global.CurrentTime" zPosition="1">
+			<convert type="gCWatch">hour,3</convert>
+		</widget>
+	</screen>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="SymbolScreen" position="2345,140" size="140,140">
+		<widget name="Icon" position="0,0" size="140,140"/>
+	</screen>
+</skin>

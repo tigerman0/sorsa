@@ -1,0 +1,35 @@
+<skin>
+	<screen flags="wfNoBorder" name="QbuttonMain" position="0,center" size="570,720">
+		<ePixmap gradient="#40000000,background,vertical" position="0,0" size="570,720" zPosition="-3"/>
+		<widget name="LogoSpinner" position="20,5" size="70,70"/>
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/ok_neutral.svg" position="480,20" size="30,30"/>
+		<widget name="PixmapMenu" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/menu_neutral.svg" position="520,20" size="30,30"/>
+		<widget backgroundColor="transpBlack" font="Regular;24" source="Title" render="Label" position="20,80" size="530,30" transparent="1"/>
+		<eLabel backgroundColor="grey" position="20,120" size="540,2"/>
+		<widget source="list" render="Listbox" backgroundColor="background" position="20,130" size="540,576" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template":[MultiContentEntryText(pos=(150,4),size=(600,25),font=0,text=3),
+				MultiContentEntryPixmapAlphaTest(pos=(10,6),size=(120,60),png=1),
+				MultiContentEntryText(pos=(150,29),size=(600,20),font=1,text=5,color=0xbab329, color_sel=0xbab329),
+				MultiContentEntryText(pos=(150,49),size=(600,20),font=1,text=2),
+				MultiContentEntryText(pos=(10,0),size=(120,72),font=0,text=4, flags=RT_HALIGN_CENTER|RT_VALIGN_CENTER),],
+				"fonts":[gFont("Regular",20),gFont("Regular",16)],"itemHeight":72}
+			</convert>
+		</widget>
+	</screen>
+	<screen flags="wfNoBorder" name="QbuttonMenu" position="0,center" size="570,720">
+		<ePixmap gradient="#40000000,background,vertical" position="0,0" size="570,720" zPosition="-3"/>
+		<widget name="LogoSpinner" position="20,5" size="70,70"/>
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/ok_neutral.svg" position="480,20" size="30,30"/>
+		<widget name="PixmapMenu" pixmap="/usr/lib/enigma2/python/Plugins/GP4/geminicomm/images/menu_neutral.svg" position="520,20" size="30,30"/>
+		<widget backgroundColor="transpBlack" font="Regular;24" source="Title" render="Label" position="20,80" size="530,30" transparent="1"/>
+		<eLabel backgroundColor="grey" position="20,120" size="540,2"/>
+		<widget source="list" render="Listbox" backgroundColor="background" position="20,130" size="540,550" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template":[MultiContentEntryText(pos=(10,4),size=(780,27),font=0,text=1),
+				MultiContentEntryText(pos=(10,30),size=(780,22),font=1,text=2,color=0xa0a0a0),],
+				"fonts":[gFont("Regular",22),gFont("Regular",17)],"itemHeight":55}
+			</convert>
+		</widget>
+	</screen>
+</skin>

@@ -1,0 +1,12 @@
+<skin>
+	<screen name="ScreenIpkg" position="center,120" size="820,520" title=" ">
+		<widget name="activityslider" position="20,10" size="780,10"  borderWidth="2" borderColor="#cccccc"/>
+		<widget name="package" position="10,40" size="800,27" font="Regular;22"/>
+		<widget name="status" position="10,70" size="800,55" font="Regular;22"/>
+		<widget name="slider" position="20,140" size="780,12" borderWidth="2" borderColor="#cccccc"/>
+		<widget name="scrolltext" position="10,160" size="800,300" font="Regular;18"/>
+		<eLabel position="10,470" size="800,1" backgroundColor="grey"/>
+		<widget name="TextBlue" position="40,487" size="750,25" font="Regular;21"/>
+		<widget name="PixmapBlue" position="10,490" size="20,20" pixmaps="skin_default/buttons/button_off.png,skin_default/buttons/button_blue.png"/>
+	</screen>
+</skin>

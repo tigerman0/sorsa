@@ -1,0 +1,121 @@
+<skin>
+	<screen name="geminiiCal" position="center,110" size="1800,930" title=" ">
+		<eLabel backgroundColor="grey" position="10,80" size="1780,1"/>
+		<eLabel backgroundColor="grey" position="1235,80" size="1,720"/>
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/red.svg" position="10,5" size="300,70"/>
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/green.svg" position="310,5" size="300,70"/>
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/blue.svg" position="610,5" size="300,70"/>
+		<widget name="redLabel" backgroundColor="#9f1313" font="Regular;30" halign="center" position="10,5" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2" size="300,70" transparent="1" valign="center" zPosition="1"/>
+		<widget name="greenLabel" backgroundColor="#1f771f" font="Regular;30" halign="center" position="310,5" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2" size="300,70" transparent="1" valign="center" zPosition="1"/>
+		<widget name="blueLabel" backgroundColor="#18188b" font="Regular;30" halign="center" position="610,5" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2" size="300,70" transparent="1" valign="center" zPosition="1"/>
+		<widget font="Regular;34" halign="right" position="1650,25" render="Label" size="120,40" source="global.CurrentTime">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget font="Regular;34" halign="right" position="1240,25" render="Label" size="400,40" source="global.CurrentTime">
+			<convert type="ClockToText">Date</convert>
+		</widget>		
+		<widget font="Regular;50" halign="center" name="TitleLine" position="120,100" size="1100,60"/>
+		<widget font="Regular;34" halign="center" name="w0" position="84,185" size="75,40" valign="center" foregroundColor="yellow"/>
+		<widget font="Regular;34" halign="center" name="w1" position="220,185" size="65,40" valign="center"/>
+		<widget font="Regular;34" halign="center" name="w2" position="350,185" size="65,40" valign="center"/>
+		<widget font="Regular;34" halign="center" name="w3" position="490,185" size="65,40" valign="center"/>
+		<widget font="Regular;34" halign="center" name="w4" position="630,185" size="65,40" valign="center"/>
+		<widget font="Regular;34" halign="center" name="w5" position="770,185" size="65,40" valign="center"/>
+		<widget font="Regular;34" halign="center" name="w6" position="910,185" size="65,40" valign="center"/>
+		<widget font="Regular;34" halign="center" name="w7" position="1050,185" size="65,40" valign="center"/>
+		<widget font="Regular;34" halign="center" name="wn0" position="95,260" size="55,40" valign="center" foregroundColor="grey"/>
+		<widget font="Regular;34" halign="center" name="wn1" position="95,350" size="55,40" valign="center" foregroundColor="grey"/>
+		<widget font="Regular;34" halign="center" name="wn2" position="95,440" size="55,40" valign="center" foregroundColor="grey"/>
+		<widget font="Regular;34" halign="center" name="wn3" position="95,530" size="55,40" valign="center" foregroundColor="grey"/>
+		<widget font="Regular;34" halign="center" name="wn4" position="95,620" size="55,40" valign="center" foregroundColor="grey"/>
+		<widget font="Regular;34" halign="center" name="wn5" position="95,710" size="55,40" valign="center" foregroundColor="grey"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#33c424,#f200ff" halign="center" name="d0" position="180,240" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d1" position="320,240" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d2" position="460,240" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d3" position="600,240" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d4" position="740,240" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d5" position="880,240" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d6" position="1020,240" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d7" position="180,330" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d8" position="320,330" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d9" position="460,330" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d10" position="600,330" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d11" position="740,330" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d12" position="880,330" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d13" position="1020,330" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d14" position="180,420" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d15" position="320,420" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d16" position="460,420" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d17" position="600,420" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d18" position="740,420" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d19" position="880,420" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d20" position="1020,420" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d21" position="180,510" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d22" position="320,510" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d23" position="460,510" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d24" position="600,510" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d25" position="740,510" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d26" position="880,510" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d27" position="1020,510" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d28" position="180,600" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d29" position="320,600" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d30" position="460,600" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d31" position="600,600" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d32" position="740,600" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d33" position="880,600" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d34" position="1020,600" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d35" position="180,690" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d36" position="320,690" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d37" position="460,690" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d38" position="600,690" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d39" position="740,690" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d40" position="880,690" size="136,86" valign="center"/>
+		<widget backgroundColors="#20294071,#204176b6" font="Regular;34" foregroundColors="foreground,black,#fff600,#0079ff,#db7a04,#10cce5,#008700,#f200ff" halign="center" name="d41" position="1020,690" size="136,86" valign="center"/>
+		<widget font="Regular;34" foregroundColor="yellow" halign="center" name="TitleEvents" position="1250,100" size="530,42"/>
+		<widget font="Regular;28" name="MonEventList" position="1250,170" size="530,600"/>
+		<eLabel backgroundColor="grey" position="10,800" size="1780,2"/>
+		<widget name="PixmapIcon" position="20,810" size="100,100"/>
+		<widget font="Regular;28" name="DayEventList" position="180,810" size="1410,100"/>
+		<ePixmap pixmap="Default-FHD/skin_default/icons/menu.svg" position="1710,820" size="80,40"/>
+		<ePixmap pixmap="Default-FHD/skin_default/icons/help.svg" position="1710,880" size="80,40"/>
+	</screen>
+	<screen name="VcardScreen" position="center,110" size="1800,930" title="Contacts">
+		<eLabel backgroundColor="grey" position="10,80" size="1780,1"/>
+		<eLabel backgroundColor="grey" position="820,80" size="1,840"/>
+		<widget name="bluePic" pixmap="Default-FHD/skin_default/buttons/blue.svg" position="10,5" size="300,70"/>
+		<widget name="blueLabel" backgroundColor="#18188b" font="Regular;30" halign="center" position="10,5" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2" size="300,70" transparent="1" valign="center" zPosition="1"/>
+		<widget font="Regular;34" halign="right" position="1650,25" render="Label" size="120,40" source="global.CurrentTime">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget font="Regular;34" halign="right" position="1240,25" render="Label" size="400,40" source="global.CurrentTime">
+			<convert type="ClockToText">Date</convert>
+		</widget>		
+		<widget source="adrlist" render="Listbox" position="10,90" size="800,800" scrollbarMode="showOnDemand" enableWrapAround="on">
+			<convert type="TemplatedMultiContent">
+				{"template":[ MultiContentEntryText(pos=(5,0),flags=RT_VALIGN_CENTER,size=(50,40),font=0,text=1),
+				MultiContentEntryText(pos=(55,0),flags=RT_VALIGN_CENTER,size=(740,40),font=0,text=2),
+				],"fonts":[gFont("Regular",30)],"itemHeight":40}
+			</convert>
+		</widget>
+		<widget name="pic" position="830,90" size="300,300" />
+		<widget name="NameLabel" position="1160,140" size="620,240" font="Regular;32" />
+		<widget name="listbackground" position="830,418" size="954,494" backgroundColor="grey"/>
+		<widget source="datalist" render="Listbox" position="832,420" size="950,490" scrollbarMode="showOnDemand" enableWrapAround="on" zPosition="1">
+			<convert type="TemplatedMultiContent">
+				{ "template": [ MultiContentEntryText(pos=(80,3),size=(850,35),font=0,text=1),
+				MultiContentEntryText(pos=(80,38),size=(850,30),font=1,text=2,color=0xa0a0a0),
+				MultiContentEntryPixmapAlphaTest(pos=(5,5),size=(60,60),png=3),
+				],"fonts": [gFont("Regular",30),gFont("Regular",24)],"itemHeight":70}
+			</convert>
+		</widget>
+	</screen>
+	<screen name="GoogleCalList" position="center,center" size="620,220" title="Google-Account">
+		<widget source="list" render="Listbox" position="10,10" size="600,160" scrollbarMode="showOnDemand" enableWrapAround="on">
+			<convert type="TemplatedMultiContent">
+				{ "template": [ MultiContentEntryText(pos=(60,6),size=(540,40),text=2),
+				MultiContentEntryPixmapAlphaTest(pos=(5,5),size=(40,40),png=1)
+				],"fonts": [gFont("Regular",35)],"itemHeight":50}
+			</convert>
+		</widget>
+	</screen>
+</skin>
